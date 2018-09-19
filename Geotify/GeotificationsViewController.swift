@@ -35,16 +35,23 @@ struct PreferencesKeys {
 }
 
 class GeotificationsViewController: UIViewController {
-  
+
   @IBOutlet weak var mapView: MKMapView!
-  
+
   var geotifications: [Geotification] = []
-  
+
+  let locationManager = CLLocationManager()
+
   override func viewDidLoad() {
     super.viewDidLoad()
+    // 1
+    locationManager.delegate = self
+    // 2
+    locationManager.requestAlwaysAuthorization()
+    // 3
     loadAllGeotifications()
   }
-  
+
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "addGeotification" {
       let navigationController = segue.destination as! UINavigationController
@@ -52,14 +59,14 @@ class GeotificationsViewController: UIViewController {
       vc.delegate = self
     }
   }
-  
+
   // MARK: Loading and saving functions
   func loadAllGeotifications() {
     geotifications.removeAll()
     let allGeotifications = Geotification.allGeotifications()
     allGeotifications.forEach { add($0) }
   }
-  
+
   func saveAllGeotifications() {
     let encoder = JSONEncoder()
     do {
@@ -69,7 +76,7 @@ class GeotificationsViewController: UIViewController {
       print("error encoding geotifications")
     }
   }
-  
+
   // MARK: Functions that update the model/associated views with geotification changes
   func add(_ geotification: Geotification) {
     geotifications.append(geotification)
@@ -77,7 +84,7 @@ class GeotificationsViewController: UIViewController {
     addRadiusOverlay(forGeotification: geotification)
     updateGeotificationsCount()
   }
-  
+
   func remove(_ geotification: Geotification) {
     guard let index = geotifications.index(of: geotification) else { return }
     geotifications.remove(at: index)
@@ -85,16 +92,16 @@ class GeotificationsViewController: UIViewController {
     removeRadiusOverlay(forGeotification: geotification)
     updateGeotificationsCount()
   }
-  
+
   func updateGeotificationsCount() {
     title = "Geotifications: \(geotifications.count)"
   }
-  
+
   // MARK: Map overlay functions
   func addRadiusOverlay(forGeotification geotification: Geotification) {
     mapView?.add(MKCircle(center: geotification.coordinate, radius: geotification.radius))
   }
-  
+
   func removeRadiusOverlay(forGeotification geotification: Geotification) {
     // Find exactly one overlay which has the same coordinates & radius to remove
     guard let overlays = mapView?.overlays else { return }
@@ -107,24 +114,24 @@ class GeotificationsViewController: UIViewController {
       }
     }
   }
-  
+
   // MARK: Other mapview functions
   @IBAction func zoomToCurrentLocation(sender: AnyObject) {
     mapView.zoomToUserLocation()
   }
-  
+
 }
 
 // MARK: AddGeotificationViewControllerDelegate
 extension GeotificationsViewController: AddGeotificationsViewControllerDelegate {
-  
+
   func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, eventType: Geotification.EventType) {
     controller.dismiss(animated: true, completion: nil)
     let geotification = Geotification(coordinate: coordinate, radius: radius, identifier: identifier, note: note, eventType: eventType)
     add(geotification)
     saveAllGeotifications()
   }
-  
+
 }
 
 // MARK: - Location Manager Delegate
@@ -134,7 +141,7 @@ extension GeotificationsViewController: CLLocationManagerDelegate {
 
 // MARK: - MapView Delegate
 extension GeotificationsViewController: MKMapViewDelegate {
-  
+
   func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
     let identifier = "myGeotification"
     if annotation is Geotification {
@@ -153,8 +160,8 @@ extension GeotificationsViewController: MKMapViewDelegate {
     }
     return nil
   }
-  
-  
+
+
   func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
     if overlay is MKCircle {
       let circleRenderer = MKCircleRenderer(overlay: overlay)
@@ -165,12 +172,12 @@ extension GeotificationsViewController: MKMapViewDelegate {
     }
     return MKOverlayRenderer(overlay: overlay)
   }
-  
+
   func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
     // Delete geotification
     let geotification = view.annotation as! Geotification
     remove(geotification)
     saveAllGeotifications()
   }
-  
+
 }
