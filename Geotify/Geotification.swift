@@ -79,7 +79,7 @@ class Geotification: NSObject, Codable, MKAnnotation {
     let event = try values.decode(String.self, forKey: .eventType)
     eventType = EventType(rawValue: event) ?? .onEntry
   }
-
+  
   func encode(to encoder: Encoder) throws {
     var container = encoder.container(keyedBy: CodingKeys.self)
     try container.encode(coordinate.latitude, forKey: .latitude)
@@ -89,7 +89,7 @@ class Geotification: NSObject, Codable, MKAnnotation {
     try container.encode(note, forKey: .note)
     try container.encode(eventType.rawValue, forKey: .eventType)
   }
-
+  
 }
 
 extension Geotification {
