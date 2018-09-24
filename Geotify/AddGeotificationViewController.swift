@@ -30,8 +30,7 @@ import UIKit
 import MapKit
 
 protocol AddGeotificationsViewControllerDelegate {
-  func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D,
-                                      radius: Double, identifier: String, note: String, eventType: Geotification.EventType)
+  func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, points: [String?:Int], eventType: Geotification.EventType)
 }
 
 class AddGeotificationViewController: UITableViewController {
@@ -64,11 +63,9 @@ class AddGeotificationViewController: UITableViewController {
     let radius = Double(radiusTextField.text!) ?? 0
     let identifier = NSUUID().uuidString
     let note = noteTextField.text
-    var points : [String? : Int] = [
-      identifier : 5
-    ]
+    let points = [identifier : 5]
     let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
-    delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note!, points : points[identifier], ventType: eventType)
+    delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note!, points : points, eventType: eventType)
   }
   
   @IBAction private func onZoomToCurrentLocation(sender: AnyObject) {

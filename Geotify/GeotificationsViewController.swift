@@ -152,15 +152,10 @@ class GeotificationsViewController: UIViewController {
 
 // MARK: AddGeotificationViewControllerDelegate
 extension GeotificationsViewController: AddGeotificationsViewControllerDelegate {
-  func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, points: Int, eventType: Geotification.EventType) {
-    <#code#>
-  }
-  
-  
-  func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, points : Int, eventType: Geotification.EventType) {
+  func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, points: [String? : Int ], eventType: Geotification.EventType) {
     controller.dismiss(animated: true, completion: nil)
     let clampedRadius = min(radius, locationManager.maximumRegionMonitoringDistance)
-    let geotification = Geotification(coordinate: coordinate, radius: clampedRadius, identifier: identifier, note: note, points : points[identifier] ,eventType: eventType)
+    let geotification = Geotification(coordinate: coordinate, radius: clampedRadius, identifier: identifier, note: note, points : [identifier:5] ,eventType: eventType)
     add(geotification)
     startMonitoring(geotification: geotification)
     saveAllGeotifications()
