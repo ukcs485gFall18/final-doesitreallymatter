@@ -64,8 +64,11 @@ class AddGeotificationViewController: UITableViewController {
     let radius = Double(radiusTextField.text!) ?? 0
     let identifier = NSUUID().uuidString
     let note = noteTextField.text
+    var points : [String? : Int] = [
+      identifier : 5
+    ]
     let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
-    delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note!, eventType: eventType)
+    delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note!, points : points[identifier], ventType: eventType)
   }
   
   @IBAction private func onZoomToCurrentLocation(sender: AnyObject) {
