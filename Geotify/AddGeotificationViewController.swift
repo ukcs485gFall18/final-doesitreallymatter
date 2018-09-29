@@ -30,6 +30,10 @@
 
 import UIKit
 import MapKit
+import Firebase
+import FirebaseFirestore
+
+let db = Firestore.firestore()
 
 protocol AddGeotificationsViewControllerDelegate {
   func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D,
@@ -62,11 +66,35 @@ class AddGeotificationViewController: UITableViewController {
   }
   
   @IBAction private func onAdd(sender: AnyObject) {
-    let coordinate = mapView.centerCoordinate
+    let restaurantID = "6YI7ekMfD3xs6u04PVmC"
+    var coordinate = CLLocationCoordinate2D()
     let radius = Double(radiusTextField.text!) ?? 0
-    let identifier = NSUUID().uuidString
+    var identifier = String()
     let note = noteTextField.text
     let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
+    
+    let docRef = db.collection("restaurants").document(restaurantID)
+    
+    docRef.getDocument { (document, error) in
+      if let document = document, document.exists {
+       // let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+        // From https://stackoverflow.com/questions/52374315/swift-retrieving-geopoints-from-firestore-how-to-show-them-as-map-annotations/52375416
+              if let coords = document.get("location") {
+                let point = coords as! GeoPoint
+                let lat = point.latitude
+                let lon = point.longitude
+                print(lat, lon) //here you can
+                coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+              }
+        if let name = document.data()!["name"] as? String {
+          identifier = name
+        }
+        print("Coordinate: \(coordinate) Indentifier: \(identifier)")
+      } else {
+        print("Document does not exist")
+      }
+    }
+    
     delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note!, eventType: eventType)
   }
   
