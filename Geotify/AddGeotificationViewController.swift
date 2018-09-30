@@ -66,9 +66,9 @@ class AddGeotificationViewController: UITableViewController {
   }
   
   @IBAction private func onAdd(sender: AnyObject) {
-    let restaurantID = "6YI7ekMfD3xs6u04PVmC"
+    let restaurantID = "nzkjAfMY4rvKayCuvsr7"
     var coordinate = CLLocationCoordinate2D()
-    let radius = Double(radiusTextField.text!) ?? 0
+    let radius = 20
     var note = String()
     let identifier = NSUUID().uuidString
     let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
@@ -90,7 +90,7 @@ class AddGeotificationViewController: UITableViewController {
           note = name
         }
         print("Coordinate: \(coordinate) Note: \(String(describing: note))")
-        self.delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note, eventType: eventType)
+        self.delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: Double(radius), identifier: identifier, note: note, eventType: eventType)
       } else {
         print("Document does not exist")
       }
