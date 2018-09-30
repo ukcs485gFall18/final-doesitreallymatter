@@ -61,7 +61,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Show an alert if application is active
     if UIApplication.shared.applicationState == .active {
       guard let message = note(from: region.identifier) else { return }
-      guard points(from: region.identifier) != nil else { return } // Adding point count to the message displayed when entering geofence (Still has to be implemented) !!!!!!!
       window?.rootViewController?.showAlert(withTitle: nil, message: message)
     } else {
       // Otherwise present a local notification
@@ -80,14 +79,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
       }
     }
-  }
-  
-  func points(from identifier: String) ->Int? {
-    let geotifications = Geotification.allGeotifications()
-    guard let matched = geotifications.filter({
-      $0.identifier == identifier
-    }).first else { return nil }
-    return matched.points[identifier]
   }
   
   func note(from identifier: String) -> String? {
