@@ -60,11 +60,13 @@ class AddGeotificationViewController: UITableViewController {
   
   @IBAction private func onAdd(sender: AnyObject) {
     let point = 5
+    var pointSum = 0
+    pointSum += point
     let coordinate = mapView.centerCoordinate
     let radius = Double(radiusTextField.text!) ?? 0
     let identifier = NSUUID().uuidString
-    let points = [identifier : point]
-    let note = "You entered the geofence, you get \(points[identifier] ?? 0)) points!" // add the point to the notification of entering the geofence to the user 
+    let points = [identifier : pointSum]
+    let note = "You entered the geofence, you get \(points[identifier] ?? 0)) points!" // add the point to the notification of entering the geofence to the user
     let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
     delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note, eventType: eventType)
   }
