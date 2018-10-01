@@ -52,11 +52,6 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
 
   var delegate: AddGeotificationsViewControllerDelegate?
 
-    var restaurants: [(name: String, id: String)] = [
-
-
-  var delegate: AddGeotificationsViewControllerDelegate?
-
   var restaurants: [(name: String, id: String)] = [
     ("McDonalds", "j2aSybH94VKs1vrpGOy"),
     ("Canes", "6YI7ekMfD3xs6u04PVmC"),
