@@ -34,25 +34,44 @@ protocol AddGeotificationsViewControllerDelegate {
                                       radius: Double, identifier: String, note: String, eventType: Geotification.EventType)
 }
 
-class AddGeotificationViewController: UITableViewController {
+class AddGeotificationViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
   
   @IBOutlet var addButton: UIBarButtonItem!
   @IBOutlet var zoomButton: UIBarButtonItem!
   @IBOutlet weak var eventTypeSegmentedControl: UISegmentedControl!
-  @IBOutlet weak var radiusTextField: UITextField!
-  @IBOutlet weak var noteTextField: UITextField!
+  //@IBOutlet weak var radiusTextField: UITextField!
+  //@IBOutlet weak var noteTextField: UITextField!
   @IBOutlet weak var mapView: MKMapView!
-  
+  @IBOutlet weak var Picker1: UIPickerView!
+    
   var delegate: AddGeotificationsViewControllerDelegate?
+  
+  var Array = ["McDonalds", "Canes", "Tolly Ho", "Chipotle", "Local Taco"]
+  
+  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    return Array[row]
+  }
+  
+  func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    return Array.count
+  }
+  
+  func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    return 1
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.rightBarButtonItems = [addButton, zoomButton]
     addButton.isEnabled = false
+    
+    Picker1.delegate = self
+    Picker1.dataSource = self
+    
   }
   
   @IBAction func textFieldEditingChanged(sender: UITextField) {
-    addButton.isEnabled = !radiusTextField.text!.isEmpty && !noteTextField.text!.isEmpty
+    //addButton.isEnabled = !radiusTextField.text!.isEmpty && !noteTextField.text!.isEmpty
   }
   
   @IBAction func onCancel(sender: AnyObject) {
@@ -60,12 +79,12 @@ class AddGeotificationViewController: UITableViewController {
   }
   
   @IBAction private func onAdd(sender: AnyObject) {
-    let coordinate = mapView.centerCoordinate
-    let radius = Double(radiusTextField.text!) ?? 0
-    let identifier = NSUUID().uuidString
-    let note = noteTextField.text
-    let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
-    delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note!, eventType: eventType)
+    //let coordinate = mapView.centerCoordinate
+    //let radius = Double(radiusTextField.text!) ?? 0
+    //let identifier = NSUUID().uuidString
+    //let note = noteTextField.text
+    //let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
+    //delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note!, eventType: eventType)
   }
   
   @IBAction private func onZoomToCurrentLocation(sender: AnyObject) {
