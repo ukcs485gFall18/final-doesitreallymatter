@@ -38,13 +38,13 @@ class Geotification: NSObject, Codable, MKAnnotation {
   }
   
   enum CodingKeys: String, CodingKey {
-    case latitude, longitude, radius, identifier, points, eventType
+    case latitude, longitude, radius, identifier, note, eventType
   }
   
   var coordinate: CLLocationCoordinate2D
   var radius: CLLocationDistance
   var identifier: String
-  var points: Int?
+  var note: String?
   var eventType: EventType
   
   /*var title: String? {
@@ -59,11 +59,11 @@ class Geotification: NSObject, Codable, MKAnnotation {
     return "Radius: \(radius)m - \(eventTypeString)"
   }
   
-  init(coordinate: CLLocationCoordinate2D, radius: CLLocationDistance, identifier: String, points: Int?, eventType: EventType) {
+  init(coordinate: CLLocationCoordinate2D, radius: CLLocationDistance, identifier: String, note: String?, eventType: EventType) {
     self.coordinate = coordinate
     self.radius = radius
     self.identifier = identifier
-    self.points = points
+    self.note = note 
     self.eventType = eventType
   }
   
@@ -75,7 +75,7 @@ class Geotification: NSObject, Codable, MKAnnotation {
     coordinate = CLLocationCoordinate2DMake(latitude, longitude)
     radius = try values.decode(Double.self, forKey: .radius)
     identifier = try values.decode(String.self, forKey: .identifier)
-    points = try values.decode(Int?.self, forKey: .points)
+    note = try values.decode(String?.self, forKey: .note)
     let event = try values.decode(String.self, forKey: .eventType)
     eventType = EventType(rawValue: event) ?? .onEntry
   }
@@ -86,7 +86,7 @@ class Geotification: NSObject, Codable, MKAnnotation {
     try container.encode(coordinate.longitude, forKey: .longitude)
     try container.encode(radius, forKey: .radius)
     try container.encode(identifier, forKey: .identifier)
-    try container.encode(points, forKey: .points)
+    try container.encode(note, forKey: .note)
     try container.encode(eventType.rawValue, forKey: .eventType)
   }
   

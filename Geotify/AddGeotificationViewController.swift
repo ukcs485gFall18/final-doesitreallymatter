@@ -93,13 +93,15 @@ class AddGeotificationViewController: UITableViewController {
   
   @IBAction private func onAdd(sender: AnyObject) {
     var pointSum: Int = 0 // Var that will change every time we create a new geofence (adds on point per new geofence) - Chelina
+    let identifier = NSUUID().uuidString
+    
     let point = 5 // every new Geofence will be worth 5 points - Chelina
     pointSum += point // Add points earned to the total count in the identifier - Chelina
     let points = [identifier : pointSum]
     let note = "You entered the geofence, you get \(points[identifier] ?? 0) points!" // add the point to the notification of entering the geofence to the user - Chelina
     var coordinate = CLLocationCoordinate2D()
     let radius = 20
-    let identifier = NSUUID().uuidString
+
     let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
     
     let docRef = db.collection("restaurants").document(restaurantID)
@@ -123,7 +125,7 @@ class AddGeotificationViewController: UITableViewController {
     }
     print(coordinate)
   }
-  }
+  
   
   @IBAction private func onZoomToCurrentLocation(sender: AnyObject) {
     mapView.zoomToUserLocation()
