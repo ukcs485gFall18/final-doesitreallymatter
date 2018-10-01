@@ -29,17 +29,17 @@
 import UIKit
 import CoreLocation
 import UserNotifications
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
+  
   let locationManager = CLLocationManager()
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:[UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
     // Initializes the Firebase App using GoogleService-Info.plist - Kenton
-    FirebaseApp.configure()
+    //FirebaseApp.configure()
     locationManager.delegate = self
     locationManager.requestAlwaysAuthorization()
     let options: UNAuthorizationOptions = [.badge, .sound, .alert]
@@ -59,6 +59,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   func handleEvent(for region: CLRegion!) {
+    print("Geofence triggered!")
+    guard let note = "You entered the restaurant, you have earned \(points(from: region.identifier)) points!" else { return }
     // Show an alert if application is active
     if UIApplication.shared.applicationState == .active {
       guard let message = note(from: region.identifier) else { return }
