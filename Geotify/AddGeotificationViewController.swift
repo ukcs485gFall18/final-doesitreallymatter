@@ -85,7 +85,8 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
   }
   
   @IBAction private func onAdd(sender: AnyObject) {
-    let restaurantID = "nzkjAfMY4rvKayCuvsr7"
+    let restaurantID = pickerViewContent[pickerView.selectedRowInComponent(0)];
+    //let restaurantID = "nzkjAfMY4rvKayCuvsr7"
     var coordinate = CLLocationCoordinate2D()
     let radius = 20
     var note = String()
