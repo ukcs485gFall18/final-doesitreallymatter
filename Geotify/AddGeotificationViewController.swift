@@ -34,6 +34,7 @@ import Firebase
 import FirebaseFirestore
 
 let db = Firestore.firestore()
+var restaurantID
 
 protocol AddGeotificationsViewControllerDelegate {
   func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D,
@@ -72,6 +73,10 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
     return 1
   }
   
+  func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    restaurantID = restaurants[row].id
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.rightBarButtonItems = [addButton, zoomButton]
@@ -85,14 +90,13 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
   @IBAction func textFieldEditingChanged(sender: UITextField) {
     //addButton.isEnabled = !radiusTextField.text!.isEmpty && !noteTextField.text!.isEmpty
   }
-  //crap
   
   @IBAction func onCancel(sender: AnyObject) {
     dismiss(animated: true, completion: nil)
   }
   
   @IBAction private func onAdd(sender: AnyObject) {
-    let restaurantID = pickerViewContent[pickerView.selectedRowInComponent(0).id];
+    //let restaurantID = pickerViewContent[pickerView.selectedRowInComponent(0).id];
     //let restaurantID = "nzkjAfMY4rvKayCuvsr7"
     var coordinate = CLLocationCoordinate2D()
     let radius = 20
