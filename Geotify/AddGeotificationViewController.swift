@@ -30,8 +30,8 @@
 
 import UIKit
 import MapKit
-import Firebase
-import FirebaseFirestore
+//import Firebase
+//import FirebaseFirestore
 
 let db = Firestore.firestore()
 
@@ -52,14 +52,20 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
     
   var delegate: AddGeotificationsViewControllerDelegate?
   
-  var Array = ["McDonalds", "Canes", "Tolly Ho", "Chipotle", "Local Taco"]
+  var restaurants: [String:String] = [
+    "McDonalds" : "McDID",
+    "Canes": "CanesID",
+    "Tolly Ho": "TollyID",
+    "Chipotle": "ChipID",
+    "Local Taco": "LocalID"
+  ]
   
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return Array[row]
+    return restaurants[row]
   }
   
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-    return Array.count
+    return restaurants.count
   }
   
   func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -84,7 +90,7 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
     dismiss(animated: true, completion: nil)
   }
   
-  @IBAction private func onAdd(sender: AnyObject) {
+  /*@IBAction private func onAdd(sender: AnyObject) {
     let restaurantID = pickerViewContent[pickerView.selectedRowInComponent(0)];
     //let restaurantID = "nzkjAfMY4rvKayCuvsr7"
     var coordinate = CLLocationCoordinate2D()
@@ -116,7 +122,7 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
       }
     }
     print(coordinate)
-  }
+  }*/
   
   @IBAction private func onZoomToCurrentLocation(sender: AnyObject) {
     mapView.zoomToUserLocation()
