@@ -46,8 +46,8 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
   @IBOutlet var addButton: UIBarButtonItem!
   @IBOutlet var zoomButton: UIBarButtonItem!
   @IBOutlet weak var eventTypeSegmentedControl: UISegmentedControl!
-  @IBOutlet weak var radiusTextField: UITextField!
-  @IBOutlet weak var noteTextField: UITextField!
+  //@IBOutlet weak var radiusTextField: UITextField!
+  //@IBOutlet weak var noteTextField: UITextField!
   @IBOutlet weak var mapView: MKMapView!
   @IBOutlet weak var Picker1: UIPickerView!
     
@@ -92,12 +92,16 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
   }
   
   @IBAction private func onAdd(sender: AnyObject) {
+    var pointSum: Int = 0 // Var that will change every time we create a new geofence (adds on point per new geofence) - Chelina
+    let point = 5 // every new Geofence will be worth 5 points - Chelina
+    pointSum += point // Add points earned to the total count in the identifier - Chelina
     //let restaurantID = pickerViewContent[pickerView.selectedRowInComponent(0).id];
     //let restaurantID = "nzkjAfMY4rvKayCuvsr7"
     var coordinate = CLLocationCoordinate2D()
     let radius = 20
-    var note = String()
     let identifier = NSUUID().uuidString
+    let points = [identifier : pointSum]
+    var note = String()
     let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
     
     let docRef = db.collection("restaurants").document(restaurantID)
@@ -114,7 +118,7 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
           coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
         }
         if let name = document.data()!["name"] as? String {
-          note = name
+          note = "You entered \(name), you get \(points[identifier] ?? 0) points!" // add the point to the notification of entering the geofence to the user - Chelina
         }
         print("Coordinate: \(coordinate) Note: \(String(describing: note))")
         self.delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: Double(radius), identifier: identifier, note: note, eventType: eventType)
