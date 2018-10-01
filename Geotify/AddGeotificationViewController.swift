@@ -30,10 +30,11 @@
 
 import UIKit
 import MapKit
-//import Firebase
-//import FirebaseFirestore
+import Firebase
+import FirebaseFirestore
 
-//let db = Firestore.firestore()
+let db = Firestore.firestore()
+var restaurantID = String()
 
 protocol AddGeotificationsViewControllerDelegate {
   func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, eventType: Geotification.EventType)
@@ -47,8 +48,34 @@ class AddGeotificationViewController: UITableViewController {
   @IBOutlet weak var radiusTextField: UITextField!
   //@IBOutlet weak var noteTextField: UITextField! Removed the text field to add a message to the geofence - Chelina
   @IBOutlet weak var mapView: MKMapView!
+  @IBOutlet weak var Picker1: UIPickerView!
   
   var delegate: AddGeotificationsViewControllerDelegate?
+  
+    var restaurants: [(name: String, id: String)] = [
+    ("McDonalds", "j2aSybH94VKs1vrpGOy"),
+    ("Canes", "6YI7ekMfD3xs6u04PVmC"),
+    ("Tolly Ho", "rPyOHTck8RK2BPNIdrbF"),
+    ("Chipotle", "bmnzNLBxZ9jshG7BpkEI"),
+    ("Pazzo's Pizza Pub", "nzkjAfMY4rvKayCuvsr7"),
+    ("Local Taco", "dUGaUGDC8xeSLpGICNpU")
+  ]
+  
+  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    return restaurants[row].name
+  }
+  
+  func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    return restaurants.count
+  }
+  
+  func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    return 1
+  }
+  
+  func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    restaurantID = restaurants[row].id
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -68,13 +95,34 @@ class AddGeotificationViewController: UITableViewController {
     var pointSum: Int = 0 // Var that will change every time we create a new geofence (adds on point per new geofence) - Chelina
     let point = 5 // every new Geofence will be worth 5 points - Chelina
     pointSum += point // Add points earned to the total count in the identifier - Chelina
-    let coordinate = mapView.centerCoordinate
-    let radius = Double(radiusTextField.text!) ?? 0
-    let identifier = NSUUID().uuidString
     let points = [identifier : pointSum]
     let note = "You entered the geofence, you get \(points[identifier] ?? 0) points!" // add the point to the notification of entering the geofence to the user - Chelina
+    var coordinate = CLLocationCoordinate2D()
+    let radius = 20
+    let identifier = NSUUID().uuidString
     let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
-    delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note, eventType: eventType)
+    
+    let docRef = db.collection("restaurants").document(restaurantID)
+    
+    docRef.getDocument { (document, error) in
+      if let document = document, document.exists {
+       // let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+        // From https://stackoverflow.com/questions/52374315/swift-retrieving-geopoints-from-firestore-how-to-show-them-as-map-annotations/52375416
+        if let coords = document.get("location") {
+          let point = coords as! GeoPoint
+          let lat = point.latitude
+          let lon = point.longitude
+          print(lat, lon) //here you can
+          coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+        }
+        print("Coordinate: \(coordinate) Note: \(String(describing: note))")
+        self.delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: Double(radius), identifier: identifier, note: note, eventType: eventType)
+      } else {
+        print("Document does not exist")
+      }
+    }
+    print(coordinate)
+  }
   }
   
   @IBAction private func onZoomToCurrentLocation(sender: AnyObject) {
