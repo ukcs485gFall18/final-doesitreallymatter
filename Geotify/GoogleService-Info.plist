@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>141381234165-2rp4i2pugupnk35saflm2cf7og09l3rp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.141381234165-2rp4i2pugupnk35saflm2cf7og09l3rp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAbGVrA3NG331bTg4Cc5mfi-tQfssFPF0o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>141381234165</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.razeware.Geotify</string>
+	<key>PROJECT_ID</key>
+	<string>restaurant-royale</string>
+	<key>STORAGE_BUCKET</key>
+	<string>restaurant-royale.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:141381234165:ios:399a1610aa9fd6ab</string>
+	<key>DATABASE_URL</key>
+	<string>https://restaurant-royale.firebaseio.com</string>
+</dict>
+</plist>
