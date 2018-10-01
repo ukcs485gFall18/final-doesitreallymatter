@@ -40,7 +40,6 @@ protocol AddGeotificationsViewControllerDelegate {
   func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, eventType: Geotification.EventType)
 }
 
-class AddGeotificationViewController: UITableViewController {
   
   @IBOutlet var addButton: UIBarButtonItem!
   @IBOutlet var zoomButton: UIBarButtonItem!
@@ -49,10 +48,15 @@ class AddGeotificationViewController: UITableViewController {
   //@IBOutlet weak var noteTextField: UITextField! Removed the text field to add a message to the geofence - Chelina
   @IBOutlet weak var mapView: MKMapView!
   @IBOutlet weak var Picker1: UIPickerView!
+<<<<<<< HEAD
   
   var delegate: AddGeotificationsViewControllerDelegate?
   
     var restaurants: [(name: String, id: String)] = [
+=======
+    
+  
+>>>>>>> no_pin_drop
     ("McDonalds", "j2aSybH94VKs1vrpGOy"),
     ("Canes", "6YI7ekMfD3xs6u04PVmC"),
     ("Tolly Ho", "rPyOHTck8RK2BPNIdrbF"),
@@ -80,11 +84,15 @@ class AddGeotificationViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.rightBarButtonItems = [addButton, zoomButton]
+<<<<<<< HEAD
     addButton.isEnabled = false
   }
   
   @IBAction func textFieldEditingChanged(sender: UITextField) {
     addButton.isEnabled = !radiusTextField.text!.isEmpty
+=======
+    
+>>>>>>> no_pin_drop
   }
   
   @IBAction func onCancel(sender: AnyObject) {
@@ -92,6 +100,7 @@ class AddGeotificationViewController: UITableViewController {
   }
   
   @IBAction private func onAdd(sender: AnyObject) {
+<<<<<<< HEAD
     var pointSum: Int = 0 // Var that will change every time we create a new geofence (adds on point per new geofence) - Chelina
     let identifier = NSUUID().uuidString
     
@@ -99,6 +108,10 @@ class AddGeotificationViewController: UITableViewController {
     pointSum += point // Add points earned to the total count in the identifier - Chelina
     let points = [identifier : pointSum]
     let note = "You entered the geofence, you get \(points[identifier] ?? 0) points!" // add the point to the notification of entering the geofence to the user - Chelina
+=======
+    //let restaurantID = pickerViewContent[pickerView.selectedRowInComponent(0).id];
+    //let restaurantID = "nzkjAfMY4rvKayCuvsr7"
+>>>>>>> no_pin_drop
     var coordinate = CLLocationCoordinate2D()
     let radius = 20
 
