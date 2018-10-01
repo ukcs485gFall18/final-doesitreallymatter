@@ -30,8 +30,8 @@
 
 import UIKit
 import MapKit
-import Firebase
-import FirebaseFirestore
+//import Firebase
+//import FirebaseFirestore
 
 let db = Firestore.firestore()
 
@@ -40,7 +40,7 @@ protocol AddGeotificationsViewControllerDelegate {
                                       radius: Double, identifier: String, note: String, eventType: Geotification.EventType)
 }
 
-class AddGeotificationViewController: UITableViewController {
+class AddGeotificationViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
   
   @IBOutlet var addButton: UIBarButtonItem!
   @IBOutlet var zoomButton: UIBarButtonItem!
@@ -48,25 +48,51 @@ class AddGeotificationViewController: UITableViewController {
   @IBOutlet weak var radiusTextField: UITextField!
   @IBOutlet weak var noteTextField: UITextField!
   @IBOutlet weak var mapView: MKMapView!
-  
+  @IBOutlet weak var Picker1: UIPickerView!
+    
   var delegate: AddGeotificationsViewControllerDelegate?
+  
+  var restaurants: [String:String] = [
+    "McDonalds" : "McDID",
+    "Canes": "CanesID",
+    "Tolly Ho": "TollyID",
+    "Chipotle": "ChipID",
+    "Local Taco": "LocalID"
+  ]
+  
+  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    return restaurants[row]
+  }
+  
+  func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    return restaurants.count
+  }
+  
+  func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    return 1
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.rightBarButtonItems = [addButton, zoomButton]
     addButton.isEnabled = false
+    
+    Picker1.delegate = self
+    Picker1.dataSource = self
+    
   }
   
   @IBAction func textFieldEditingChanged(sender: UITextField) {
-    addButton.isEnabled = !radiusTextField.text!.isEmpty && !noteTextField.text!.isEmpty
+    //addButton.isEnabled = !radiusTextField.text!.isEmpty && !noteTextField.text!.isEmpty
   }
   
   @IBAction func onCancel(sender: AnyObject) {
     dismiss(animated: true, completion: nil)
   }
   
-  @IBAction private func onAdd(sender: AnyObject) {
-    let restaurantID = "nzkjAfMY4rvKayCuvsr7"
+  /*@IBAction private func onAdd(sender: AnyObject) {
+    let restaurantID = pickerViewContent[pickerView.selectedRowInComponent(0)];
+    //let restaurantID = "nzkjAfMY4rvKayCuvsr7"
     var coordinate = CLLocationCoordinate2D()
     let radius = 20
     var note = String()
@@ -96,7 +122,7 @@ class AddGeotificationViewController: UITableViewController {
       }
     }
     print(coordinate)
-  }
+  }*/
   
   @IBAction private func onZoomToCurrentLocation(sender: AnyObject) {
     mapView.zoomToUserLocation()
