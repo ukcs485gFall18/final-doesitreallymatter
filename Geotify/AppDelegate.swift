@@ -29,12 +29,12 @@
 import UIKit
 import CoreLocation
 import UserNotifications
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
+  
   let locationManager = CLLocationManager()
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:[UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
@@ -59,6 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   func handleEvent(for region: CLRegion!) {
+    print("Geofence triggered!")
     // Show an alert if application is active
     if UIApplication.shared.applicationState == .active {
       guard let message = note(from: region.identifier) else { return }
