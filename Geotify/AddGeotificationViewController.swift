@@ -30,10 +30,10 @@
 
 import UIKit
 import MapKit
-import Firebase
-import FirebaseFirestore
+//import Firebase
+//import FirebaseFirestore
 
-let db = Firestore.firestore()
+//let db = Firestore.firestore()
 
 protocol AddGeotificationsViewControllerDelegate {
   func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, eventType: Geotification.EventType)
@@ -45,7 +45,7 @@ class AddGeotificationViewController: UITableViewController {
   @IBOutlet var zoomButton: UIBarButtonItem!
   @IBOutlet weak var eventTypeSegmentedControl: UISegmentedControl!
   @IBOutlet weak var radiusTextField: UITextField!
-  //@IBOutlet weak var noteTextField: UITextField! Removed the text field to add a message to the geofence
+  //@IBOutlet weak var noteTextField: UITextField! Removed the text field to add a message to the geofence - Chelina
   @IBOutlet weak var mapView: MKMapView!
   
   var delegate: AddGeotificationsViewControllerDelegate?
@@ -65,14 +65,14 @@ class AddGeotificationViewController: UITableViewController {
   }
   
   @IBAction private func onAdd(sender: AnyObject) {
-    let point = 5
-    var pointSum = 0
-    pointSum += point
+    var pointSum: Int = 0 // Var that will change every time we create a new geofence (adds on point per new geofence) - Chelina
+    let point = 5 // every new Geofence will be worth 5 points - Chelina
+    pointSum += point // Add points earned to the total count in the identifier - Chelina
     let coordinate = mapView.centerCoordinate
     let radius = Double(radiusTextField.text!) ?? 0
     let identifier = NSUUID().uuidString
     let points = [identifier : pointSum]
-    let note = "You entered the geofence, you get \(points[identifier] ?? 0)) points!" // add the point to the notification of entering the geofence to the user
+    let note = "You entered the geofence, you get \(points[identifier] ?? 0) points!" // add the point to the notification of entering the geofence to the user - Chelina
     let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
     delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note, eventType: eventType)
   }
