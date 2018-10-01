@@ -85,6 +85,7 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
   @IBAction func textFieldEditingChanged(sender: UITextField) {
     //addButton.isEnabled = !radiusTextField.text!.isEmpty && !noteTextField.text!.isEmpty
   }
+  //crap
   
   @IBAction func onCancel(sender: AnyObject) {
     dismiss(animated: true, completion: nil)
