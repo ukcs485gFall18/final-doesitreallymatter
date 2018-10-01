@@ -40,6 +40,7 @@ protocol AddGeotificationsViewControllerDelegate {
   func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, eventType: Geotification.EventType)
 }
 
+class AddGeotificationViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
   
   @IBOutlet var addButton: UIBarButtonItem!
   @IBOutlet var zoomButton: UIBarButtonItem!
@@ -55,7 +56,9 @@ protocol AddGeotificationsViewControllerDelegate {
     var restaurants: [(name: String, id: String)] = [
 =======
     
+  var delegate: AddGeotificationsViewControllerDelegate?
   
+  var restaurants: [(name: String, id: String)] = [
 >>>>>>> no_pin_drop
     ("McDonalds", "j2aSybH94VKs1vrpGOy"),
     ("Canes", "6YI7ekMfD3xs6u04PVmC"),
@@ -91,6 +94,9 @@ protocol AddGeotificationsViewControllerDelegate {
   @IBAction func textFieldEditingChanged(sender: UITextField) {
     addButton.isEnabled = !radiusTextField.text!.isEmpty
 =======
+    addButton.isEnabled = true
+    Picker1.delegate = self
+    Picker1.dataSource = self
     
 >>>>>>> no_pin_drop
   }
