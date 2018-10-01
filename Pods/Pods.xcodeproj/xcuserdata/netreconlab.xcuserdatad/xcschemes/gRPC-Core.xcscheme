@@ -7,6 +7,7 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
+<<<<<<< HEAD
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
@@ -18,22 +19,45 @@
                BuildableName = "grpc.framework"
                BlueprintName = "gRPC-Core"
                ReferencedContainer = "container:Pods.xcodeproj">
+=======
+            buildForAnalyzing = "YES"
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BF28F146E42E2F056619CC28347265B6"
+               BlueprintName = "gRPC-Core"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "gRPC-Core.framework">
+>>>>>>> 9f65cb46a8134a0a5852b4038edb9254a4b46bb9
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+<<<<<<< HEAD
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+=======
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+>>>>>>> 9f65cb46a8134a0a5852b4038edb9254a4b46bb9
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
+<<<<<<< HEAD
       buildConfiguration = "Debug"
+=======
+>>>>>>> 9f65cb46a8134a0a5852b4038edb9254a4b46bb9
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -41,6 +65,7 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
+<<<<<<< HEAD
       allowLocationSimulation = "YES">
       <MacroExpansion>
          <BuildableReference
@@ -51,15 +76,27 @@
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+=======
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+>>>>>>> 9f65cb46a8134a0a5852b4038edb9254a4b46bb9
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+<<<<<<< HEAD
       buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+=======
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES"
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+>>>>>>> 9f65cb46a8134a0a5852b4038edb9254a4b46bb9
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
