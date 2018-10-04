@@ -30,15 +30,15 @@
 
 import UIKit
 import MapKit
-import Firebase
-import FirebaseFirestore
+//import Firebase
+//import FirebaseFirestore
 
 let db = Firestore.firestore()
 var restaurantID = String()
 
+
 protocol AddGeotificationsViewControllerDelegate {
-  func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D,
-                                      radius: Double, identifier: String, note: String, eventType: Geotification.EventType)
+  func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, eventType: Geotification.EventType)
 }
 
 class AddGeotificationViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
@@ -47,7 +47,7 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
   @IBOutlet var zoomButton: UIBarButtonItem!
   @IBOutlet weak var eventTypeSegmentedControl: UISegmentedControl!
   @IBOutlet weak var radiusTextField: UITextField!
-  @IBOutlet weak var noteTextField: UITextField!
+  //@IBOutlet weak var noteTextField: UITextField! Removed the text field to add a message to the geofence - Chelina
   @IBOutlet weak var mapView: MKMapView!
   @IBOutlet weak var Picker1: UIPickerView!
     
@@ -92,12 +92,19 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
   }
   
   @IBAction private func onAdd(sender: AnyObject) {
+
     //let restaurantID = pickerViewContent[pickerView.selectedRowInComponent(0).id];
     //let restaurantID = "nzkjAfMY4rvKayCuvsr7"
     var coordinate = CLLocationCoordinate2D()
     let radius = 20
-    var note = String()
+    var pointSum: Int = 0 // Var that will change every time we create a new geofence (adds on point per new geofence) - Chelina
+    let point = 5 // every new Geofence will be worth 5 points - Chelina
+    pointSum += point // Add points earned to the total count in the identifier - Chelina
+ 
+
     let identifier = NSUUID().uuidString
+    let points = [identifier : pointSum]
+    let note = "You entered the geofence, you get \(points[identifier] ?? 0) points!" // add the point to the notification of entering the geofence to the user - Chelina
     let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
     
     let docRef = db.collection("restaurants").document(restaurantID)
@@ -123,6 +130,7 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
       }
     }
     print(coordinate)
+    
   }
   
   @IBAction private func onZoomToCurrentLocation(sender: AnyObject) {
