@@ -9,7 +9,7 @@ Geofencing with Core Location tutorial as base:
     <br> - Creating and managing geofences.
     <br> - Storing notifications and other data to persist across launches.
     <br> - Push notification when the device enters a geofence.
-Added Functionalities:
+<br> Added Functionalities:
     <br> - Firebase stores several locations and metadata in a database.
     <br> - Geofences are set by the app using data stored in Firebase.
     <br> - The user gains points and rewards by traveling to geofences.
