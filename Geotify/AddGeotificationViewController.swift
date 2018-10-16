@@ -30,8 +30,8 @@
 
 import UIKit
 import MapKit
-//import Firebase
-//import FirebaseFirestore
+import Firebase
+import FirebaseFirestore
 
 let db = Firestore.firestore()
 var restaurantID = String()
@@ -119,9 +119,6 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
           let lon = point.longitude
           print(lat, lon) //here you can
           coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
-        }
-        if let name = document.data()!["name"] as? String {
-          note = name
         }
         print("Coordinate: \(coordinate) Note: \(String(describing: note))")
         self.delegate?.addGeotificationViewController(self, didAddCoordinate: coordinate, radius: Double(radius), identifier: identifier, note: note, eventType: eventType)

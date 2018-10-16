@@ -60,7 +60,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func handleEvent(for region: CLRegion!) {
     print("Geofence triggered!")
-    guard let note = "You entered the restaurant, you have earned \(points(from: region.identifier)) points!" else { return }
     // Show an alert if application is active
     if UIApplication.shared.applicationState == .active {
       guard let message = note(from: region.identifier) else { return }

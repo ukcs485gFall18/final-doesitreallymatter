@@ -8,6 +8,6 @@ target 'Geotify' do
   # Pods for Geotify
 
   pod 'Firebase/Core'
-  pod 'Firebase/Firestore'  
+  pod 'Firebase/Firestore'
 
 end
