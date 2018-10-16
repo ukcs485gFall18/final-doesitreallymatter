@@ -34,6 +34,8 @@ import Firebase
 import FirebaseFirestore
 
 let db = Firestore.firestore()
+let settings = db.settings
+
 var restaurantID = String()
 
 
@@ -76,6 +78,7 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
   
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     restaurantID = restaurants[row].id
+    print(restaurantID)
   }
   
   override func viewDidLoad() {
@@ -93,8 +96,9 @@ class AddGeotificationViewController: UITableViewController, UIPickerViewDelegat
   
   @IBAction private func onAdd(sender: AnyObject) {
 
-    //let restaurantID = pickerViewContent[pickerView.selectedRowInComponent(0).id];
-    //let restaurantID = "nzkjAfMY4rvKayCuvsr7"
+    settings.areTimestampsInSnapshotsEnabled = true
+    db.settings = settings
+    
     var coordinate = CLLocationCoordinate2D()
     let radius = 20
     var pointSum: Int = 0 // Var that will change every time we create a new geofence (adds on point per new geofence) - Chelina
