@@ -17,6 +17,7 @@ Geofencing with Core Location tutorial as base:
 # Frameworks:
 <br> - Core Location
 <br> - Firebase
+<br> - MapKit
 
 # Tutorials      
 Link to Geofencing tutorial: https://www.raywenderlich.com/5470-geofencing-with-core-location-getting-started
