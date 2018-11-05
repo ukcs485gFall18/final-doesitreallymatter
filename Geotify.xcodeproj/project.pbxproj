@@ -24,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		13F19E17DA808956BF0165CC /* Pods_Geotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		308B7289218FDB950027F45B /* TollyToLocal.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TollyToLocal.gpx; sourceTree = "<group>"; };
 		A16373B92054471A0065C2D9 /* Google.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Google.gpx; sourceTree = "<group>"; };
 		A16373BA2054475A0065C2D9 /* SimulatedLocations.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SimulatedLocations.gpx; sourceTree = "<group>"; };
 		A7C16AD7B12606E885B73C3C /* Pods-Geotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geotify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Geotify/Pods-Geotify.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				D9C1AF6B1A77CD6C00A06B2F /* Apple.gpx */,
+				308B7289218FDB950027F45B /* TollyToLocal.gpx */,
 				A16373B92054471A0065C2D9 /* Google.gpx */,
 				A16373BA2054475A0065C2D9 /* SimulatedLocations.gpx */,
 				D90CB6511A739B7A00228A1F /* Info.plist */,
