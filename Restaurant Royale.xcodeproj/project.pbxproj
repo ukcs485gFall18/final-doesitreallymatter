@@ -29,7 +29,7 @@
 		A16373BA2054475A0065C2D9 /* SimulatedLocations.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SimulatedLocations.gpx; sourceTree = "<group>"; };
 		A7C16AD7B12606E885B73C3C /* Pods-Geotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geotify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Geotify/Pods-Geotify.release.xcconfig"; sourceTree = "<group>"; };
 		BD538B8257216EBB2160FC2D /* Pods-Geotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geotify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Geotify/Pods-Geotify.debug.xcconfig"; sourceTree = "<group>"; };
-		D90CB64D1A739B7A00228A1F /* Geotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90CB64D1A739B7A00228A1F /* Restaurant Royale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant Royale.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90CB6511A739B7A00228A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D90CB6521A739B7A00228A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D90CB6571A739B7A00228A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		D90CB6441A739B7A00228A1F = {
 			isa = PBXGroup;
 			children = (
-				D90CB64F1A739B7A00228A1F /* Geotify */,
+				D90CB64F1A739B7A00228A1F /* RestaurantRoyale */,
 				D9AEA6FE1A793D570020A0D4 /* Frameworks */,
 				D90CB64E1A739B7A00228A1F /* Products */,
 				8EBC5CE5F56DF0ED083A7760 /* Pods */,
@@ -83,12 +83,12 @@
 		D90CB64E1A739B7A00228A1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D90CB64D1A739B7A00228A1F /* Geotify.app */,
+				D90CB64D1A739B7A00228A1F /* Restaurant Royale.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D90CB64F1A739B7A00228A1F /* Geotify */ = {
+		D90CB64F1A739B7A00228A1F /* RestaurantRoyale */ = {
 			isa = PBXGroup;
 			children = (
 				E934A4D8215FE21200712E2A /* GoogleService-Info.plist */,
@@ -102,7 +102,7 @@
 				D90CB65B1A739B7A00228A1F /* LaunchScreen.xib */,
 				D90CB6501A739B7A00228A1F /* Supporting Files */,
 			);
-			path = Geotify;
+			path = RestaurantRoyale;
 			sourceTree = "<group>";
 		};
 		D90CB6501A739B7A00228A1F /* Supporting Files */ = {
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D90CB64C1A739B7A00228A1F /* Geotify */ = {
+		D90CB64C1A739B7A00228A1F /* Restaurant Royale */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D90CB66C1A739B7A00228A1F /* Build configuration list for PBXNativeTarget "Geotify" */;
+			buildConfigurationList = D90CB66C1A739B7A00228A1F /* Build configuration list for PBXNativeTarget "Restaurant Royale" */;
 			buildPhases = (
 				E96601EC07830F3E9D3D9BDE /* [CP] Check Pods Manifest.lock */,
 				D90CB6491A739B7A00228A1F /* Sources */,
@@ -144,9 +144,9 @@
 			);
 			dependencies = (
 			);
-			name = Geotify;
+			name = "Restaurant Royale";
 			productName = Geotify;
-			productReference = D90CB64D1A739B7A00228A1F /* Geotify.app */;
+			productReference = D90CB64D1A739B7A00228A1F /* Restaurant Royale.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -171,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D90CB6481A739B7A00228A1F /* Build configuration list for PBXProject "Geotify" */;
+			buildConfigurationList = D90CB6481A739B7A00228A1F /* Build configuration list for PBXProject "Restaurant Royale" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,7 +184,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D90CB64C1A739B7A00228A1F /* Geotify */,
+				D90CB64C1A739B7A00228A1F /* Restaurant Royale */,
 			);
 		};
 /* End PBXProject section */
@@ -403,10 +403,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Geotify/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RestaurantRoyale/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Geotify;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.RestaurantRoyale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -420,10 +420,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Geotify/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RestaurantRoyale/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Geotify;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.RestaurantRoyale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -434,7 +434,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D90CB6481A739B7A00228A1F /* Build configuration list for PBXProject "Geotify" */ = {
+		D90CB6481A739B7A00228A1F /* Build configuration list for PBXProject "Restaurant Royale" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D90CB66A1A739B7A00228A1F /* Debug */,
@@ -443,7 +443,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D90CB66C1A739B7A00228A1F /* Build configuration list for PBXNativeTarget "Geotify" */ = {
+		D90CB66C1A739B7A00228A1F /* Build configuration list for PBXNativeTarget "Restaurant Royale" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D90CB66D1A739B7A00228A1F /* Debug */,
