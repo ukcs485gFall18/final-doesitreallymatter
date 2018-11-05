@@ -22,3 +22,6 @@ Geofencing with Core Location tutorial as base:
 # Tutorials      
 Link to Geofencing tutorial: https://www.raywenderlich.com/5470-geofencing-with-core-location-getting-started
 
+# Update for Graders
+Part of our work for this midterm was to redesign the UI and clean out some of the leftover "junk" from our tutorials recquired starting code. Our other partner that has now dropped the class was working on this, and since she is no longer working on it, Kenton has been. He created a new Xcode project and added his additions to it after we found out our other partner would no longer be doing this. Here is the repo for his additions with the new project and Firebase authentications: 
+https://github.com/kncarrier28/RestaurantRoyaleRedo
