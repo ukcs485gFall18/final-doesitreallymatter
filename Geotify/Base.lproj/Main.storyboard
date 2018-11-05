@@ -150,19 +150,27 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="uJw-H3-sfo">
-                                        <rect key="frame" x="0.0" y="300" width="375" height="200"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="Rv2-Qa-S75">
+                                        <rect key="frame" x="0.0" y="300" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uJw-H3-sfo" id="s9s-LM-A3C">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.66666666666666"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rv2-Qa-S75" id="1Eb-zW-BKH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <pickerView contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wM2-bA-a4s">
-                                                    <rect key="frame" x="0.0" y="-29" width="375" height="257"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                                </pickerView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-qH-u1R">
+                                                    <rect key="frame" x="0.0" y="19" width="375" height="111"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="randomRestaurant:" destination="WOc-Kh-RdY" eventType="touchUpInside" id="LXY-nI-2Fv"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
-
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="HwZ-qH-u1R" secondAttribute="trailing" id="3fp-Bi-8Ia"/>
+                                                <constraint firstItem="HwZ-qH-u1R" firstAttribute="top" secondItem="1Eb-zW-BKH" secondAttribute="topMargin" constant="8" id="5l5-XM-a0Q"/>
+                                                <constraint firstItem="HwZ-qH-u1R" firstAttribute="centerY" secondItem="1Eb-zW-BKH" secondAttribute="centerY" id="Gke-Bq-z43"/>
+                                                <constraint firstItem="HwZ-qH-u1R" firstAttribute="leading" secondItem="1Eb-zW-BKH" secondAttribute="leading" id="IW7-HM-pk5"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -193,10 +201,10 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="Picker1" destination="wM2-bA-a4s" id="6HM-vg-xMS"/>
                         <outlet property="addButton" destination="Zqz-jV-nhQ" id="ghk-If-qAk"/>
                         <outlet property="eventTypeSegmentedControl" destination="qO7-cw-PJc" id="OuO-Zk-T2c"/>
                         <outlet property="mapView" destination="frU-qC-iGG" id="DtX-ni-IE0"/>
+                        <outlet property="randomRestaurant" destination="HwZ-qH-u1R" id="EAz-hN-KHS"/>
                         <outlet property="zoomButton" destination="cLD-qt-jBr" id="E2Z-95-cgF"/>
                     </connections>
                 </tableViewController>
