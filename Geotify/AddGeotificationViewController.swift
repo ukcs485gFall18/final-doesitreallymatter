@@ -125,7 +125,7 @@ class AddGeotificationViewController: UITableViewController{
     super.viewDidLoad()
     navigationItem.rightBarButtonItems = [addButton, zoomButton]
     addButton.isEnabled = true
-     randomRestaurant.setTitle("Pull the Lever!", for: .normal)
+     randomRestaurant.setTitle("Let's Eat!", for: .normal)
     restaurantID = restaurants[0].id // Sets the default value of the picker to be the first value in the array
     restaurantName = restaurants[0].name // Same ^^^
     
