@@ -4,9 +4,10 @@ import CoreLocation
 
 class Geotification: NSObject, Codable, MKAnnotation {
   
+  // TODO: Only have the button add an On Entry geotification
   enum EventType: String {
     case onEntry = "On Entry"
-    case onExit = "On Exit"
+    //case onExit = "On Exit"
   }
   
   enum CodingKeys: String, CodingKey {

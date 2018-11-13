@@ -31,16 +31,11 @@ class AddGeotificationViewController: UITableViewController{
     //Use that restaurant to generate the next pin drop
     //Possibly bring out a text box stating which restaurant was chosen, then asking if user wants to go there
     //    or select again
-    
-    print("Inside Random Restauraunt")
-    print(restaurants.count)
+   
     let randomIndex = Int.random(in: 0..<restaurants.count)
     print(randomIndex)
     restaurantID = restaurants[randomIndex].id
     restaurantName = restaurants[randomIndex].name
-    
-    //TODO: Add an popup window that asks if the user would like to go to selected restaurant
-    //TODO: If yes, add the restaurant. If no, do nothing and take back to the add screen
     
     // Moved all the code from the onAdd function to here to trigger the add action once the button is selected
     settings.areTimestampsInSnapshotsEnabled = true
@@ -56,7 +51,7 @@ class AddGeotificationViewController: UITableViewController{
     let identifier = NSUUID().uuidString
     let points = [identifier : pointSum]
     let note = "You have arrived at " + restaurantName + ", you get \(points[identifier] ?? 0) points!" // add the point to the notification of entering the geofence to the user - Chelina
-    let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
+    let eventType: Geotification.EventType = (.onEntry)
     
     let docRef = db.collection("restaurants").document(restaurantID)
     
@@ -83,6 +78,12 @@ class AddGeotificationViewController: UITableViewController{
   
   var delegate: AddGeotificationsViewControllerDelegate?
   
+  // Function used to read in all the restaurant values
+  // Later on, could vary this by only reading in restaurants within a certain distance of the user (Ex: 5mi radius)
+  func getRestaurantData () {
+    
+  }
+  
   // List of restaurants in Alphabetical order
   var restaurants: [(name: String, id: String)] = [
     ("Canes", "6YI7ekMfD3xs6u04PVmC"),
@@ -97,7 +98,8 @@ class AddGeotificationViewController: UITableViewController{
     super.viewDidLoad()
     navigationItem.rightBarButtonItems = [addButton, zoomButton]
     addButton.isEnabled = true
-     randomRestaurant.setTitle("Let's Eat!", for: .normal)
+    randomRestaurant.setTitle("Let's Eat!", for: .normal)
+    randomRestaurant.layer.cornerRadius = 4
     restaurantID = restaurants[0].id // Sets the default value of the picker to be the first value in the array
     restaurantName = restaurants[0].name // Same ^^^
     
