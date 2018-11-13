@@ -31,16 +31,11 @@ class AddGeotificationViewController: UITableViewController{
     //Use that restaurant to generate the next pin drop
     //Possibly bring out a text box stating which restaurant was chosen, then asking if user wants to go there
     //    or select again
-    
-    print("Inside Random Restauraunt")
-    print(restaurants.count)
+   
     let randomIndex = Int.random(in: 0..<restaurants.count)
     print(randomIndex)
     restaurantID = restaurants[randomIndex].id
     restaurantName = restaurants[randomIndex].name
-    
-    //TODO: Add an popup window that asks if the user would like to go to selected restaurant
-    //TODO: If yes, add the restaurant. If no, do nothing and take back to the add screen
     
     // Moved all the code from the onAdd function to here to trigger the add action once the button is selected
     settings.areTimestampsInSnapshotsEnabled = true
@@ -82,6 +77,12 @@ class AddGeotificationViewController: UITableViewController{
   }
   
   var delegate: AddGeotificationsViewControllerDelegate?
+  
+  // Function used to read in all the restaurant values
+  // Later on, could vary this by only reading in restaurants within a certain distance of the user (Ex: 5mi radius)
+  func getRestaurantData () {
+    
+  }
   
   // List of restaurants in Alphabetical order
   var restaurants: [(name: String, id: String)] = [
