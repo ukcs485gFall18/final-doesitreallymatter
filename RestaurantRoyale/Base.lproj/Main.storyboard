@@ -85,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="-622" y="505"/>
         </scene>
-        <!--Geotifications: 0-->
+        <!--Restaurants-->
         <scene sceneID="QSg-Wp-O1B">
             <objects>
                 <viewController id="LYI-dq-R4y" customClass="GeotificationsViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,7 +113,7 @@
                             <constraint firstAttribute="trailing" secondItem="fP9-ox-VWa" secondAttribute="trailing" id="wXm-Xs-UMV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Geotifications: 0" id="dS8-nZ-3oV">
+                    <navigationItem key="navigationItem" title="Restaurants" id="dS8-nZ-3oV">
                         <barButtonItem key="leftBarButtonItem" image="CurrentLocation" id="FIG-L9-xbZ">
                             <connections>
                                 <action selector="zoomToCurrentLocationWithSender:" destination="LYI-dq-R4y" id="e7K-H3-omj"/>
@@ -151,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="689" y="505"/>
         </scene>
-        <!--Add Geotification-->
+        <!--Find a Restaurant-->
         <scene sceneID="fiQ-Gi-mFr">
             <objects>
                 <tableViewController id="WOc-Kh-RdY" customClass="AddGeotificationViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
@@ -182,31 +182,14 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddPin" translatesAutoresizingMaskIntoConstraints="NO" id="WUy-YH-DKS">
                                                     <rect key="frame" x="150" y="134.66666666666666" width="75" height="75"/>
                                                 </imageView>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qO7-cw-PJc">
-                                                    <rect key="frame" x="16" y="11.000000000000002" width="343" height="26.666666666666671"/>
-                                                    <segments>
-                                                        <segment title="Upon Entry"/>
-                                                        <segment title="Upon Exit"/>
-                                                    </segments>
-                                                </segmentedControl>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="topMargin" secondItem="qO7-cw-PJc" secondAttribute="top" id="MPT-jM-L2q"/>
                                                 <constraint firstItem="frU-qC-iGG" firstAttribute="centerX" secondItem="WUy-YH-DKS" secondAttribute="centerX" id="Nbw-Mp-kGs"/>
                                                 <constraint firstItem="frU-qC-iGG" firstAttribute="centerY" secondItem="WUy-YH-DKS" secondAttribute="centerY" id="QFB-Fm-Pu9"/>
                                                 <constraint firstAttribute="trailing" secondItem="frU-qC-iGG" secondAttribute="trailing" id="jdp-SF-r7q"/>
-                                                <constraint firstItem="qO7-cw-PJc" firstAttribute="top" secondItem="G8a-9u-bod" secondAttribute="topMargin" constant="2" id="mVC-ZL-rrC"/>
-                                                <constraint firstItem="frU-qC-iGG" firstAttribute="top" secondItem="qO7-cw-PJc" secondAttribute="bottom" constant="8" id="nHX-Om-KNZ"/>
-                                                <constraint firstItem="qO7-cw-PJc" firstAttribute="trailing" secondItem="G8a-9u-bod" secondAttribute="trailingMargin" id="ryT-PV-t9y"/>
                                                 <constraint firstAttribute="bottom" secondItem="frU-qC-iGG" secondAttribute="bottom" id="tha-AC-t0d"/>
-                                                <constraint firstItem="qO7-cw-PJc" firstAttribute="leading" secondItem="G8a-9u-bod" secondAttribute="leadingMargin" id="vbf-vT-tB3"/>
                                                 <constraint firstItem="frU-qC-iGG" firstAttribute="leading" secondItem="G8a-9u-bod" secondAttribute="leading" id="zb0-6Z-etr"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="mVC-ZL-rrC"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="Rv2-Qa-S75">
@@ -216,9 +199,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="149.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-qH-u1R">
-                                                    <rect key="frame" x="0.0" y="19.000000000000007" width="375" height="111.66666666666669"/>
-                                                    <state key="normal" title="Button"/>
+                                                <button opaque="NO" clipsSubviews="YES" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-qH-u1R">
+                                                    <rect key="frame" x="16" y="11" width="343" height="128"/>
+                                                    <color key="backgroundColor" red="0.99153405427932739" green="0.77565942568947477" blue="0.11593327018731719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                                    <color key="tintColor" red="0.92146831750000002" green="0.92162626979999995" blue="0.92145836349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" red="0.92146831750000002" green="0.92162626979999995" blue="0.92145836349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="randomRestaurant:" destination="WOc-Kh-RdY" eventType="touchUpInside" id="LXY-nI-2Fv"/>
                                                     </connections>
@@ -240,7 +228,7 @@
                             <outlet property="delegate" destination="WOc-Kh-RdY" id="ZvI-W3-HhK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Add Geotification" id="cjD-eh-hQf">
+                    <navigationItem key="navigationItem" title="Find a Restaurant" id="cjD-eh-hQf">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="xDC-Ux-qv5">
                             <connections>
                                 <action selector="onCancelWithSender:" destination="WOc-Kh-RdY" id="fR4-Ya-HVp"/>
@@ -261,7 +249,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="Zqz-jV-nhQ" id="ghk-If-qAk"/>
-                        <outlet property="eventTypeSegmentedControl" destination="qO7-cw-PJc" id="OuO-Zk-T2c"/>
                         <outlet property="mapView" destination="frU-qC-iGG" id="DtX-ni-IE0"/>
                         <outlet property="randomRestaurant" destination="HwZ-qH-u1R" id="EAz-hN-KHS"/>
                         <outlet property="zoomButton" destination="cLD-qt-jBr" id="E2Z-95-cgF"/>

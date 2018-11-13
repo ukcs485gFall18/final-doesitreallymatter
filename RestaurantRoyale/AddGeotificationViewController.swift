@@ -51,7 +51,7 @@ class AddGeotificationViewController: UITableViewController{
     let identifier = NSUUID().uuidString
     let points = [identifier : pointSum]
     let note = "You have arrived at " + restaurantName + ", you get \(points[identifier] ?? 0) points!" // add the point to the notification of entering the geofence to the user - Chelina
-    let eventType: Geotification.EventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? .onEntry : .onExit
+    let eventType: Geotification.EventType = (.onEntry)
     
     let docRef = db.collection("restaurants").document(restaurantID)
     
@@ -98,7 +98,8 @@ class AddGeotificationViewController: UITableViewController{
     super.viewDidLoad()
     navigationItem.rightBarButtonItems = [addButton, zoomButton]
     addButton.isEnabled = true
-     randomRestaurant.setTitle("Let's Eat!", for: .normal)
+    randomRestaurant.setTitle("Let's Eat!", for: .normal)
+    randomRestaurant.layer.cornerRadius = 4
     restaurantID = restaurants[0].id // Sets the default value of the picker to be the first value in the array
     restaurantName = restaurants[0].name // Same ^^^
     

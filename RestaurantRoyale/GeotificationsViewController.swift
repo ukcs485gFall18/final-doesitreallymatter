@@ -47,6 +47,11 @@ class GeotificationsViewController: UIViewController {
   
   // MARK: Functions that update the model/associated views with geotification changes
   func add(_ geotification: Geotification) {
+    // Remove first Restaurant if already one exists
+    if (geotifications.count > 0) {
+      self.remove(geotifications[0])
+    }
+    
     geotifications.append(geotification)
     mapView.addAnnotation(geotification)
     addRadiusOverlay(forGeotification: geotification)
@@ -62,7 +67,7 @@ class GeotificationsViewController: UIViewController {
   }
   
   func updateGeotificationsCount() {
-    title = "Geotifications: \(geotifications.count)"
+    title = "Restaurants: \(geotifications.count)"
     navigationItem.rightBarButtonItem?.isEnabled = (geotifications.count < 20)
   }
   
