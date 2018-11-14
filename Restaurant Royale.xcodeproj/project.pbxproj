@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		201A3A20A67FD997B2ED6F98 /* Pods_Geotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F19E17DA808956BF0165CC /* Pods_Geotify.framework */; };
+		CB00DE048DF123642887EB65 /* Pods_Restaurant_Royale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00D4DEFE6DFD07D30EAC895 /* Pods_Restaurant_Royale.framework */; };
 		D90CB6531A739B7A00228A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB6521A739B7A00228A1F /* AppDelegate.swift */; };
 		D90CB6581A739B7A00228A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90CB6561A739B7A00228A1F /* Main.storyboard */; };
 		D90CB65A1A739B7A00228A1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90CB6591A739B7A00228A1F /* Images.xcassets */; };
@@ -20,15 +20,18 @@
 		D9835AF31AA6076800D265BC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835AF21AA6076800D265BC /* Utilities.swift */; };
 		D9C1AF6C1A77CD6C00A06B2F /* Apple.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D9C1AF6B1A77CD6C00A06B2F /* Apple.gpx */; };
 		E934A4D9215FE21200712E2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E934A4D8215FE21200712E2A /* GoogleService-Info.plist */; };
+		E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65DE219CD82500B3EDE1 /* InitialViewController.swift */; };
+		E9CC65E1219CDE5D00B3EDE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */; };
+		E9CC65E3219CDE6700B3EDE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */; };
+		E9CC65E5219CE1E500B3EDE1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E4219CE1E500B3EDE1 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13F19E17DA808956BF0165CC /* Pods_Geotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C7E16726DE474D67283AED2 /* Pods-Restaurant Royale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Royale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale.debug.xcconfig"; sourceTree = "<group>"; };
 		308B7289218FDB950027F45B /* TollyToLocal.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TollyToLocal.gpx; sourceTree = "<group>"; };
+		7DBB1DD8B77C6707E9D01F9D /* Pods-Restaurant Royale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Royale.release.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale.release.xcconfig"; sourceTree = "<group>"; };
 		A16373B92054471A0065C2D9 /* Google.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Google.gpx; sourceTree = "<group>"; };
 		A16373BA2054475A0065C2D9 /* SimulatedLocations.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SimulatedLocations.gpx; sourceTree = "<group>"; };
-		A7C16AD7B12606E885B73C3C /* Pods-Geotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geotify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Geotify/Pods-Geotify.release.xcconfig"; sourceTree = "<group>"; };
-		BD538B8257216EBB2160FC2D /* Pods-Geotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geotify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Geotify/Pods-Geotify.debug.xcconfig"; sourceTree = "<group>"; };
 		D90CB64D1A739B7A00228A1F /* Restaurant Royale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant Royale.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90CB6511A739B7A00228A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D90CB6521A739B7A00228A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +45,12 @@
 		D90CB67E1A73C4B200228A1F /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
 		D9835AF21AA6076800D265BC /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D9C1AF6B1A77CD6C00A06B2F /* Apple.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Apple.gpx; sourceTree = "<group>"; };
+		E00D4DEFE6DFD07D30EAC895 /* Pods_Restaurant_Royale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Restaurant_Royale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E934A4D8215FE21200712E2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E9CC65DE219CD82500B3EDE1 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E9CC65E4219CE1E500B3EDE1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,7 @@
 			files = (
 				D90CB6751A73A16700228A1F /* MapKit.framework in Frameworks */,
 				D90CB6731A739D4300228A1F /* CoreLocation.framework in Frameworks */,
-				201A3A20A67FD997B2ED6F98 /* Pods_Geotify.framework in Frameworks */,
+				CB00DE048DF123642887EB65 /* Pods_Restaurant_Royale.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +70,8 @@
 		8EBC5CE5F56DF0ED083A7760 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BD538B8257216EBB2160FC2D /* Pods-Geotify.debug.xcconfig */,
-				A7C16AD7B12606E885B73C3C /* Pods-Geotify.release.xcconfig */,
+				2C7E16726DE474D67283AED2 /* Pods-Restaurant Royale.debug.xcconfig */,
+				7DBB1DD8B77C6707E9D01F9D /* Pods-Restaurant Royale.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -91,10 +99,13 @@
 		D90CB64F1A739B7A00228A1F /* RestaurantRoyale */ = {
 			isa = PBXGroup;
 			children = (
-				E934A4D8215FE21200712E2A /* GoogleService-Info.plist */,
 				D90CB6521A739B7A00228A1F /* AppDelegate.swift */,
+				E9CC65DE219CD82500B3EDE1 /* InitialViewController.swift */,
+				E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */,
+				E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */,
 				D90CB6761A73B1ED00228A1F /* GeotificationsViewController.swift */,
 				D90CB67C1A73B2BD00228A1F /* AddGeotificationViewController.swift */,
+				E9CC65E4219CE1E500B3EDE1 /* SettingsViewController.swift */,
 				D90CB67E1A73C4B200228A1F /* Geotification.swift */,
 				D9835AF21AA6076800D265BC /* Utilities.swift */,
 				D90CB6561A739B7A00228A1F /* Main.storyboard */,
@@ -108,6 +119,7 @@
 		D90CB6501A739B7A00228A1F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E934A4D8215FE21200712E2A /* GoogleService-Info.plist */,
 				D9C1AF6B1A77CD6C00A06B2F /* Apple.gpx */,
 				308B7289218FDB950027F45B /* TollyToLocal.gpx */,
 				A16373B92054471A0065C2D9 /* Google.gpx */,
@@ -122,7 +134,7 @@
 			children = (
 				D90CB6741A73A16700228A1F /* MapKit.framework */,
 				D90CB6721A739D4300228A1F /* CoreLocation.framework */,
-				13F19E17DA808956BF0165CC /* Pods_Geotify.framework */,
+				E00D4DEFE6DFD07D30EAC895 /* Pods_Restaurant_Royale.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,8 +223,9 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Geotify/Pods-Geotify-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
@@ -226,6 +239,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
@@ -238,7 +252,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Geotify/Pods-Geotify-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E96601EC07830F3E9D3D9BDE /* [CP] Check Pods Manifest.lock */ = {
@@ -252,7 +266,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Geotify-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Restaurant Royale-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -267,10 +281,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90CB6821A73CBC600228A1F /* AddGeotificationViewController.swift in Sources */,
+				E9CC65E1219CDE5D00B3EDE1 /* SignUpViewController.swift in Sources */,
 				D90CB6531A739B7A00228A1F /* AppDelegate.swift in Sources */,
 				D90CB6771A73B1ED00228A1F /* GeotificationsViewController.swift in Sources */,
+				E9CC65E3219CDE6700B3EDE1 /* LoginViewController.swift in Sources */,
+				E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */,
 				D9835AF31AA6076800D265BC /* Utilities.swift in Sources */,
 				D90CB6801A73C9E200228A1F /* Geotification.swift in Sources */,
+				E9CC65E5219CE1E500B3EDE1 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +416,7 @@
 		};
 		D90CB66D1A739B7A00228A1F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD538B8257216EBB2160FC2D /* Pods-Geotify.debug.xcconfig */;
+			baseConfigurationReference = 2C7E16726DE474D67283AED2 /* Pods-Restaurant Royale.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -415,7 +433,7 @@
 		};
 		D90CB66E1A739B7A00228A1F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7C16AD7B12606E885B73C3C /* Pods-Geotify.release.xcconfig */;
+			baseConfigurationReference = 7DBB1DD8B77C6707E9D01F9D /* Pods-Restaurant Royale.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

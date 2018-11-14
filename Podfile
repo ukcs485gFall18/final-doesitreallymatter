@@ -7,6 +7,7 @@ target 'Restaurant Royale' do
 
   # Pods for RR
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
   pod 'Firebase/Firestore'  
 
 end
