@@ -1,26 +1,20 @@
 //
-//  SettingsViewController.swift
+//  TabViewController.swift
 //  Restaurant Royale
 //
-//  Created by Netreconlab on 11/14/18.
+//  Created by Joseph Crocker on 11/29/18.
 //  Copyright © 2018 Ken Toh. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
-class SettingsViewController: UIViewController {
+class TabViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-  
-  @IBAction func handleLogout(_ sender: Any) {
-    try! Auth.auth().signOut()
-    self.dismiss(animated: false, completion: nil)
-  }
     
 
     /*
