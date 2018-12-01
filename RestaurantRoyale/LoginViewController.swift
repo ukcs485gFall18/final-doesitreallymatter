@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  RestaurantRoyale
 //
-//  Created by Netreconlab on 11/4/18.
+//  Created by Carrier, Kenton on 11/4/18.
 //  Copyright © 2018 University of Kentucky. All rights reserved.
 //
 

@@ -25,7 +25,7 @@
 		E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65DE219CD82500B3EDE1 /* InitialViewController.swift */; };
 		E9CC65E1219CDE5D00B3EDE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */; };
 		E9CC65E3219CDE6700B3EDE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */; };
-		E9CC65E5219CE1E500B3EDE1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E4219CE1E500B3EDE1 /* SettingsViewController.swift */; };
+		E9CC65E5219CE1E500B3EDE1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +54,7 @@
 		E9CC65DE219CD82500B3EDE1 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E9CC65E4219CE1E500B3EDE1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 				E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */,
 				D90CB6761A73B1ED00228A1F /* GeotificationsViewController.swift */,
 				D90CB67C1A73B2BD00228A1F /* AddGeotificationViewController.swift */,
-				E9CC65E4219CE1E500B3EDE1 /* SettingsViewController.swift */,
+				E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */,
 				D90CB67E1A73C4B200228A1F /* Geotification.swift */,
 				D9835AF21AA6076800D265BC /* Utilities.swift */,
 				D90CB6561A739B7A00228A1F /* Main.storyboard */,
@@ -294,9 +294,11 @@
 				E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */,
 				D9835AF31AA6076800D265BC /* Utilities.swift in Sources */,
 				D90CB6801A73C9E200228A1F /* Geotification.swift in Sources */,
+
 				0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */,
 				0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */,
-				E9CC65E5219CE1E500B3EDE1 /* SettingsViewController.swift in Sources */,
+				E9CC65E5219CE1E500B3EDE1 /* ProfileViewController.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
