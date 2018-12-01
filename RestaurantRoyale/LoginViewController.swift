@@ -20,22 +20,20 @@ class LoginViewController: UIViewController {
     // Do any additional setup after loading the view.
   }
   
-  @IBAction func handleLogin(_ sender: Any) {
-    
-    guard let email = emailField.text else { return }
-    guard let password = passwordField.text else { return }
-    
-    Auth.auth().signIn(withEmail: email, password: password) { user, error in
-      
-      if error == nil && user != nil {
-        self.dismiss(animated: false, completion: nil)
-      } else {
-        print("Error logging in: \(error!.localizedDescription)")
-      }
-      
+    @IBAction func handleLogin(_ sender: Any) {
+        guard let email = emailField.text else { return }
+        guard let password = passwordField.text else { return }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { user, error in
+            
+            if error == nil && user != nil {
+                self.dismiss(animated: false, completion: nil)
+            } else {
+                print("Error logging in: \(error!.localizedDescription)")
+            }
+        }
+
     }
-    
-  }
   
   /*
    // MARK: - Navigation
