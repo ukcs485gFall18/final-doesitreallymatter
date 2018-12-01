@@ -17,10 +17,8 @@ protocol AddGeotificationsViewControllerDelegate {
 
 class AddGeotificationViewController: UIViewController{
   
-  @IBOutlet weak var background: UIImageView!
-  
   @IBOutlet weak var slots: UIImageView!
-  
+  @IBOutlet weak var background: UIImageView!
   @IBOutlet weak var randomRestaurant: UIButton!
   @IBAction func randomRestaurant(_ sender: UIButton) {
     //Perform all actions when a button is tapped
