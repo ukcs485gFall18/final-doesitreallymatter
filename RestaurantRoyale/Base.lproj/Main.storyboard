@@ -73,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="-570.39999999999998" y="381.2807881773399"/>
         </scene>
-        <!--Profile-->
+        <!--Profile Page-->
         <scene sceneID="Lzj-pA-rE7">
             <objects>
                 <viewController title="Profile Page" id="MnW-gW-vyd" customClass="ProfileViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
@@ -144,13 +144,13 @@
                             <constraint firstItem="sPE-xS-VTn" firstAttribute="top" secondItem="ZSm-wM-1P8" secondAttribute="bottom" constant="8" symbolic="YES" id="spd-VQ-cCC"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="4qG-pY-Lwt"/>
                     <connections>
                         <outlet property="favFoodDisplay" destination="QcO-9p-CFt" id="Ia9-yb-VoO"/>
                         <outlet property="nameDisplay" destination="sPE-xS-VTn" id="jyt-HU-PnJ"/>
                         <outlet property="profilePic" destination="ZSm-wM-1P8" id="7qC-3A-WaT"/>
                         <outlet property="usernameDisplay" destination="FST-OE-vu9" id="0Ql-MC-Zfc"/>
                     </connections>
-                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="4qG-pY-Lwt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErU-3h-vQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -528,16 +528,15 @@
             </objects>
             <point key="canvasLocation" x="-1176.8" y="-730.04926108374389"/>
         </scene>
+    </scenes>
     <resources>
         <image name="AddPin" width="75" height="75"/>
         <image name="CurrentLocation" width="15" height="15"/>
-        <image name="rw-logo" width="1024" height="1024"/>
         <image name="Profile" width="16" height="16"/>
+        <image name="rw-logo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="OBT-bC-M5u"/>
-        <segue reference="Rxu-yy-N72"/>
+        <segue reference="lAI-mA-Ra0"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-    </scenes>
-        </document>
+</document>
