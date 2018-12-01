@@ -529,13 +529,10 @@
             </objects>
             <point key="canvasLocation" x="-1176.8" y="-730.04926108374389"/>
         </scene>
-    </scenes>
     <resources>
         <image name="AddPin" width="75" height="75"/>
         <image name="CurrentLocation" width="15" height="15"/>
         <image name="rw-logo" width="1024" height="1024"/>
-    </scenes>
-    <resources>
         <image name="Profile" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
