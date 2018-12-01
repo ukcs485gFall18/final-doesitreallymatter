@@ -9,6 +9,19 @@
 import UIKit
 import Firebase
 
+class AuthButtons: UIButton {
+  
+  override func awakeFromNib() {
+    
+    layer.cornerRadius = 15
+    backgroundColor = UIColor(red: 0.75, green: 0.20, blue: 0.19, alpha: 1.0)
+    setTitleColor(UIColor.white, for: .normal)
+    
+    
+  }
+  
+}
+
 class InitialViewController: UIViewController {
   
   override func viewDidLoad() {
