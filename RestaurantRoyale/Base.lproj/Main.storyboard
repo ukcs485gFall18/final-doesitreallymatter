@@ -28,51 +28,6 @@
             </objects>
             <point key="canvasLocation" x="-1974" y="650"/>
         </scene>
-        <!--Let's Eat-->
-        <scene sceneID="1S8-P2-XyC">
-            <objects>
-                <viewController id="7Mc-j4-ifC" customClass="AddGeotificationViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yem-h7-3QV"/>
-                        <viewControllerLayoutGuide type="bottom" id="2Pa-kI-g20"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ieO-q4-CyQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nzl-PQ-8Zp">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJq-A9-AV1">
-                                <rect key="frame" x="16" y="198" width="343" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2e-e9-Py6">
-                                <rect key="frame" x="88" y="473" width="199" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99153405429999997" green="0.77565942570000002" blue="0.11593327019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Let's Eat!"/>
-                                <connections>
-                                    <action selector="randomRestaurant:" destination="7Mc-j4-ifC" eventType="touchUpInside" id="nTl-0T-Vgz"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Let's Eat" id="WBN-m2-lCF"/>
-                    <connections>
-                        <outlet property="background" destination="Nzl-PQ-8Zp" id="Pmz-Qq-4Uk"/>
-                        <outlet property="randomRestaurant" destination="L2e-e9-Py6" id="5rE-uY-DWd"/>
-                        <outlet property="slots" destination="XJq-A9-AV1" id="Vs5-8G-dWc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GZR-AP-ENp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-938.39999999999998" y="302.95566502463055"/>
-        </scene>
         <!--Profile-->
         <scene sceneID="Lzj-pA-rE7">
             <objects>
@@ -96,7 +51,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="4qG-pY-Lwt"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="4qG-pY-Lwt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErU-3h-vQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -252,14 +207,65 @@
                     </tabBar>
                     <connections>
                         <segue destination="MnW-gW-vyd" kind="relationship" relationship="viewControllers" id="VpR-OS-g5A"/>
-                        <segue destination="7Mc-j4-ifC" kind="relationship" relationship="viewControllers" id="h63-NS-hkg"/>
-                        <segue destination="Q3l-SK-Dot" kind="relationship" relationship="viewControllers" id="EVw-mb-1eG"/>
+                        <segue destination="Q3l-SK-Dot" kind="relationship" relationship="viewControllers" id="rHK-9a-LlJ"/>
+                        <segue destination="Zci-E9-QA1" kind="relationship" relationship="viewControllers" id="aSM-aI-l9Q"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ve-nt-eVw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3249" y="244"/>
         </scene>
+        <!--Let's Eat-->
+        <scene sceneID="Md4-q9-2ef">
+            <objects>
+                <navigationController id="Zci-E9-QA1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Let's Eat" id="Lnl-f4-sxd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ZHC-OJ-4RH">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yg7-wl-OlG" kind="relationship" relationship="rootViewController" id="gsa-tD-wIp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hN6-XR-ogW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="505"/>
+        </scene>
+        <!--Add Geotification View Controller-->
+        <scene sceneID="NHu-mO-3TO">
+            <objects>
+                <viewController id="yg7-wl-OlG" customClass="AddGeotificationViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="npS-So-ZHA"/>
+                        <viewControllerLayoutGuide type="bottom" id="gjo-C3-Cig"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3qT-1K-7RD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fg3-NW-sN7">
+                                <rect key="frame" x="105" y="448" width="165" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vat-Uh-qDf"/>
+                    <connections>
+                        <outlet property="randomRestaurant" destination="Fg3-NW-sN7" id="hYb-Il-aFW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2F-jF-5OT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245.59999999999999" y="504.67980295566502"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Profile" width="16" height="16"/>
+    </resources>
     <color key="tintColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
