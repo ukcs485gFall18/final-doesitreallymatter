@@ -144,7 +144,6 @@
                             <constraint firstItem="sPE-xS-VTn" firstAttribute="top" secondItem="ZSm-wM-1P8" secondAttribute="bottom" constant="8" symbolic="YES" id="spd-VQ-cCC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="4qG-pY-Lwt"/>
                     <connections>
                         <outlet property="favFoodDisplay" destination="QcO-9p-CFt" id="Ia9-yb-VoO"/>
                         <outlet property="nameDisplay" destination="sPE-xS-VTn" id="jyt-HU-PnJ"/>
