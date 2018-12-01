@@ -15,15 +15,10 @@ protocol AddGeotificationsViewControllerDelegate {
   func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, eventType: Geotification.EventType)
 }
 
-class AddGeotificationViewController: UITableViewController{
+class AddGeotificationViewController: UIViewController{
   
-  @IBOutlet var addButton: UIBarButtonItem!
-  @IBOutlet var zoomButton: UIBarButtonItem!
-  @IBOutlet weak var eventTypeSegmentedControl: UISegmentedControl!
-  @IBOutlet weak var radiusTextField: UITextField!
-  //@IBOutlet weak var noteTextField: UITextField! Removed the text field to add a message to the geofence - Chelina
-  @IBOutlet weak var mapView: MKMapView!
-  @IBOutlet weak var Picker1: UIPickerView!
+  @IBOutlet weak var slots: UIImageView!
+  @IBOutlet weak var background: UIImageView!
   @IBOutlet weak var randomRestaurant: UIButton!
   @IBAction func randomRestaurant(_ sender: UIButton) {
     //Perform all actions when a button is tapped
@@ -96,13 +91,15 @@ class AddGeotificationViewController: UITableViewController{
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    navigationItem.rightBarButtonItems = [addButton, zoomButton]
-    addButton.isEnabled = true
     randomRestaurant.setTitle("Let's Eat!", for: .normal)
     randomRestaurant.layer.cornerRadius = 4
     restaurantID = restaurants[0].id // Sets the default value of the picker to be the first value in the array
     restaurantName = restaurants[0].name // Same ^^^
     
+    background.loadGif(name: "money")
+    slots.loadGif(name: "slots")
+    view.bringSubview(toFront: slots)
+    view.bringSubview(toFront: randomRestaurant)
   }
   
   @IBAction func onCancel(sender: AnyObject) {
@@ -112,9 +109,5 @@ class AddGeotificationViewController: UITableViewController{
   @IBAction private func onAdd(sender: AnyObject) {
 
     
-  }
-  
-  @IBAction private func onZoomToCurrentLocation(sender: AnyObject) {
-    mapView.zoomToUserLocation()
   }
 }

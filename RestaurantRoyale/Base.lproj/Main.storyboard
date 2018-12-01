@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="7pC-Ze-gNB">
             <objects>
                 <viewController id="Q3l-SK-Dot" sceneMemberID="viewController">
@@ -22,13 +22,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="3Yt-zN-USd"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="3Yt-zN-USd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erO-Iz-tPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1974" y="650"/>
         </scene>
-        <!--Profile Page-->
+        <!--Item-->
+        <scene sceneID="Nf4-fv-WtH">
+            <objects>
+                <viewController id="jlM-bB-7qN" customClass="AddGeotificationViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uX5-lu-sDI"/>
+                        <viewControllerLayoutGuide type="bottom" id="x0S-s8-6oE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Wr-3R-YYX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9vI-jV-Rw0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B67-Jx-Yuc">
+                                <rect key="frame" x="16" y="160" width="343" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="001-mR-9bl">
+                                <rect key="frame" x="83" y="507" width="208" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99153405429999997" green="0.77565942570000002" blue="0.11593327019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Let's Eat!"/>
+                                <connections>
+                                    <action selector="randomRestaurant:" destination="jlM-bB-7qN" eventType="touchUpInside" id="HaW-3S-QML"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="OpB-eq-LRt"/>
+                    <connections>
+                        <outlet property="background" destination="9vI-jV-Rw0" id="pDf-Ej-Wy0"/>
+                        <outlet property="randomRestaurant" destination="001-mR-9bl" id="2Ac-Ty-lkm"/>
+                        <outlet property="slots" destination="B67-Jx-Yuc" id="sYr-o9-TsP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fig-x7-LCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-570.39999999999998" y="381.2807881773399"/>
+        </scene>
+        <!--Profile-->
         <scene sceneID="Lzj-pA-rE7">
             <objects>
                 <viewController title="Profile Page" id="MnW-gW-vyd" customClass="ProfileViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,6 +152,7 @@
                         <outlet property="profilePic" destination="ZSm-wM-1P8" id="7qC-3A-WaT"/>
                         <outlet property="usernameDisplay" destination="FST-OE-vu9" id="0Ql-MC-Zfc"/>
                     </connections>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="4qG-pY-Lwt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErU-3h-vQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -466,6 +512,9 @@
         <image name="AddPin" width="75" height="75"/>
         <image name="CurrentLocation" width="15" height="15"/>
         <image name="rw-logo" width="1024" height="1024"/>
+    </scenes>
+    <resources>
+        <image name="Profile" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="I5A-5y-PdH"/>
