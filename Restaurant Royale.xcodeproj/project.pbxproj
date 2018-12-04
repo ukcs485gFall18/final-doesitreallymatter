@@ -29,6 +29,7 @@
 		E9CC65E3219CDE6700B3EDE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */; };
 		E9CC65E5219CE1E500B3EDE1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */; };
 		E9F340BE21B63A6C00779987 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9F340BD21B63A6C00779987 /* GoogleService-Info.plist */; };
+		E9F340C021B63F1600779987 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F340BF21B63F1600779987 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E9F340BD21B63A6C00779987 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E9F340BF21B63F1600779987 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +120,14 @@
 				E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */,
 				D90CB67E1A73C4B200228A1F /* Geotification.swift */,
 				D9835AF21AA6076800D265BC /* Utilities.swift */,
-				30362D0721B31A1600AB07E8 /* money.gif */,
-				30362D0921B31A2100AB07E8 /* slots.gif */,
 				30362D0521B319FC00AB07E8 /* gif.swift */,
+				E9F340BF21B63F1600779987 /* Restaurant.swift */,
 				D90CB6561A739B7A00228A1F /* Main.storyboard */,
 				0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */,
 				0131FCF621B08F3A0087BAA6 /* TabViewController.swift */,
 				D90CB6591A739B7A00228A1F /* Images.xcassets */,
+				30362D0921B31A2100AB07E8 /* slots.gif */,
+				30362D0721B31A1600AB07E8 /* money.gif */,
 				D90CB65B1A739B7A00228A1F /* LaunchScreen.xib */,
 				D90CB6501A739B7A00228A1F /* Supporting Files */,
 			);
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F340C021B63F1600779987 /* Restaurant.swift in Sources */,
 				D90CB6821A73CBC600228A1F /* AddGeotificationViewController.swift in Sources */,
 				E9CC65E1219CDE5D00B3EDE1 /* SignUpViewController.swift in Sources */,
 				30362D0621B319FC00AB07E8 /* gif.swift in Sources */,

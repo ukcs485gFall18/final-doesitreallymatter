@@ -5,7 +5,6 @@
 //  Created by Jordan Menchen on 12/1/18.
 //  Copyright © 2018 Ken Toh. All rights reserved.
 //
-
 import Foundation
 import UIKit
 import ImageIO

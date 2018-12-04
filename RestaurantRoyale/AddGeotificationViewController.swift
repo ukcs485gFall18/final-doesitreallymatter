@@ -32,6 +32,8 @@ class AddGeotificationViewController: UIViewController{
     restaurantID = restaurants[randomIndex].id
     restaurantName = restaurants[randomIndex].name
     
+    var randomRestaurant = Restaurant(restaurantID: restaurantID)
+    
     // Moved all the code from the onAdd function to here to trigger the add action once the button is selected
     settings.areTimestampsInSnapshotsEnabled = true
     db.settings = settings
@@ -73,11 +75,6 @@ class AddGeotificationViewController: UIViewController{
   
   var delegate: AddGeotificationsViewControllerDelegate?
   
-  // Function used to read in all the restaurant values
-  // Later on, could vary this by only reading in restaurants within a certain distance of the user (Ex: 5mi radius)
-  func getRestaurantData () {
-    
-  }
   
   // List of restaurants in Alphabetical order
   var restaurants: [(name: String, id: String)] = [
@@ -96,8 +93,8 @@ class AddGeotificationViewController: UIViewController{
     restaurantID = restaurants[0].id // Sets the default value of the picker to be the first value in the array
     restaurantName = restaurants[0].name // Same ^^^
     
-    //background.loadGif(name: "money")
-    //slots.loadGif(name: "slots")
+    background.loadGif(name: "money")
+    slots.loadGif(name: "slots")
     view.bringSubview(toFront: slots)
     view.bringSubview(toFront: randomRestaurant)
   }
@@ -106,8 +103,4 @@ class AddGeotificationViewController: UIViewController{
     dismiss(animated: true, completion: nil)
   }
   
-  @IBAction private func onAdd(sender: AnyObject) {
-
-    
-  }
 }
