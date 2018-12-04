@@ -224,7 +224,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="z78-he-qAW">
                                             <connections>
-                                                <segue destination="owN-fc-arC" kind="presentation" id="vCD-mT-hC2"/>
+                                                <action selector="handleLogin:" destination="ADm-Q9-0xF" id="yR8-Lf-kjE"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -287,7 +287,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="d4V-ha-aqk">
                                             <connections>
-                                                <segue destination="owN-fc-arC" kind="presentation" id="I5A-5y-PdH"/>
+                                                <action selector="handleSignUp:" destination="gb6-pS-RJG" id="Yut-2S-VC3"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -490,7 +490,6 @@
         <image name="rw-logo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OBT-bC-M5u"/>
         <segue reference="Rxu-yy-N72"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
