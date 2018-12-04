@@ -2,7 +2,7 @@
 //  Restaurant.swift
 //  Restaurant Royale
 //
-//  Created by Netreconlab on 12/3/18.
+//  Created by Carrier, Kenton on 12/3/18.
 //  Copyright © 2018 Ken Toh. All rights reserved.
 //
 
@@ -37,6 +37,18 @@ class Restaurant {
     }
   }
   
-  
+  func openMapToRestaurant() {
+    
+    let mapBoundary: CLLocationDistance = 10000
+    let region = MKCoordinateRegionMakeWithDistance(self.location, mapBoundary, mapBoundary)
+    let options = [ MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: region.center),
+                    MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: region.span)
+    ]
+    let placemark = MKPlacemark(coordinate: self.location)
+    let mapItem = MKMapItem(placemark: placemark)
+    
+    mapItem.name = self.name
+    mapItem.openInMaps(launchOptions: options)
+  }
   
 }
