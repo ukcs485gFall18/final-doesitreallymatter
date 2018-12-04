@@ -47,6 +47,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B67-Jx-Yuc">
                                 <rect key="frame" x="16" y="160" width="343" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="001-mR-9bl">
                                 <rect key="frame" x="83" y="507" width="208" height="99"/>
@@ -57,12 +60,14 @@
                                 <state key="normal" title="Let's Eat!"/>
                                 <connections>
                                     <action selector="randomRestaurant:" destination="jlM-bB-7qN" eventType="touchUpInside" id="HaW-3S-QML"/>
+                                    <segue destination="8EC-MV-30q" kind="show" id="jVv-it-Qf6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="OpB-eq-LRt"/>
+                    <navigationItem key="navigationItem" id="gd0-0x-a23"/>
                     <connections>
                         <outlet property="background" destination="9vI-jV-Rw0" id="pDf-Ej-Wy0"/>
                         <outlet property="randomRestaurant" destination="001-mR-9bl" id="2Ac-Ty-lkm"/>
@@ -71,7 +76,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fig-x7-LCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-570.39999999999998" y="381.2807881773399"/>
+            <point key="canvasLocation" x="58" y="306"/>
+        </scene>
+        <!--Sound Good?-->
+        <scene sceneID="efH-RT-8F2">
+            <objects>
+                <viewController id="8EC-MV-30q" customClass="RestaurantViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pVJ-YW-HSY"/>
+                        <viewControllerLayoutGuide type="bottom" id="xPm-Oq-buC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TU3-RU-cPA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="397-9j-mYL">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="WmT-J2-0KO"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sound Good?" id="J1Q-Ym-eMj">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="1aG-mi-ECb"/>
+                        <barButtonItem key="rightBarButtonItem" title="Winner!" id="hVp-We-kci"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPh-y6-ggX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="306"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="7p6-zG-ozT">
+            <objects>
+                <navigationController id="PbZ-uY-DQr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="jj4-eZ-Ozn"/>
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="onv-Rz-cOj">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jlM-bB-7qN" kind="relationship" relationship="rootViewController" id="kY4-8W-DRM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rcz-xR-PP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820" y="306"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Lzj-pA-rE7">
@@ -93,6 +152,15 @@
                                     <action selector="handleLogout:" destination="MnW-gW-vyd" eventType="touchUpInside" id="e0q-9M-MYn"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tQe-Wn-U3y">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Title" id="XFA-l2-sxt"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -252,8 +320,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="MnW-gW-vyd" kind="relationship" relationship="viewControllers" id="VpR-OS-g5A"/>
-                        <segue destination="jlM-bB-7qN" kind="relationship" relationship="viewControllers" id="zPG-Eg-1oB"/>
-                        <segue destination="Q3l-SK-Dot" kind="relationship" relationship="viewControllers" id="0MT-oY-v3w"/>
+                        <segue destination="PbZ-uY-DQr" kind="relationship" relationship="viewControllers" id="H6a-G5-MTe"/>
+                        <segue destination="Q3l-SK-Dot" kind="relationship" relationship="viewControllers" id="fqG-aG-uI9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ve-nt-eVw" userLabel="First Responder" sceneMemberID="firstResponder"/>
