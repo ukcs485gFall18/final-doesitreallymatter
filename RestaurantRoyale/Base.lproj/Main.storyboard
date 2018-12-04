@@ -20,13 +20,50 @@
                     <view key="view" contentMode="scaleToFill" id="1er-HS-lXI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uYq-d1-gSG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                <color key="backgroundColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ozj-td-P5C">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="dJJ-b8-pv5"/>
+                                </items>
+                            </navigationBar>
+                            <navigationBar opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDn-l0-drw">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="54l-S9-pKa"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eDn-l0-drw" firstAttribute="top" secondItem="VqT-vy-Kq2" secondAttribute="bottom" id="3Ze-Do-fz4"/>
+                            <constraint firstItem="eDn-l0-drw" firstAttribute="top" secondItem="Ozj-td-P5C" secondAttribute="top" id="AQB-wF-m1o"/>
+                            <constraint firstItem="uYq-d1-gSG" firstAttribute="leading" secondItem="Ozj-td-P5C" secondAttribute="leading" id="QUb-r3-rBE"/>
+                            <constraint firstItem="uYq-d1-gSG" firstAttribute="trailing" secondItem="eDn-l0-drw" secondAttribute="trailing" id="Zif-7M-R3O"/>
+                            <constraint firstItem="eDn-l0-drw" firstAttribute="leading" secondItem="Ozj-td-P5C" secondAttribute="leading" id="hKP-ys-ryk"/>
+                            <constraint firstItem="uYq-d1-gSG" firstAttribute="bottom" secondItem="eDn-l0-drw" secondAttribute="bottom" id="jqq-3n-y9c"/>
+                            <constraint firstItem="uYq-d1-gSG" firstAttribute="top" secondItem="1er-HS-lXI" secondAttribute="top" id="m2p-Tv-536"/>
+                            <constraint firstItem="uYq-d1-gSG" firstAttribute="leading" secondItem="1er-HS-lXI" secondAttribute="leading" id="njn-Qd-jOr"/>
+                            <constraint firstAttribute="trailing" secondItem="uYq-d1-gSG" secondAttribute="trailing" id="uyp-y7-ohx"/>
+                            <constraint firstItem="Ozj-td-P5C" firstAttribute="trailing" secondItem="eDn-l0-drw" secondAttribute="trailing" id="w2w-hz-7Tt"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="3Yt-zN-USd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erO-Iz-tPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1974" y="650"/>
+            <point key="canvasLocation" x="-1975.2" y="649.50738916256159"/>
         </scene>
         <!--Item-->
         <scene sceneID="Nf4-fv-WtH">
@@ -117,6 +154,7 @@
                     <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="onv-Rz-cOj">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -144,31 +182,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obl-6t-pkv">
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ULR-iw-Inc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                <color key="backgroundColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="UZa-OH-ouy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obl-6t-pkv">
                                 <rect key="frame" x="163" y="331" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="handleLogout:" destination="MnW-gW-vyd" eventType="touchUpInside" id="e0q-9M-MYn"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tQe-Wn-U3y">
+                            <navigationBar opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQe-Wn-U3y">
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="barTintColor" red="0.99153405427932739" green="0.095917247235774994" blue="0.0056222132407128811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Title" id="XFA-l2-sxt"/>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ULR-iw-Inc" firstAttribute="leading" secondItem="OE7-QY-kog" secondAttribute="leading" id="6PI-gk-Uri"/>
+                            <constraint firstItem="ULR-iw-Inc" firstAttribute="trailing" secondItem="tQe-Wn-U3y" secondAttribute="trailing" id="N8Z-7g-XLr"/>
+                            <constraint firstItem="ULR-iw-Inc" firstAttribute="bottom" secondItem="tQe-Wn-U3y" secondAttribute="bottom" id="RIR-41-SoA"/>
+                            <constraint firstItem="ULR-iw-Inc" firstAttribute="centerX" secondItem="Obl-6t-pkv" secondAttribute="centerX" id="cuo-e1-AJU"/>
+                            <constraint firstAttribute="trailing" secondItem="ULR-iw-Inc" secondAttribute="trailing" id="ffk-Vy-dFd"/>
+                            <constraint firstItem="ULR-iw-Inc" firstAttribute="leading" secondItem="tQe-Wn-U3y" secondAttribute="leading" id="iud-SN-WVO"/>
+                            <constraint firstItem="ULR-iw-Inc" firstAttribute="top" secondItem="OE7-QY-kog" secondAttribute="top" id="vbt-Zm-2Hz"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="4qG-pY-Lwt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErU-3h-vQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2015" y="-56"/>
+            <point key="canvasLocation" x="-2015.2" y="-56.157635467980299"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="NqW-bX-WYH">
