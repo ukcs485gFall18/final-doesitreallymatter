@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fig-x7-LCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-570.39999999999998" y="381.2807881773399"/>
+            <point key="canvasLocation" x="-1975" y="678"/>
         </scene>
         <!--Profile Page-->
         <scene sceneID="Lzj-pA-rE7">
@@ -363,121 +363,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="MnW-gW-vyd" kind="relationship" relationship="viewControllers" id="VpR-OS-g5A"/>
-                        <segue destination="WOc-Kh-RdY" kind="relationship" relationship="viewControllers" id="PQO-qA-dP5"/>
                         <segue destination="jly-z2-CkB" kind="relationship" relationship="viewControllers" id="Vvt-gM-grN"/>
+                        <segue destination="jlM-bB-7qN" kind="relationship" relationship="viewControllers" id="0tp-eS-CN8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ve-nt-eVw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3249" y="244"/>
-        </scene>
-        <!--Find a Restaurant-->
-        <scene sceneID="fiQ-Gi-mFr">
-            <objects>
-                <tableViewController id="WOc-Kh-RdY" customClass="AddGeotificationViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="22" sectionFooterHeight="22" id="KFK-uw-HxV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <sections>
-                            <tableViewSection id="fbT-Iw-5fj">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="300" id="7Tl-gH-olP">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Tl-gH-olP" id="G8a-9u-bod">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299.66666666666669"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frU-qC-iGG">
-                                                    <rect key="frame" x="0.0" y="44.666666666666657" width="375" height="254.99999999999997"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="255" id="WXX-LR-sI5"/>
-                                                    </constraints>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="KFK-uw-HxV" id="H8K-Km-M1o"/>
-                                                    </connections>
-                                                </mapView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddPin" translatesAutoresizingMaskIntoConstraints="NO" id="WUy-YH-DKS">
-                                                    <rect key="frame" x="150" y="134.66666666666666" width="75" height="75"/>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="frU-qC-iGG" firstAttribute="centerX" secondItem="WUy-YH-DKS" secondAttribute="centerX" id="Nbw-Mp-kGs"/>
-                                                <constraint firstItem="frU-qC-iGG" firstAttribute="centerY" secondItem="WUy-YH-DKS" secondAttribute="centerY" id="QFB-Fm-Pu9"/>
-                                                <constraint firstAttribute="trailing" secondItem="frU-qC-iGG" secondAttribute="trailing" id="jdp-SF-r7q"/>
-                                                <constraint firstAttribute="bottom" secondItem="frU-qC-iGG" secondAttribute="bottom" id="tha-AC-t0d"/>
-                                                <constraint firstItem="frU-qC-iGG" firstAttribute="leading" secondItem="G8a-9u-bod" secondAttribute="leading" id="zb0-6Z-etr"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="Rv2-Qa-S75">
-                                        <rect key="frame" x="0.0" y="300" width="375" height="150"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rv2-Qa-S75" id="1Eb-zW-BKH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.66666666666666"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" clipsSubviews="YES" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-qH-u1R">
-                                                    <rect key="frame" x="16" y="11" width="343" height="128"/>
-                                                    <color key="backgroundColor" red="0.99153405427932739" green="0.77565942568947477" blue="0.11593327018731719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                                    <color key="tintColor" red="0.92146831750000002" green="0.92162626979999995" blue="0.92145836349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <state key="normal" title="Button">
-                                                        <color key="titleColor" red="0.92146831750000002" green="0.92162626979999995" blue="0.92145836349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="randomRestaurant:" destination="WOc-Kh-RdY" eventType="touchUpInside" id="LXY-nI-2Fv"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="HwZ-qH-u1R" secondAttribute="trailing" id="3fp-Bi-8Ia"/>
-                                                <constraint firstItem="HwZ-qH-u1R" firstAttribute="top" secondItem="1Eb-zW-BKH" secondAttribute="topMargin" constant="8" id="5l5-XM-a0Q"/>
-                                                <constraint firstItem="HwZ-qH-u1R" firstAttribute="centerY" secondItem="1Eb-zW-BKH" secondAttribute="centerY" id="Gke-Bq-z43"/>
-                                                <constraint firstItem="HwZ-qH-u1R" firstAttribute="leading" secondItem="1Eb-zW-BKH" secondAttribute="leading" id="IW7-HM-pk5"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="WOc-Kh-RdY" id="8sB-Yz-Pj4"/>
-                            <outlet property="delegate" destination="WOc-Kh-RdY" id="ZvI-W3-HhK"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Let's eat" id="A1e-T0-Cxi" propertyAccessControl="all"/>
-                    <navigationItem key="navigationItem" title="Find a Restaurant" id="cjD-eh-hQf">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="xDC-Ux-qv5">
-                            <connections>
-                                <action selector="onCancelWithSender:" destination="WOc-Kh-RdY" id="fR4-Ya-HVp"/>
-                            </connections>
-                        </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Add" id="Zqz-jV-nhQ">
-                                <connections>
-                                    <action selector="onAddWithSender:" destination="WOc-Kh-RdY" id="o75-ar-PF3"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem image="CurrentLocation" id="cLD-qt-jBr" userLabel="CurrentLocation">
-                                <connections>
-                                    <action selector="onZoomToCurrentLocationWithSender:" destination="WOc-Kh-RdY" id="vJ9-LT-9X0"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="addButton" destination="Zqz-jV-nhQ" id="ghk-If-qAk"/>
-                        <outlet property="mapView" destination="frU-qC-iGG" id="DtX-ni-IE0"/>
-                        <outlet property="randomRestaurant" destination="HwZ-qH-u1R" id="EAz-hN-KHS"/>
-                        <outlet property="zoomButton" destination="cLD-qt-jBr" id="E2Z-95-cgF"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3fN-jg-cX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2015" y="601"/>
         </scene>
         <!--Search-->
         <scene sceneID="VHq-yU-dQ4">
@@ -530,8 +422,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AddPin" width="75" height="75"/>
-        <image name="CurrentLocation" width="15" height="15"/>
         <image name="Profile" width="16" height="16"/>
         <image name="rw-logo" width="512" height="512"/>
     </resources>

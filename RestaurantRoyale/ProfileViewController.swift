@@ -18,6 +18,10 @@ class ProfileViewController: UIViewController {
   
   override func viewDidLoad() {
         super.viewDidLoad()
+    
+    let settings = db.settings
+    settings.areTimestampsInSnapshotsEnabled = true
+    db.settings = settings
 
     let user = Auth.auth().currentUser
     let userDocRef = db.collection("userData").document((user?.uid)!)
