@@ -1,26 +1,21 @@
 import UIKit
 import MapKit
-import Firebase
 import FirebaseFirestore
 
 let db = Firestore.firestore()
 let settings = db.settings
 
-// Two values used to store the random location for the user
-var restaurantID = String()
-var restaurantName = String()
-
-
-protocol AddGeotificationsViewControllerDelegate {
-  func addGeotificationViewController(_ controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, eventType: Geotification.EventType)
-}
-
 class AddGeotificationViewController: UIViewController{
+  
+  // Two values used to store the random location for the user
+  var restaurantID = String()
+  var restaurantName = String()
+  var randomRestaurant = Restaurant()
   
   @IBOutlet weak var slots: UIImageView!
   @IBOutlet weak var background: UIImageView!
-  @IBOutlet weak var randomRestaurant: UIButton!
-  @IBAction func randomRestaurant(_ sender: UIButton) {
+  @IBOutlet weak var randomRestaurantButton: UIButton!
+  @IBAction func randomRestaurantRequest(_ sender: UIButton) {
     //Perform all actions when a button is tapped
     //Want to generate a random number, link it to the index of a restaurant in the restaurants array
     //Use that restaurant to generate the next pin drop
@@ -30,14 +25,11 @@ class AddGeotificationViewController: UIViewController{
     let randomIndex = Int.random(in: 0..<restaurants.count)
     restaurantID = restaurants[randomIndex].id
     
-    let randomRestaurant = Restaurant(restaurantID: restaurantID)
-    
-    randomRestaurant.openMapToRestaurant()
+    randomRestaurant.loadRestaurant(restaurantID: restaurantID, completion: {
+      self.randomRestaurant.openMapToRestaurant()
+    })
     
   }
-  
-  var delegate: AddGeotificationsViewControllerDelegate?
-  
   
   // List of restaurants in Alphabetical order
   var restaurants: [(name: String, id: String)] = [
@@ -51,19 +43,18 @@ class AddGeotificationViewController: UIViewController{
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    randomRestaurant.setTitle("Let's Eat!", for: .normal)
-    randomRestaurant.layer.cornerRadius = 4
+    randomRestaurantButton.setTitle("Let's Eat!", for: .normal)
+    randomRestaurantButton.layer.cornerRadius = 4
     restaurantID = restaurants[0].id // Sets the default value of the picker to be the first value in the array
     restaurantName = restaurants[0].name // Same ^^^
     
     background.loadGif(name: "money")
     slots.loadGif(name: "slots")
     view.bringSubview(toFront: slots)
-    view.bringSubview(toFront: randomRestaurant)
-  }
-  
-  @IBAction func onCancel(sender: AnyObject) {
-    dismiss(animated: true, completion: nil)
+    view.bringSubview(toFront: randomRestaurantButton)
+    
+    print(self)
+    
   }
   
 }
