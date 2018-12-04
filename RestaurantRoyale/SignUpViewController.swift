@@ -22,7 +22,9 @@ class SignUpViewController: UIViewController {
     // Do any additional setup after loading the view.
   }
   
-  
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+    }
+    
   /*
    // MARK: - Navigation
    
@@ -33,27 +35,30 @@ class SignUpViewController: UIViewController {
    }
    */
   
-  @IBAction func handleSignUp(_ sender: Any) {
-    guard let username = usernameField.text else { return }
-    guard let email = emailField.text else { return }
-    guard let password = passwordField.text else { return }
-    
-    Auth.auth().createUser(withEmail: email, password: password) { user, error in
-      if error == nil && user != nil {
-        print("User created!")
+  
+    @IBAction func handleSignUp(_ sender: Any) {
+        guard let username = usernameField.text else { return }
+        guard let email = emailField.text else { return }
+        guard let password = passwordField.text else { return }
         
-        let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
-        changeRequest?.displayName = username
-        changeRequest?.commitChanges { error in
-          if error == nil {
-            print("User display name changed!")
-            self.dismiss(animated: false, completion: nil)
-          }
+        Auth.auth().createUser(withEmail: email, password: password) { user, error in
+            if error == nil && user != nil {
+                print("User created!")
+                
+                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                changeRequest?.displayName = username
+                changeRequest?.commitChanges { error in
+                    if error == nil {
+                        print("User display name changed!")
+                        self.dismiss(animated: false, completion: nil)
+                    }
+                }
+                
+            } else {
+                print("Error creating user: \(error!.localizedDescription)")
+            }
         }
-        
-      } else {
-        print("Error creating user: \(error!.localizedDescription)")
-      }
     }
-  }
+    
+
 }
