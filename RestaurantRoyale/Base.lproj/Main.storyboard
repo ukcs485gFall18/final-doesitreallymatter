@@ -144,7 +144,7 @@
                             <constraint firstItem="sPE-xS-VTn" firstAttribute="top" secondItem="ZSm-wM-1P8" secondAttribute="bottom" constant="8" symbolic="YES" id="spd-VQ-cCC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="4qG-pY-Lwt"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="4qG-pY-Lwt"/>
                     <connections>
                         <outlet property="favFoodDisplay" destination="QcO-9p-CFt" id="Ia9-yb-VoO"/>
                         <outlet property="nameDisplay" destination="sPE-xS-VTn" id="jyt-HU-PnJ"/>
@@ -422,7 +422,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Profile" width="16" height="16"/>
         <image name="rw-logo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>

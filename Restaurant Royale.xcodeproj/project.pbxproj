@@ -24,11 +24,11 @@
 		D90CB6821A73CBC600228A1F /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB67C1A73B2BD00228A1F /* AddGeotificationViewController.swift */; };
 		D9835AF31AA6076800D265BC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835AF21AA6076800D265BC /* Utilities.swift */; };
 		D9C1AF6C1A77CD6C00A06B2F /* Apple.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D9C1AF6B1A77CD6C00A06B2F /* Apple.gpx */; };
-		E934A4D9215FE21200712E2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E934A4D8215FE21200712E2A /* GoogleService-Info.plist */; };
 		E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65DE219CD82500B3EDE1 /* InitialViewController.swift */; };
 		E9CC65E1219CDE5D00B3EDE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */; };
 		E9CC65E3219CDE6700B3EDE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */; };
 		E9CC65E5219CE1E500B3EDE1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */; };
+		E9F340BE21B63A6C00779987 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9F340BD21B63A6C00779987 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,11 +56,11 @@
 		D9835AF21AA6076800D265BC /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D9C1AF6B1A77CD6C00A06B2F /* Apple.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Apple.gpx; sourceTree = "<group>"; };
 		E00D4DEFE6DFD07D30EAC895 /* Pods_Restaurant_Royale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Restaurant_Royale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E934A4D8215FE21200712E2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E9CC65DE219CD82500B3EDE1 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E9F340BD21B63A6C00779987 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,7 @@
 		D90CB6501A739B7A00228A1F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E934A4D8215FE21200712E2A /* GoogleService-Info.plist */,
+				E9F340BD21B63A6C00779987 /* GoogleService-Info.plist */,
 				D9C1AF6B1A77CD6C00A06B2F /* Apple.gpx */,
 				308B7289218FDB950027F45B /* TollyToLocal.gpx */,
 				A16373B92054471A0065C2D9 /* Google.gpx */,
@@ -224,10 +224,10 @@
 				D90CB6581A739B7A00228A1F /* Main.storyboard in Resources */,
 				D90CB65D1A739B7A00228A1F /* LaunchScreen.xib in Resources */,
 				30362D0A21B31A2100AB07E8 /* slots.gif in Resources */,
-				E934A4D9215FE21200712E2A /* GoogleService-Info.plist in Resources */,
 				D9C1AF6C1A77CD6C00A06B2F /* Apple.gpx in Resources */,
 				D90CB65A1A739B7A00228A1F /* Images.xcassets in Resources */,
 				30362D0821B31A1700AB07E8 /* money.gif in Resources */,
+				E9F340BE21B63A6C00779987 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,11 +306,9 @@
 				E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */,
 				D9835AF31AA6076800D265BC /* Utilities.swift in Sources */,
 				D90CB6801A73C9E200228A1F /* Geotification.swift in Sources */,
-
 				0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */,
 				0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */,
 				E9CC65E5219CE1E500B3EDE1 /* ProfileViewController.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +444,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/RestaurantRoyale/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.RestaurantRoyale;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ukycs.restaurantRoyale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -463,7 +461,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/RestaurantRoyale/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.RestaurantRoyale;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ukycs.restaurantRoyale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;

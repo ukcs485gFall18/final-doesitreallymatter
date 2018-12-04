@@ -96,8 +96,8 @@ class AddGeotificationViewController: UIViewController{
     restaurantID = restaurants[0].id // Sets the default value of the picker to be the first value in the array
     restaurantName = restaurants[0].name // Same ^^^
     
-    background.loadGif(name: "money")
-    slots.loadGif(name: "slots")
+    //background.loadGif(name: "money")
+    //slots.loadGif(name: "slots")
     view.bringSubview(toFront: slots)
     view.bringSubview(toFront: randomRestaurant)
   }
