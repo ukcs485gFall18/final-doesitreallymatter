@@ -19,8 +19,6 @@
 		D90CB65D1A739B7A00228A1F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90CB65B1A739B7A00228A1F /* LaunchScreen.xib */; };
 		D90CB6731A739D4300228A1F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90CB6721A739D4300228A1F /* CoreLocation.framework */; };
 		D90CB6751A73A16700228A1F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90CB6741A73A16700228A1F /* MapKit.framework */; };
-		D90CB6771A73B1ED00228A1F /* GeotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB6761A73B1ED00228A1F /* GeotificationsViewController.swift */; };
-		D90CB6801A73C9E200228A1F /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB67E1A73C4B200228A1F /* Geotification.swift */; };
 		D90CB6821A73CBC600228A1F /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB67C1A73B2BD00228A1F /* AddGeotificationViewController.swift */; };
 		D9835AF31AA6076800D265BC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835AF21AA6076800D265BC /* Utilities.swift */; };
 		D9C1AF6C1A77CD6C00A06B2F /* Apple.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D9C1AF6B1A77CD6C00A06B2F /* Apple.gpx */; };
@@ -51,9 +49,7 @@
 		D90CB65C1A739B7A00228A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D90CB6721A739D4300228A1F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D90CB6741A73A16700228A1F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D90CB6761A73B1ED00228A1F /* GeotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeotificationsViewController.swift; sourceTree = "<group>"; };
 		D90CB67C1A73B2BD00228A1F /* AddGeotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationViewController.swift; sourceTree = "<group>"; };
-		D90CB67E1A73C4B200228A1F /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
 		D9835AF21AA6076800D265BC /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D9C1AF6B1A77CD6C00A06B2F /* Apple.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Apple.gpx; sourceTree = "<group>"; };
 		E00D4DEFE6DFD07D30EAC895 /* Pods_Restaurant_Royale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Restaurant_Royale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,10 +111,8 @@
 				E9CC65DE219CD82500B3EDE1 /* InitialViewController.swift */,
 				E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */,
 				E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */,
-				D90CB6761A73B1ED00228A1F /* GeotificationsViewController.swift */,
 				D90CB67C1A73B2BD00228A1F /* AddGeotificationViewController.swift */,
 				E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */,
-				D90CB67E1A73C4B200228A1F /* Geotification.swift */,
 				D9835AF21AA6076800D265BC /* Utilities.swift */,
 				30362D0521B319FC00AB07E8 /* gif.swift */,
 				E9F340BF21B63F1600779987 /* Restaurant.swift */,
@@ -305,11 +299,9 @@
 				E9CC65E1219CDE5D00B3EDE1 /* SignUpViewController.swift in Sources */,
 				30362D0621B319FC00AB07E8 /* gif.swift in Sources */,
 				D90CB6531A739B7A00228A1F /* AppDelegate.swift in Sources */,
-				D90CB6771A73B1ED00228A1F /* GeotificationsViewController.swift in Sources */,
 				E9CC65E3219CDE6700B3EDE1 /* LoginViewController.swift in Sources */,
 				E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */,
 				D9835AF31AA6076800D265BC /* Utilities.swift in Sources */,
-				D90CB6801A73C9E200228A1F /* Geotification.swift in Sources */,
 				0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */,
 				0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */,
 				E9CC65E5219CE1E500B3EDE1 /* ProfileViewController.swift in Sources */,
