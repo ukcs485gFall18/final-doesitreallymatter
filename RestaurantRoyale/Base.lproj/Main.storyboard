@@ -57,6 +57,7 @@
                                 <state key="normal" title="Let's Eat!"/>
                                 <connections>
                                     <action selector="randomRestaurantRequest:" destination="jlM-bB-7qN" eventType="touchUpInside" id="2ap-Ym-JjX"/>
+                                    <segue destination="whQ-jv-Og8" kind="show" id="JQq-5R-zzv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -166,6 +167,7 @@
                         <outlet property="tryAgainButton" destination="Eog-u6-gsu" id="8E8-io-WZ6"/>
                         <outlet property="typeLabel" destination="Ixb-2U-nev" id="4ik-9k-qcG"/>
                         <outlet property="winnerButton" destination="my8-l1-akx" id="BNo-Uz-dSY"/>
+                        <segue destination="jlM-bB-7qN" kind="show" identifier="mySegueIdentifier" id="xhd-ZJ-X2D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVs-bk-AwA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -526,5 +528,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lAI-mA-Ra0"/>
+        <segue reference="xhd-ZJ-X2D"/>
     </inferredMetricsTieBreakers>
 </document>

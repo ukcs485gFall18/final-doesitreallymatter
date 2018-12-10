@@ -5,6 +5,8 @@ import FirebaseFirestore
 let db = Firestore.firestore()
 let settings = db.settings
 
+var reward = Bool(true)
+
 class AddGeotificationViewController: UIViewController{
   
   // Two values used to store the random location for the user
@@ -17,17 +19,13 @@ class AddGeotificationViewController: UIViewController{
   @IBOutlet weak var randomRestaurantButton: UIButton!
   @IBAction func randomRestaurantRequest(_ sender: UIButton) {
     //Perform all actions when a button is tapped
-    //Want to generate a random number, link it to the index of a restaurant in the restaurants array
-    //Use that restaurant to generate the next pin drop
-    //Possibly bring out a text box stating which restaurant was chosen, then asking if user wants to go there
-    //    or select again
    
     let randomIndex = Int.random(in: 0..<restaurants.count)
     restaurantID = restaurants[randomIndex].id
     
-    randomRestaurant.loadRestaurant(restaurantID: restaurantID, completion: {
-      self.randomRestaurant.openMapToRestaurant()
-    })
+    //randomRestaurant.loadRestaurant(restaurantID: restaurantID, completion: {
+      //self.randomRestaurant.openMapToRestaurant()
+    //})
     
   }
   
