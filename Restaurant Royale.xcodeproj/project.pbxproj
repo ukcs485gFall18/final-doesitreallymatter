@@ -10,8 +10,6 @@
 		0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131FCF621B08F3A0087BAA6 /* TabViewController.swift */; };
 		0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */; };
 		30362D0621B319FC00AB07E8 /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30362D0521B319FC00AB07E8 /* gif.swift */; };
-		30362D0821B31A1700AB07E8 /* money.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30362D0721B31A1600AB07E8 /* money.gif */; };
-		30362D0A21B31A2100AB07E8 /* slots.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30362D0921B31A2100AB07E8 /* slots.gif */; };
 		CB00DE048DF123642887EB65 /* Pods_Restaurant_Royale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00D4DEFE6DFD07D30EAC895 /* Pods_Restaurant_Royale.framework */; };
 		D90CB6531A739B7A00228A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB6521A739B7A00228A1F /* AppDelegate.swift */; };
 		D90CB6581A739B7A00228A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90CB6561A739B7A00228A1F /* Main.storyboard */; };
@@ -22,6 +20,10 @@
 		D90CB6821A73CBC600228A1F /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB67C1A73B2BD00228A1F /* AddGeotificationViewController.swift */; };
 		D9835AF31AA6076800D265BC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835AF21AA6076800D265BC /* Utilities.swift */; };
 		D9C1AF6C1A77CD6C00A06B2F /* Apple.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D9C1AF6B1A77CD6C00A06B2F /* Apple.gpx */; };
+		E978543221C053BD003313D1 /* money.gif in Resources */ = {isa = PBXBuildFile; fileRef = E978543121C053BD003313D1 /* money.gif */; };
+		E978543421C053CA003313D1 /* rouletteWheel.gif in Resources */ = {isa = PBXBuildFile; fileRef = E978543321C053CA003313D1 /* rouletteWheel.gif */; };
+		E978543621C053D5003313D1 /* slots.gif in Resources */ = {isa = PBXBuildFile; fileRef = E978543521C053D5003313D1 /* slots.gif */; };
+		E978543821C05DAC003313D1 /* profileHeader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E978543721C05DAB003313D1 /* profileHeader.jpg */; };
 		E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65DE219CD82500B3EDE1 /* InitialViewController.swift */; };
 		E9CC65E1219CDE5D00B3EDE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */; };
 		E9CC65E3219CDE6700B3EDE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */; };
@@ -36,8 +38,6 @@
 		0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		2C7E16726DE474D67283AED2 /* Pods-Restaurant Royale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Royale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale.debug.xcconfig"; sourceTree = "<group>"; };
 		30362D0521B319FC00AB07E8 /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gif.swift; sourceTree = "<group>"; };
-		30362D0721B31A1600AB07E8 /* money.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = money.gif; sourceTree = "<group>"; };
-		30362D0921B31A2100AB07E8 /* slots.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slots.gif; sourceTree = "<group>"; };
 		308B7289218FDB950027F45B /* TollyToLocal.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TollyToLocal.gpx; sourceTree = "<group>"; };
 		7DBB1DD8B77C6707E9D01F9D /* Pods-Restaurant Royale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Royale.release.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale.release.xcconfig"; sourceTree = "<group>"; };
 		A16373B92054471A0065C2D9 /* Google.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Google.gpx; sourceTree = "<group>"; };
@@ -54,6 +54,10 @@
 		D9835AF21AA6076800D265BC /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D9C1AF6B1A77CD6C00A06B2F /* Apple.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Apple.gpx; sourceTree = "<group>"; };
 		E00D4DEFE6DFD07D30EAC895 /* Pods_Restaurant_Royale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Restaurant_Royale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E978543121C053BD003313D1 /* money.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = money.gif; path = Images.xcassets/money.dataset/money.gif; sourceTree = "<group>"; };
+		E978543321C053CA003313D1 /* rouletteWheel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = rouletteWheel.gif; path = Images.xcassets/rouletteWheel.dataset/rouletteWheel.gif; sourceTree = "<group>"; };
+		E978543521C053D5003313D1 /* slots.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = slots.gif; path = Images.xcassets/slots.dataset/slots.gif; sourceTree = "<group>"; };
+		E978543721C05DAB003313D1 /* profileHeader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profileHeader.jpg; sourceTree = "<group>"; };
 		E9CC65DE219CD82500B3EDE1 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -119,12 +123,14 @@
 				D9835AF21AA6076800D265BC /* Utilities.swift */,
 				30362D0521B319FC00AB07E8 /* gif.swift */,
 				E9F340BF21B63F1600779987 /* Restaurant.swift */,
+				E978543121C053BD003313D1 /* money.gif */,
+				E978543521C053D5003313D1 /* slots.gif */,
+				E978543321C053CA003313D1 /* rouletteWheel.gif */,
 				D90CB6561A739B7A00228A1F /* Main.storyboard */,
 				0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */,
 				0131FCF621B08F3A0087BAA6 /* TabViewController.swift */,
 				D90CB6591A739B7A00228A1F /* Images.xcassets */,
-				30362D0921B31A2100AB07E8 /* slots.gif */,
-				30362D0721B31A1600AB07E8 /* money.gif */,
+				E978543721C05DAB003313D1 /* profileHeader.jpg */,
 				D90CB65B1A739B7A00228A1F /* LaunchScreen.xib */,
 				D90CB6501A739B7A00228A1F /* Supporting Files */,
 			);
@@ -223,11 +229,13 @@
 			files = (
 				D90CB6581A739B7A00228A1F /* Main.storyboard in Resources */,
 				D90CB65D1A739B7A00228A1F /* LaunchScreen.xib in Resources */,
-				30362D0A21B31A2100AB07E8 /* slots.gif in Resources */,
+				E978543621C053D5003313D1 /* slots.gif in Resources */,
+				E978543821C05DAC003313D1 /* profileHeader.jpg in Resources */,
+				E978543421C053CA003313D1 /* rouletteWheel.gif in Resources */,
 				D9C1AF6C1A77CD6C00A06B2F /* Apple.gpx in Resources */,
 				D90CB65A1A739B7A00228A1F /* Images.xcassets in Resources */,
-				30362D0821B31A1700AB07E8 /* money.gif in Resources */,
 				E9F340BE21B63A6C00779987 /* GoogleService-Info.plist in Resources */,
+				E978543221C053BD003313D1 /* money.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +313,6 @@
 				E9CC65E3219CDE6700B3EDE1 /* LoginViewController.swift in Sources */,
 				E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */,
 				D9835AF31AA6076800D265BC /* Utilities.swift in Sources */,
-
 				0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */,
 				0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */,
 				E9CC65E5219CE1E500B3EDE1 /* ProfileViewController.swift in Sources */,

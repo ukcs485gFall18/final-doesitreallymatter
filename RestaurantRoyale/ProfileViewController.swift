@@ -45,6 +45,14 @@ class ProfileViewController: UIViewController {
       
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.setNeedsStatusBarAppearanceUpdate()
+  }
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
+  }
+  
   @IBAction func handleLogout(_ sender: Any) {
     try! Auth.auth().signOut()
     self.dismiss(animated: false, completion: nil)
