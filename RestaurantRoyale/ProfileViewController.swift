@@ -18,6 +18,10 @@ class ProfileViewController: UIViewController {
   
   override func viewDidLoad() {
         super.viewDidLoad()
+    
+    let settings = db.settings
+    settings.areTimestampsInSnapshotsEnabled = true
+    db.settings = settings
 
     let user = Auth.auth().currentUser
     let userDocRef = db.collection("userData").document((user?.uid)!)
@@ -32,7 +36,12 @@ class ProfileViewController: UIViewController {
     }
     
     usernameDisplay.text = user?.displayName
-    profilePic.load(url: (user?.photoURL)!)
+    if (user!.photoURL == nil) {
+      profilePic.load(url: NSURL(string: "https://upload.wikimedia.org/wikipedia/commons/9/93/Default_profile_picture_%28male%29_on_Facebook.jpg")! as URL)
+    }
+    else {
+      profilePic.load(url: (user?.photoURL)!)
+    }
       
   }
   
