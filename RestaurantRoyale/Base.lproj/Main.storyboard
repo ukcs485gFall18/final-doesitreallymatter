@@ -168,62 +168,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rw-logo" translatesAutoresizingMaskIntoConstraints="NO" id="YxZ-7O-JmF">
-                                <rect key="frame" x="16" y="44" width="343" height="343"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="so0-TD-ru5" customClass="AuthButtons" customModule="Restaurant_Royale" customModuleProvider="target">
-                                <rect key="frame" x="16" y="454" width="343" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Royale" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkf-8O-wc0">
+                                <rect key="frame" x="16" y="70" width="343" height="158"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="gpW-5n-KWX"/>
+                                    <constraint firstAttribute="height" constant="158" id="OjV-l1-cKf"/>
                                 </constraints>
-                                <state key="normal" title="Login"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="so0-TD-ru5">
+                                <rect key="frame" x="16" y="463" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nOv-gZ-kde"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="ADm-Q9-0xF" kind="show" id="sec-US-f5I"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rh-RF-76q" customClass="AuthButtons" customModule="Restaurant_Royale" customModuleProvider="target">
-                                <rect key="frame" x="16" y="543" width="343" height="52"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3R-Ge-992">
+                                <rect key="frame" x="16" y="533" width="343" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="KnF-RQ-piw"/>
+                                    <constraint firstAttribute="height" constant="50" id="LQ9-tX-GQ8"/>
                                 </constraints>
-                                <color key="tintColor" red="0.99153405429999997" green="0.095917247240000003" blue="0.0056222132410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Sign Up"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="gb6-pS-RJG" kind="show" id="Xyu-IY-las"/>
+                                    <segue destination="gb6-pS-RJG" kind="show" id="Rkg-6Q-75p"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Don't have an account yet?" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CWf-hU-nPv">
-                                <rect key="frame" x="73" y="512" width="228" height="23"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" notEnabled="YES"/>
-                                </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="Q7F-VH-JsH"/>
-                                </constraints>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
-                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="so0-TD-ru5" firstAttribute="top" secondItem="YxZ-7O-JmF" secondAttribute="bottom" constant="72" id="5Tj-Z3-0nc"/>
-                            <constraint firstItem="YxZ-7O-JmF" firstAttribute="trailing" secondItem="TCI-xq-dju" secondAttribute="trailingMargin" id="6jU-CP-d9U"/>
-                            <constraint firstItem="so0-TD-ru5" firstAttribute="centerX" secondItem="CWf-hU-nPv" secondAttribute="centerX" id="8xI-jj-ENQ"/>
-                            <constraint firstItem="acB-a6-dR3" firstAttribute="top" secondItem="3Rh-RF-76q" secondAttribute="bottom" constant="182" id="B85-R2-fIS"/>
-                            <constraint firstItem="YxZ-7O-JmF" firstAttribute="trailing" secondItem="so0-TD-ru5" secondAttribute="trailing" id="H0G-op-ZRw"/>
-                            <constraint firstItem="CWf-hU-nPv" firstAttribute="top" secondItem="so0-TD-ru5" secondAttribute="bottom" constant="8" symbolic="YES" id="SlR-iP-4uj"/>
-                            <constraint firstItem="so0-TD-ru5" firstAttribute="leading" secondItem="3Rh-RF-76q" secondAttribute="leading" id="Xn0-Es-dLi"/>
-                            <constraint firstItem="so0-TD-ru5" firstAttribute="trailing" secondItem="3Rh-RF-76q" secondAttribute="trailing" id="fK3-fA-day"/>
-                            <constraint firstItem="YxZ-7O-JmF" firstAttribute="top" secondItem="ceb-GV-bIQ" secondAttribute="bottom" id="fc3-8S-ktq"/>
-                            <constraint firstItem="CWf-hU-nPv" firstAttribute="leading" secondItem="TCI-xq-dju" secondAttribute="leadingMargin" constant="57" id="hZh-Wo-G2v"/>
-                            <constraint firstItem="YxZ-7O-JmF" firstAttribute="leading" secondItem="so0-TD-ru5" secondAttribute="leading" id="i1e-6j-u10"/>
-                            <constraint firstItem="YxZ-7O-JmF" firstAttribute="leading" secondItem="TCI-xq-dju" secondAttribute="leadingMargin" id="nOS-Vp-8WZ"/>
-                            <constraint firstItem="3Rh-RF-76q" firstAttribute="top" secondItem="CWf-hU-nPv" secondAttribute="bottom" constant="8" symbolic="YES" id="q1G-f3-6Zc"/>
+                            <constraint firstItem="B3R-Ge-992" firstAttribute="top" secondItem="so0-TD-ru5" secondAttribute="bottom" constant="20" id="B0U-W6-3cB"/>
+                            <constraint firstItem="Dkf-8O-wc0" firstAttribute="centerX" secondItem="TCI-xq-dju" secondAttribute="centerX" id="Cbd-BW-B7V"/>
+                            <constraint firstItem="so0-TD-ru5" firstAttribute="centerX" secondItem="TCI-xq-dju" secondAttribute="centerX" id="P2V-lb-4ZY"/>
+                            <constraint firstItem="B3R-Ge-992" firstAttribute="leading" secondItem="so0-TD-ru5" secondAttribute="leading" id="P2e-co-gYh"/>
+                            <constraint firstItem="Dkf-8O-wc0" firstAttribute="leading" secondItem="TCI-xq-dju" secondAttribute="leadingMargin" id="TO7-Gk-0Bh"/>
+                            <constraint firstItem="B3R-Ge-992" firstAttribute="trailing" secondItem="so0-TD-ru5" secondAttribute="trailing" id="W4L-A0-hcD"/>
+                            <constraint firstAttribute="bottom" secondItem="so0-TD-ru5" secondAttribute="bottom" constant="299" id="tyi-Da-sL8"/>
+                            <constraint firstItem="Dkf-8O-wc0" firstAttribute="leading" secondItem="so0-TD-ru5" secondAttribute="leading" id="u94-Py-UQc"/>
+                            <constraint firstItem="Dkf-8O-wc0" firstAttribute="top" secondItem="ceb-GV-bIQ" secondAttribute="bottom" constant="26" id="uCB-aH-NkZ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="so0-TD-ru5" id="R6y-tc-ex7"/>
+                        <outlet property="signupButton" destination="B3R-Ge-992" id="wFg-CN-Zml"/>
                         <segue destination="owN-fc-arC" kind="show" identifier="toDashboard" id="OBT-bC-M5u"/>
                     </connections>
                 </viewController>
@@ -269,7 +266,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="z78-he-qAW">
                                             <connections>
-                                                <action selector="handleLogin:" destination="ADm-Q9-0xF" id="B3z-cc-0Xn"/>
+                                                <action selector="handleLogin:" destination="ADm-Q9-0xF" id="yR8-Lf-kjE"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -332,7 +329,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="d4V-ha-aqk">
                                             <connections>
-                                                <action selector="handleSignUp:" destination="gb6-pS-RJG" id="SOR-Vc-ft3"/>
+                                                <action selector="handleSignUp:" destination="gb6-pS-RJG" id="Yut-2S-VC3"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -423,9 +420,8 @@
     </scenes>
     <resources>
         <image name="CurrentLocation" width="15" height="15"/>
-        <image name="rw-logo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lAI-mA-Ra0"/>
+        <segue reference="Rxu-yy-N72"/>
     </inferredMetricsTieBreakers>
 </document>
