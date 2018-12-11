@@ -9,25 +9,35 @@
 import UIKit
 import Firebase
 
-class AuthButtons: UIButton {
-  
-  override func awakeFromNib() {
-    
-    layer.cornerRadius = 15
-    backgroundColor = UIColor(red: 0.75, green: 0.20, blue: 0.19, alpha: 1.0)
-    setTitleColor(UIColor.white, for: .normal)
-    
-    
-  }
-  
-}
-
 class InitialViewController: UIViewController {
+  
+  @IBOutlet weak var loginButton: UIButton!
+  @IBOutlet weak var signupButton: UIButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
+    loginButton.layer.cornerRadius = loginButton.frame.size.height / 2
+    loginButton.layer.frame.size = CGSize(width: 50, height: 25)
+    loginButton.layer.masksToBounds = true
+    
+    loginButton.layer.borderWidth = 1
+    loginButton.layer.borderColor = Colors.Timberwolf.cgColor
+    
+    signupButton.layer.cornerRadius = signupButton.frame.size.height / 2
+    signupButton.layer.masksToBounds = true
+    
+    signupButton.layer.borderWidth = 1
+    signupButton.layer.borderColor = Colors.Timberwolf.cgColor
+    
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    loginButton.setGradientBackground(colorOne: Colors.DarkTangerine, colorTwo: Colors.SunsetOrange)
+    signupButton.setGradientBackground(colorOne: Colors.DarkTangerine, colorTwo: Colors.SunsetOrange)
+    
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -38,16 +48,5 @@ class InitialViewController: UIViewController {
     }
     
   }
-  
-  
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destination.
-   // Pass the selected object to the new view controller.
-   }
-   */
   
 }

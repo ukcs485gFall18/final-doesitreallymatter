@@ -26,6 +26,7 @@
 		E9CC65E1219CDE5D00B3EDE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */; };
 		E9CC65E3219CDE6700B3EDE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */; };
 		E9CC65E5219CE1E500B3EDE1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */; };
+		E9F340C221BF86B900779987 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F340C121BF86B900779987 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E9F340C121BF86B900779987 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				D90CB6521A739B7A00228A1F /* AppDelegate.swift */,
+				E9F340C121BF86B900779987 /* Constants.swift */,
 				E9CC65DE219CD82500B3EDE1 /* InitialViewController.swift */,
 				E9CC65E0219CDE5D00B3EDE1 /* SignUpViewController.swift */,
 				E9CC65E2219CDE6700B3EDE1 /* LoginViewController.swift */,
@@ -294,11 +297,10 @@
 				E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */,
 				D9835AF31AA6076800D265BC /* Utilities.swift in Sources */,
 				D90CB6801A73C9E200228A1F /* Geotification.swift in Sources */,
-
 				0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */,
 				0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */,
 				E9CC65E5219CE1E500B3EDE1 /* ProfileViewController.swift in Sources */,
-
+				E9F340C221BF86B900779987 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
