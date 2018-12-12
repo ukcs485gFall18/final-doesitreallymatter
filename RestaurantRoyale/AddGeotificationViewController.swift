@@ -11,6 +11,14 @@ class AddGeotificationViewController: UIViewController{
   @IBOutlet weak var background: UIImageView!
   @IBOutlet weak var randomRestaurantButton: UIButton!
   
+  @IBAction func mexicanRestaurantRequest(_ sender: UIButton) {
+    
+    randomRestaurant = manager.GetRestaurantByCategory(category: "Mexican", completion: {
+      self.randomRestaurant.openMapToRestaurant()
+    })
+    
+  }
+  
   @IBAction func randomRestaurantRequest(_ sender: UIButton) {
     
     randomRestaurant = manager.GetRandomRestaurant(completion: {

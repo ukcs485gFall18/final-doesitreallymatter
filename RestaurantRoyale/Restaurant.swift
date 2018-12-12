@@ -17,7 +17,6 @@ class Restaurant {
   var categories = Array<String>()
   
   func loadRestaurant(restaurantID: String, completion: @escaping () -> Void) {
-    
     let docRef = db.collection("restaurants").document(restaurantID)
     docRef.getDocument(){ (document, error) in
       if let document = document {
