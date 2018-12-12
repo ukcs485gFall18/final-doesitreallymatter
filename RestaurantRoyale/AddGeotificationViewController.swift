@@ -14,7 +14,7 @@ class AddGeotificationViewController: UIViewController{
   
   @IBAction func randomRestaurantRequest(_ sender: UIButton) {
     
-    let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    /*let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
     let randomID = String((0...19).map{ _ in letters.randomElement()! })
    
     db.collection("restaurants").whereField(FieldPath.documentID(), isGreaterThan: randomID).limit(to: 1).getDocuments() { (querySnapshot, err) in
@@ -28,7 +28,7 @@ class AddGeotificationViewController: UIViewController{
           })
         }
       }
-    }
+    }*/
     
   }
   

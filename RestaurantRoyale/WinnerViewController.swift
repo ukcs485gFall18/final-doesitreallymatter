@@ -5,7 +5,6 @@
 //  Created by Jordan Menchen on 12/9/18.
 //  Copyright © 2018 Ken Toh. All rights reserved.
 //
-
 import UIKit
 
 class WinnerViewController: UIViewController {
@@ -17,27 +16,27 @@ class WinnerViewController: UIViewController {
   var randomRestaurant: (name: String, id: String, type: String)?
   var randomRestaurantView = Restaurant()
   
-    @IBOutlet weak var restaurantLabel: UILabel!
-    @IBOutlet weak var typeLabel: UILabel!
-    @IBOutlet weak var rewardLabel: UILabel!
-    @IBOutlet weak var winnerButton: UIButton!
-    @IBOutlet weak var tryAgainButton: UIButton!
+  @IBOutlet weak var restaurantLabel: UILabel!
+  @IBOutlet weak var typeLabel: UILabel!
+  @IBOutlet weak var rewardLabel: UILabel!
+  @IBOutlet weak var winnerButton: UIButton!
+  @IBOutlet weak var tryAgainButton: UIButton!
   
-    override func viewDidLoad() {
-      super.viewDidLoad()
-      getRandomRestaurant()
-      winnerButton.layer.cornerRadius = 4
-      tryAgainButton.layer.cornerRadius = 4
-      //set name label here with randomly selected restaurant
-      restaurantLabel.text = (restaurantName)
-      //set type here
-      typeLabel.text = (restaurantType)
-      if (reward) {
-        rewardLabel.text = (rewardArray.randomElement())
-      } else {
-        rewardLabel.text = ("Sorry, no reward this time!")
-      }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    getRandomRestaurant()
+    winnerButton.layer.cornerRadius = 4
+    tryAgainButton.layer.cornerRadius = 4
+    //set name label here with randomly selected restaurant
+    restaurantLabel.text = (restaurantName)
+    //set type here
+    typeLabel.text = (restaurantType)
+    if (reward) {
+      rewardLabel.text = (rewardArray.randomElement())
+    } else {
+      rewardLabel.text = ("Sorry, no reward this time!")
     }
+  }
   func getRandomRestaurant() {
     
     randomRestaurant = restaurants.randomElement()
@@ -58,9 +57,9 @@ class WinnerViewController: UIViewController {
   ]
   
   let rewardArray = [
-  "A free drink!",
-  "A free side!",
-  "10% Off Your Entire Meal!"
+    "A free drink!",
+    "A free side!",
+    "10% Off Your Entire Meal!"
   ]
   
   @IBAction func winnerButtonPressed(_ sender: Any) {
