@@ -38,4 +38,11 @@ class RewardsViewController: UIViewController {
       
     }
 
+  @IBAction func winnerButtonPressed(_ sender: Any) {
+  }
+  
+  @IBAction func tryAgainButtonPressed(_ sender: Any) {
+  }
+  
+  
 }
