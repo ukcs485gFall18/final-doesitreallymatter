@@ -40,7 +40,7 @@ class InitialViewController: UIViewController {
     
     loginButton.setGradientBackground(colorOne: Colors.DarkTangerine, colorTwo: Colors.SunsetOrange)
     signupButton.setGradientBackground(colorOne: Colors.DarkTangerine, colorTwo: Colors.SunsetOrange)
-    self.view.setGradientBackground(colorOne: Colors.DeepLemon, colorTwo: Colors.Isabelline)
+    self.view.setGradientBackground(colorOne: Colors.MaastrichtBlue, colorTwo: Colors.RifleGray)
     
   }
   
@@ -51,6 +51,14 @@ class InitialViewController: UIViewController {
       self.performSegue(withIdentifier: "toDashboard", sender: self)
     }
     
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.setNeedsStatusBarAppearanceUpdate()
+  }
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
   }
   
 }

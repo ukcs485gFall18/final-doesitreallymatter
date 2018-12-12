@@ -24,4 +24,6 @@ struct Colors {
   static let Red = UIColor(red: 252/255, green: 49/255, blue: 22/255, alpha: 1)
   static let Isabelline = UIColor(red: 247/255, green: 243/255, blue: 237/255, alpha: 1)
   static let RifleGray = UIColor(red: 68/255, green: 67/255, blue: 65/255, alpha: 1)
+  static let MaastrichtBlue = UIColor(red: 8/255, green: 26/255, blue: 42/255, alpha: 1)
+
 }
