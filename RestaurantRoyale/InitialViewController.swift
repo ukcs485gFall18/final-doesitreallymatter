@@ -13,6 +13,7 @@ class InitialViewController: UIViewController {
   
   @IBOutlet weak var loginButton: UIButton!
   @IBOutlet weak var signupButton: UIButton!
+  @IBOutlet weak var rouletteWheel: UIImageView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -30,6 +31,8 @@ class InitialViewController: UIViewController {
     signupButton.layer.borderWidth = 1
     signupButton.layer.borderColor = Colors.Timberwolf.cgColor
     
+    rouletteWheel.loadGif(name: "rouletteWheel")
+    
   }
   
   override func viewDidLayoutSubviews() {
@@ -37,6 +40,7 @@ class InitialViewController: UIViewController {
     
     loginButton.setGradientBackground(colorOne: Colors.DarkTangerine, colorTwo: Colors.SunsetOrange)
     signupButton.setGradientBackground(colorOne: Colors.DarkTangerine, colorTwo: Colors.SunsetOrange)
+    self.view.setGradientBackground(colorOne: Colors.MaastrichtBlue, colorTwo: Colors.RifleGray)
     
   }
   
@@ -47,6 +51,14 @@ class InitialViewController: UIViewController {
       self.performSegue(withIdentifier: "toDashboard", sender: self)
     }
     
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.setNeedsStatusBarAppearanceUpdate()
+  }
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
   }
   
 }

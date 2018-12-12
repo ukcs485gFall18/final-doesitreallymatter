@@ -17,7 +17,6 @@ class Restaurant {
   var categories = Array<String>()
   
   func loadRestaurant(restaurantID: String, completion: @escaping () -> Void) {
-    
     let docRef = db.collection("restaurants").document(restaurantID)
     docRef.getDocument(){ (document, error) in
       if let document = document {
@@ -29,7 +28,7 @@ class Restaurant {
           let lon = point.longitude
           self.location = CLLocationCoordinate2D(latitude: lat, longitude: lon)
         }
-        self.categories = document.get("categories") as! [String]
+        self.categories = document.get("type") as! [String]
       }
       completion()
     }
