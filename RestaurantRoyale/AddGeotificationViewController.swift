@@ -14,7 +14,7 @@ class AddGeotificationViewController: UIViewController{
   @IBAction func mexicanRestaurantRequest(_ sender: UIButton) {
     
     randomRestaurant = manager.GetRestaurantByCategory(category: "Mexican", completion: {
-      self.randomRestaurant.openMapToRestaurant()
+      self.performSegue(withIdentifier: "showRewardsView", sender: self)
     })
     
   }
@@ -22,9 +22,14 @@ class AddGeotificationViewController: UIViewController{
   @IBAction func randomRestaurantRequest(_ sender: UIButton) {
     
     randomRestaurant = manager.GetRandomRestaurant(completion: {
-      self.randomRestaurant.openMapToRestaurant()
+      self.performSegue(withIdentifier: "showRewardsView", sender: self)
     })
     
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let rewardController = segue.destination as! RewardsViewController
+    rewardController.selectedRestaurant = randomRestaurant
   }
   
   override func viewDidLoad() {
