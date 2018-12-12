@@ -1,5 +1,5 @@
 # Restaurant Royale - Midterm 1 of Team doesitreallymatter
-Members: Kenton Carrier, Jordan Menchen
+Members: Kenton Carrier, Jordan Menchen, Joseph Crocker, Joshua Fishman
 
 # Description
  Use the geofencing system to allow our users to travel to a random restaurant based on their preferences, and upon arriving at the premises of the place, they will get a discount as well as points to continue to gain perks for future use.
