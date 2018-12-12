@@ -11,13 +11,19 @@ import Firebase
 
 class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var favFoodDisplay: UILabel!
-    @IBOutlet weak var usernameDisplay: UILabel!
-    @IBOutlet weak var profilePic: UIImageView!
-    @IBOutlet weak var nameDisplay: UILabel!
+  @IBOutlet weak var favFoodDisplay: UILabel!
+  @IBOutlet weak var usernameDisplay: UILabel!
+  @IBOutlet weak var profilePic: UIImageView!
+  @IBOutlet weak var nameDisplay: UILabel!
+  @IBOutlet weak var logoutButton: UIButton!
   
   override func viewDidLoad() {
         super.viewDidLoad()
+    
+    logoutButton.layer.cornerRadius = logoutButton.frame.size.height / 2
+    logoutButton.layer.masksToBounds = true
+    logoutButton.layer.borderWidth = 1
+    logoutButton.layer.borderColor = Colors.Timberwolf.cgColor
     
     let settings = db.settings
     settings.areTimestampsInSnapshotsEnabled = true
@@ -45,9 +51,25 @@ class ProfileViewController: UIViewController {
       
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.setNeedsStatusBarAppearanceUpdate()
+  }
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
+  }
+  
   @IBAction func handleLogout(_ sender: Any) {
     try! Auth.auth().signOut()
     self.dismiss(animated: false, completion: nil)
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    logoutButton.setGradientBackground(colorOne: Colors.DarkTangerine, colorTwo: Colors.SunsetOrange)
+    self.view.setGradientBackground(colorOne: Colors.MaastrichtBlue, colorTwo: Colors.RifleGray)
+    
   }
 
 }
