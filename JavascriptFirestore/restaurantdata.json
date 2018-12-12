@@ -1,0 +1,2897 @@
+[
+  {
+    "Name": "Hibachi Express",
+    "Location": "38.037839, -84.507441",
+    "Type": "Japanese"
+  },
+  {
+    "Name": "Phillips Market",
+    "Location": "38.038156, -84.507396",
+    "Type": "Sandwich,Deli"
+  },
+  {
+    "Name": "Arby's",
+    "Location": "38.03933, -84.507097",
+    "Type": "Burger,Fast Food"
+  },
+  {
+    "Name": "Bangkok House",
+    "Location": "38.038037, -84.499766",
+    "Type": "Thai"
+  },
+  {
+    "Name": "Papa John's Pizza",
+    "Location": "38.038488, -84.49982",
+    "Type": "Pizza,Fast Food"
+  },
+  {
+    "Name": "QDOBA Mexican Eats",
+    "Location": "38.0283019288382, -84.5031400644724",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Coffea",
+    "Location": "38.0381742145329, -84.4994476924458",
+    "Type": "Coffee and Tea,Cafe"
+  },
+  {
+    "Name": "Pazzo's Pizza Pub",
+    "Location": "38.041872, -84.503626",
+    "Type": "Italian"
+  },
+  {
+    "Name": "Han Woo Ri",
+    "Location": "38.042068, -84.503317",
+    "Type": "Korean"
+  },
+  {
+    "Name": "Jamba Juice",
+    "Location": "38.042672, -84.504704",
+    "Type": "Desserts"
+  },
+  {
+    "Name": "Raising Cane's Chicken Fingers",
+    "Location": "38.042525, -84.504226",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.042335, -84.503019",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Apothecary Cafe",
+    "Location": "38.03352, -84.509211",
+    "Type": "Healthy Food,Fast Food,Sandwich"
+  },
+  {
+    "Name": "Chipotle Mexican Grill",
+    "Location": "38.042632, -84.502599",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Blaze Pizza",
+    "Location": "38.042669, -84.502522",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "Two Keys Tavern",
+    "Location": "38.042811, -84.502234",
+    "Type": "Bar Food"
+  },
+  {
+    "Name": "Goodfellas pizzeria",
+    "Location": "38.042811, -84.502234",
+    "Type": "Pizza,Fast Food"
+  },
+  {
+    "Name": "Insomnia Cookies",
+    "Location": "38.043188, -84.502754",
+    "Type": "Desserts"
+  },
+  {
+    "Name": "Mellow Mushroom",
+    "Location": "38.0435, -84.503516",
+    "Type": "Pizza,Bar Food"
+  },
+  {
+    "Name": "The Local Taco",
+    "Location": "38.043151, -84.501859",
+    "Type": "Southwestern,Tex-Mex,American,Burgers,Sandwiches,Wraps"
+  },
+  {
+    "Name": "Sav's Grill & West African Cuisine",
+    "Location": "38.043093, -84.501398",
+    "Type": "African"
+  },
+  {
+    "Name": "Tin Roof",
+    "Location": "38.043258, -84.50176",
+    "Type": "Bar Food,Sandwich,Southwestern"
+  },
+  {
+    "Name": "Tolly-Ho Restaurants Inc",
+    "Location": "38.04338, -84.507489",
+    "Type": "American,Burger"
+  },
+  {
+    "Name": "Joe Bologna's Restaurant & Pizzeria, Inc",
+    "Location": "38.043796, -84.501999",
+    "Type": "Italian,Pizza,Sandwich"
+  },
+  {
+    "Name": "Sav's Chill",
+    "Location": "38.043544, -84.501285",
+    "Type": "Ice Cream"
+  },
+  {
+    "Name": "Red Bang Bang",
+    "Location": "38.043589, -84.501362",
+    "Type": "Asian,Chinese,Fast Food"
+  },
+  {
+    "Name": "Cinco De Mayo Mexican Restaurant Downtown Lexington",
+    "Location": "38.043921, -84.502068",
+    "Type": "Tex-Mex,Mexican"
+  },
+  {
+    "Name": "Mad Mushroom Pizza",
+    "Location": "38.044565, -84.506414",
+    "Type": "Italian,Pizza"
+  },
+  {
+    "Name": "DQ Grill & Chill Restaurant",
+    "Location": "38.03689, -84.514329",
+    "Type": "Fast Food,Desserts,American,Burgers,Ice Cream"
+  },
+  {
+    "Name": "Best Friend Bar",
+    "Location": "38.034303, -84.496073",
+    "Type": "Bar"
+  },
+  {
+    "Name": "Cook Out",
+    "Location": "38.040512, -84.513666",
+    "Type": "American"
+  },
+  {
+    "Name": "Waffle House",
+    "Location": "38.040069, -84.514139",
+    "Type": "American"
+  },
+  {
+    "Name": "Great Bagel",
+    "Location": "38.034461, -84.495584",
+    "Type": "Sandwich,Bagels"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.034577, -84.495379",
+    "Type": "Sandwich"
+  },
+  {
+    "Name": "Lynagh's Irish Pub",
+    "Location": "38.034652, -84.495277",
+    "Type": "Burger,Irish,Bar Food"
+  },
+  {
+    "Name": "Pie Five Pizza Co.",
+    "Location": "38.039735, -84.514771",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "Ellos on Broadway",
+    "Location": "38.045632, -84.504349",
+    "Type": "Puerto Rican"
+  },
+  {
+    "Name": "Jersey Mike's Subs",
+    "Location": "38.039735, -84.514771",
+    "Type": "American,Deli,Sandwich"
+  },
+  {
+    "Name": "Jet's Pizza",
+    "Location": "38.036394, -84.51521",
+    "Type": "Pizza,Fast Food"
+  },
+  {
+    "Name": "Hanna's On Lime",
+    "Location": "38.044777, -84.499076",
+    "Type": "American"
+  },
+  {
+    "Name": "RamenYa",
+    "Location": "38.037096, -84.516223",
+    "Type": "Ramen,Asian"
+  },
+  {
+    "Name": "Soundbar",
+    "Location": "38.044872, -84.498966",
+    "Type": "Bar Food"
+  },
+  {
+    "Name": "Jalapenos Mexican Restaurant",
+    "Location": "38.037096, -84.516223",
+    "Type": "Mexican,Tex-Mex"
+  },
+  {
+    "Name": "Ole Hookers",
+    "Location": "38.045026, -84.499145",
+    "Type": "Bar Food"
+  },
+  {
+    "Name": "Sonic Drive-In",
+    "Location": "38.037824, -84.516156",
+    "Type": "American,Burger"
+  },
+  {
+    "Name": "Mumbai masala Indian restaurant",
+    "Location": "38.045168, -84.498963",
+    "Type": "Indian"
+  },
+  {
+    "Name": "Common Grounds Coffee House",
+    "Location": "38.040273, -84.494035",
+    "Type": "Cafe,Sandwich"
+  },
+  {
+    "Name": "Missy's",
+    "Location": "38.036475, -84.492974",
+    "Type": "Desserts"
+  },
+  {
+    "Name": "Gumbo Ya Ya",
+    "Location": "38.036484, -84.516948",
+    "Type": "Southern,Vegetarian,Cajun"
+  },
+  {
+    "Name": "Sir Pizza of Kentucky",
+    "Location": "38.037259, -84.516922",
+    "Type": "Pizza,Sandwich"
+  },
+  {
+    "Name": "Buffalo Wild Wings",
+    "Location": "38.036484, -84.516948",
+    "Type": "American,Bar Food"
+  },
+  {
+    "Name": "Blue Reef Sushi & Grill",
+    "Location": "38.036484, -84.516948",
+    "Type": "Asian,Japanese,Sushi"
+  },
+  {
+    "Name": "First Watch South Broadway",
+    "Location": "38.036484, -84.516948",
+    "Type": "American,Diner"
+  },
+  {
+    "Name": "Penn Station East Coast Subs",
+    "Location": "38.036484, -84.516948",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "High on Art & Coffee",
+    "Location": "38.036055, -84.492358",
+    "Type": "Coffee and Tea,Sandwich"
+  },
+  {
+    "Name": "The Weekly Juicery",
+    "Location": "38.039781, -84.49184",
+    "Type": "Juices,Healthy Food,Beverages"
+  },
+  {
+    "Name": "Oshimi Sushi and Asian Foods",
+    "Location": "38.037207, -84.51808",
+    "Type": "Asian,Sushi"
+  },
+  {
+    "Name": "McCarthy's Irish Bar",
+    "Location": "38.046838, -84.498603",
+    "Type": "Bar Food"
+  },
+  {
+    "Name": "Portofino Italian and American Cuisine",
+    "Location": "38.043956, -84.493696",
+    "Type": "Italian,American"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.045359, -84.49536",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "NAT'S",
+    "Location": "38.046935, -84.498439",
+    "Type": "Thai"
+  },
+  {
+    "Name": "Alfalfa",
+    "Location": "38.045851, -84.496059",
+    "Type": "American"
+  },
+  {
+    "Name": "Sunrise Bakery",
+    "Location": "38.046644, -84.497104",
+    "Type": "Sandwich,Desserts"
+  },
+  {
+    "Name": "Taste of Thai",
+    "Location": "38.046561, -84.497007",
+    "Type": "Thai"
+  },
+  {
+    "Name": "Sam's Hot Dog Stand, Lexington",
+    "Location": "38.046627, -84.496894",
+    "Type": "Sandwich,Fast Food"
+  },
+  {
+    "Name": "Molly Brooke's Irish Bar",
+    "Location": "38.046673, -84.496783",
+    "Type": "Bar Food"
+  },
+  {
+    "Name": "BlueFire Bar & Grill",
+    "Location": "38.048742, -84.501758",
+    "Type": "Steak,Bar Food"
+  },
+  {
+    "Name": "Bigg Blue Martini",
+    "Location": "38.048453, -84.500288",
+    "Type": "American"
+  },
+  {
+    "Name": "Triangle Grille",
+    "Location": "38.048453, -84.500288",
+    "Type": "American,Seafood,Southern"
+  },
+  {
+    "Name": "Lockbox",
+    "Location": "38.047164, -84.497657",
+    "Type": "Southern"
+  },
+  {
+    "Name": "A Cup Of Common Wealth",
+    "Location": "38.041763, -84.491337",
+    "Type": "Coffee and Tea,Beverages"
+  },
+  {
+    "Name": "Kroger Deli",
+    "Location": "38.030778, -84.492939",
+    "Type": "American"
+  },
+  {
+    "Name": "Henry Clay's Public House",
+    "Location": "38.047411, -84.497451",
+    "Type": "Pub Food"
+  },
+  {
+    "Name": "Rally's",
+    "Location": "38.035784, -84.519519",
+    "Type": "Burger,Fast Food"
+  },
+  {
+    "Name": "SUBWAY%uFFFD%uFFFD Restaurants",
+    "Location": "38.049295, -84.501574",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Corto Lima",
+    "Location": "38.047088, -84.496284",
+    "Type": "Latin American"
+  },
+  {
+    "Name": "Lexington Diner",
+    "Location": "38.047574, -84.497208",
+    "Type": "American,Burger,Vegetarian"
+  },
+  {
+    "Name": "Main Street Deli",
+    "Location": "38.048701, -84.499865",
+    "Type": "American,Sandwich"
+  },
+  {
+    "Name": "Goodfellas Pizzeria",
+    "Location": "38.048302, -84.498514",
+    "Type": "Pizza,Fast Food"
+  },
+  {
+    "Name": "Wild Cat Saloon",
+    "Location": "38.04822, -84.498211",
+    "Type": "Bar Food"
+  },
+  {
+    "Name": "Yesterday's Billiards",
+    "Location": "38.049295, -84.501574",
+    "Type": "Burger,Bar Food"
+  },
+  {
+    "Name": "Buddha Lounge",
+    "Location": "38.048442, -84.498758",
+    "Type": "Tapas,Sushi"
+  },
+  {
+    "Name": "Sidebar Grill",
+    "Location": "38.047236, -84.495996",
+    "Type": "Burger,Sandwich"
+  },
+  {
+    "Name": "Starbucks",
+    "Location": "38.048684, -84.499174",
+    "Type": "American,Coffee & Tea"
+  },
+  {
+    "Name": "West Coast Gourmet Pizza",
+    "Location": "38.048591, -84.499174",
+    "Type": "Pizza,Sandwich"
+  },
+  {
+    "Name": "Sawyer's Downtown",
+    "Location": "38.048591, -84.499174",
+    "Type": "American"
+  },
+  {
+    "Name": "The Rosebud Bar",
+    "Location": "38.048533, -84.498532",
+    "Type": "Drinks Only"
+  },
+  {
+    "Name": "Double H BBQ",
+    "Location": "38.04896, -84.5003",
+    "Type": "BBQ"
+  },
+  {
+    "Name": "Parlay Social",
+    "Location": "38.048371, -84.49772",
+    "Type": "Pizza,Seafood,Pub Food"
+  },
+  {
+    "Name": "Dudley's On Short",
+    "Location": "38.048479, -84.497858",
+    "Type": "American"
+  },
+  {
+    "Name": "George's Deli",
+    "Location": "38.047566, -84.495583",
+    "Type": "Deli,Sandwich"
+  },
+  {
+    "Name": "Vinaigrette Salad Kitchen",
+    "Location": "38.049277, -84.499674",
+    "Type": "Healthy Food"
+  },
+  {
+    "Name": "Pies & Pints",
+    "Location": "38.049633, -84.500351",
+    "Type": "Pizza,Healthy Food"
+  },
+  {
+    "Name": "Saul Good Restaurant & Pub",
+    "Location": "38.049363, -84.499529",
+    "Type": "American"
+  },
+  {
+    "Name": "The Village Idiot",
+    "Location": "38.048852, -84.498291",
+    "Type": "European,Pub Food"
+  },
+  {
+    "Name": "The Sweet Spot",
+    "Location": "38.049218, -84.499234",
+    "Type": "Sandwich,Desserts"
+  },
+  {
+    "Name": "Tony's of Lexington",
+    "Location": "38.049414, -84.500001",
+    "Type": "Seafood,Steak,American"
+  },
+  {
+    "Name": "Clawdaddy's",
+    "Location": "38.049253, -84.499188",
+    "Type": "Seafood,Sandwich"
+  },
+  {
+    "Name": "Shakespeare and Co.",
+    "Location": "38.04947, -84.498855",
+    "Type": "Coffee and Tea,Mediterranean,Middle Eastern,Seafood,Cafe"
+  },
+  {
+    "Name": "The Sage Rabbit",
+    "Location": "38.029908, -84.491647",
+    "Type": "American"
+  },
+  {
+    "Name": "Athenian Grill",
+    "Location": "38.0313, -84.491037",
+    "Type": "Greek,Mediterranean"
+  },
+  {
+    "Name": "The Bridge Pizza",
+    "Location": "38.019486, -84.486361",
+    "Type": "Italian,Pizza"
+  },
+  {
+    "Name": "Great Wall",
+    "Location": "38.03111, -84.519905",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Gyroz Mediterranean Eatery",
+    "Location": "38.03111, -84.519905",
+    "Type": "Greek,Mediterranean,Deli"
+  },
+  {
+    "Name": "Charlie Brown's Restaurant",
+    "Location": "38.029822, -84.491038",
+    "Type": "Burger,Sandwich"
+  },
+  {
+    "Name": "Campus Pub",
+    "Location": "38.03111, -84.519905",
+    "Type": "Burger,Bar Food"
+  },
+  {
+    "Name": "Daily Offerings Coffee Roastery",
+    "Location": "38.050403, -84.501263",
+    "Type": "Coffee and Tea"
+  },
+  {
+    "Name": "Starbucks",
+    "Location": "38.030735, -84.490236",
+    "Type": "Cafe,Sandwich"
+  },
+  {
+    "Name": "Le Deauville",
+    "Location": "38.04824, -84.494605",
+    "Type": "French,Seafood,Moroccan,Crepes"
+  },
+  {
+    "Name": "Courtyard Deli",
+    "Location": "38.04975, -84.498048",
+    "Type": "Sandwich,Deli"
+  },
+  {
+    "Name": "Bourbon n' Toulouse",
+    "Location": "38.029779, -84.490539",
+    "Type": "Cajun,Southern"
+  },
+  {
+    "Name": "Distilled at Gratz Park",
+    "Location": "38.048612, -84.495259",
+    "Type": "American,Turkish"
+  },
+  {
+    "Name": "Jimmy John's",
+    "Location": "38.031489, -84.520407",
+    "Type": "American,Sandwiches,Wraps"
+  },
+  {
+    "Name": "Dunkin' Donuts",
+    "Location": "38.034377, -84.521834",
+    "Type": "Donuts,Burger"
+  },
+  {
+    "Name": "Columbia Steak House",
+    "Location": "38.048361, -84.494406",
+    "Type": "Burger,Steak,Bar Food"
+  },
+  {
+    "Name": "Josie's",
+    "Location": "38.028893, -84.491134",
+    "Type": "American"
+  },
+  {
+    "Name": "Tomo",
+    "Location": "38.029913, -84.490013",
+    "Type": "Japanese,Sushi"
+  },
+  {
+    "Name": "Graeter's Ice Cream",
+    "Location": "38.028908, -84.490319",
+    "Type": "Ice Cream,Desserts"
+  },
+  {
+    "Name": "Puccini's Smiling Teeth Pizza & Pasta",
+    "Location": "38.028714, -84.490786",
+    "Type": "Italian,Pizza"
+  },
+  {
+    "Name": "China Star Chinese restaurant",
+    "Location": "38.047041, -84.492084",
+    "Type": "Asian,Chinese,Fast Food"
+  },
+  {
+    "Name": "Lexington Beerworks",
+    "Location": "38.048565, -84.494091",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "Greentree Tearoom",
+    "Location": "38.050955, -84.50038",
+    "Type": "Desserts,Coffee and Tea"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.032272, -84.521397",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Oasis Mediterranean Restaurant",
+    "Location": "38.028641, -84.490577",
+    "Type": "Mediterranean"
+  },
+  {
+    "Name": "McAlister's Deli",
+    "Location": "38.0283019288382, -84.5031400644724",
+    "Type": "Sandwich,Fast Food"
+  },
+  {
+    "Name": "Sorella Gelateria",
+    "Location": "38.048628, -84.493999",
+    "Type": "Ice Cream,Desserts"
+  },
+  {
+    "Name": "Lexington Seafood Co.",
+    "Location": "38.028488, -84.489622",
+    "Type": "Seafood"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.036656, -84.486502",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "A&W Burgers Chicken Floats",
+    "Location": "38.036354, -84.486375",
+    "Type": "American,American,Burgers,Hot Dogs,Ice Cream,Pub Food,Sandwiches"
+  },
+  {
+    "Name": "Confused Confections",
+    "Location": "38.035914, -84.486197",
+    "Type": "Desserts"
+  },
+  {
+    "Name": "LeMatin",
+    "Location": "38.027859, -84.490619",
+    "Type": "French"
+  },
+  {
+    "Name": "Pete's Wok",
+    "Location": "38.033358, -84.52283",
+    "Type": "Chinese,Vegetarian,Vietnamese"
+  },
+  {
+    "Name": "Joella's Hot Chicken",
+    "Location": "38.027743, -84.489999",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Wagon Bones Grill",
+    "Location": "38.05234, -84.50197",
+    "Type": "American,BBQ,Pizza"
+  },
+  {
+    "Name": "doodles breakfast and lunch",
+    "Location": "38.049133, -84.492634",
+    "Type": "Sandwich"
+  },
+  {
+    "Name": "Third Street Stuff",
+    "Location": "38.049356, -84.492995",
+    "Type": "Cafe"
+  },
+  {
+    "Name": "Grillfish Lexington",
+    "Location": "38.049536, -84.492743",
+    "Type": "Seafood"
+  },
+  {
+    "Name": "Stella's Kentucky Deli",
+    "Location": "38.052802, -84.501932",
+    "Type": "American,Burger"
+  },
+  {
+    "Name": "Magee's Bakery",
+    "Location": "38.035405, -84.48515",
+    "Type": "Sandwich,Bakery,Fast Food"
+  },
+  {
+    "Name": "Donatos Pizza",
+    "Location": "38.035247, -84.485035",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "Nick Ryan's",
+    "Location": "38.053071, -84.501701",
+    "Type": "American,Bar Food"
+  },
+  {
+    "Name": "Grey Goose",
+    "Location": "38.053105, -84.501037",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "The Campbell House, Curio Collection by Hilton",
+    "Location": "38.034262, -84.524826",
+    "Type": "Southern,Steak"
+  },
+  {
+    "Name": "Wine + Market",
+    "Location": "38.053507, -84.500456",
+    "Type": "French,Sandwich"
+  },
+  {
+    "Name": "The Blue Heron Steakhouse",
+    "Location": "38.053552, -84.500923",
+    "Type": "Steak,Southern,Seafood"
+  },
+  {
+    "Name": "C & P Market",
+    "Location": "38.053499, -84.511516",
+    "Type": "American"
+  },
+  {
+    "Name": "DoubleH BBQ",
+    "Location": "38.049585, -84.52033",
+    "Type": "BBQ"
+  },
+  {
+    "Name": "Sabor Latino",
+    "Location": "38.050233, -84.519495",
+    "Type": "Latin American"
+  },
+  {
+    "Name": "Blue Door Smokehouse",
+    "Location": "38.039972, -84.480834",
+    "Type": "BBQ"
+  },
+  {
+    "Name": "Locals' Craft Food & Drink",
+    "Location": "38.041087, -84.479813",
+    "Type": "American"
+  },
+  {
+    "Name": "Spalding's Bakery",
+    "Location": "38.040921, -84.477616",
+    "Type": "Desserts,Donuts"
+  },
+  {
+    "Name": "Arcadium Bar",
+    "Location": "38.05375, -84.486375",
+    "Type": "Bar Food"
+  },
+  {
+    "Name": "Wilson's Grocery Meat",
+    "Location": "38.035095, -84.47718",
+    "Type": "Sandwich"
+  },
+  {
+    "Name": "North Lime Coffee & Donuts",
+    "Location": "38.053939, -84.486575",
+    "Type": "Cafe,Donuts"
+  },
+  {
+    "Name": "Al's Bar",
+    "Location": "38.054097, -84.486358",
+    "Type": "Burger,Bar Food"
+  },
+  {
+    "Name": "middle fork kitchen bar",
+    "Location": "38.056522, -84.519739",
+    "Type": "American"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.040872, -84.476175",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "A P Suggins Bar & Grill",
+    "Location": "38.019341, -84.485903",
+    "Type": "Burger,Bar Food,Sandwich"
+  },
+  {
+    "Name": "Rally's",
+    "Location": "38.060685, -84.501069",
+    "Type": "Burger,Fast Food"
+  },
+  {
+    "Name": "Tulip Bistro & Bar",
+    "Location": "38.019071, -84.48603",
+    "Type": "French,Seafood"
+  },
+  {
+    "Name": "County Club Restaurant",
+    "Location": "38.059219, -84.492997",
+    "Type": "BBQ,Burger,American"
+  },
+  {
+    "Name": "Smithtown Seafood",
+    "Location": "38.059327, -84.492081",
+    "Type": "Burger,Seafood"
+  },
+  {
+    "Name": "Frisch's Big Boy",
+    "Location": "38.027921, -84.533517",
+    "Type": "American"
+  },
+  {
+    "Name": "Indi's Fast Food Restaurant",
+    "Location": "38.057568, -84.486925",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Good Foods Co-op",
+    "Location": "38.019885, -84.52769",
+    "Type": "American,Sandwich,Desserts"
+  },
+  {
+    "Name": "Marikka's",
+    "Location": "38.018768, -84.526366",
+    "Type": "German,Bar Food"
+  },
+  {
+    "Name": "Wing Zone",
+    "Location": "38.016825, -84.524455",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Wong Wong",
+    "Location": "38.019603, -84.528417",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Minton's",
+    "Location": "38.056439, -84.482512",
+    "Type": "American,Sandwich"
+  },
+  {
+    "Name": "Ruby Jean's",
+    "Location": "38.019084, -84.528365",
+    "Type": "American,Burger,Southern"
+  },
+  {
+    "Name": "El Toro Mexican Restaurant",
+    "Location": "38.01281, -84.516368",
+    "Type": "Mexican,Tex-Mex"
+  },
+  {
+    "Name": "Pasta Garage Italian Cafe",
+    "Location": "38.038926, -84.471312",
+    "Type": "Italian"
+  },
+  {
+    "Name": "Caramanda's Bake Shoppe",
+    "Location": "38.016592, -84.52561",
+    "Type": "Desserts,Bakery"
+  },
+  {
+    "Name": "Mai Thai Restaurant",
+    "Location": "38.015851, -84.524374",
+    "Type": "Thai"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.016869, -84.525943",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Denny's",
+    "Location": "38.012485, -84.516648",
+    "Type": "American,Diner"
+  },
+  {
+    "Name": "The Soup Kitchen",
+    "Location": "38.017081, -84.526198",
+    "Type": "American,Deli,Sandwich"
+  },
+  {
+    "Name": "Winchell's Restaurant & Bar",
+    "Location": "38.016736, -84.525779",
+    "Type": "Southern,Bar Food"
+  },
+  {
+    "Name": "Burger King",
+    "Location": "38.0271, -84.536324",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Willie's Locally Known",
+    "Location": "38.014601, -84.522923",
+    "Type": "BBQ,Southern,Bar Food"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.025671, -84.535653",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Jasmine Rice Thai Restaurant",
+    "Location": "38.041987, -84.470933",
+    "Type": "Thai,Vietnamese"
+  },
+  {
+    "Name": "Broomwagon",
+    "Location": "38.05731, -84.481354",
+    "Type": "American,Cafe,Soul Food"
+  },
+  {
+    "Name": "Columbia Steak Express",
+    "Location": "38.012161, -84.518277",
+    "Type": "Steak,Burger,Sandwich"
+  },
+  {
+    "Name": "Taziki's Mediterranean Cafe",
+    "Location": "38.011991, -84.517663",
+    "Type": "Mediterranean"
+  },
+  {
+    "Name": "Donut Days Bakery",
+    "Location": "38.012251, -84.518585",
+    "Type": "Desserts,Donuts"
+  },
+  {
+    "Name": "Raising Cane's Chicken Fingers",
+    "Location": "38.02539, -84.536152",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "The Ketch Seafood Grill",
+    "Location": "38.013252, -84.521982",
+    "Type": "Seafood,Caribbean,Steak,Cajun,Mexican"
+  },
+  {
+    "Name": "Chick-fil-A",
+    "Location": "38.02595, -84.536927",
+    "Type": "American,Chicken,Salads,Sandwiches"
+  },
+  {
+    "Name": "Detroit Famous Coney Island",
+    "Location": "38.029414, -84.538661",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Loudon Square Buffet",
+    "Location": "38.060168, -84.484231",
+    "Type": "Southern"
+  },
+  {
+    "Name": "Maria's Kitchen",
+    "Location": "38.060278, -84.484043",
+    "Type": "Latin American,Mexican"
+  },
+  {
+    "Name": "Charlie's Fresh Seafood Market",
+    "Location": "38.041563, -84.469327",
+    "Type": "Seafood"
+  },
+  {
+    "Name": "Yummy Yummy Asian Cuisine",
+    "Location": "38.063712, -84.519955",
+    "Type": "Asian,Chinese"
+  },
+  {
+    "Name": "Brasabana",
+    "Location": "38.03041, -84.540474",
+    "Type": "Cuban"
+  },
+  {
+    "Name": "Tchoupitoulas",
+    "Location": "38.064099, -84.519635",
+    "Type": "Pub Food,Sandwich"
+  },
+  {
+    "Name": "China Hut",
+    "Location": "38.029377, -84.540915",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Dad's Favorites Deli",
+    "Location": "38.02837, -84.54066",
+    "Type": "Deli,Sandwich"
+  },
+  {
+    "Name": "Domino's Pizza",
+    "Location": "38.02936, -84.541301",
+    "Type": "American,Pizza,Wings"
+  },
+  {
+    "Name": "Ramsey's Diners",
+    "Location": "38.009039, -84.518859",
+    "Type": "Sandwich,Southern"
+  },
+  {
+    "Name": "City Barbeque and Catering",
+    "Location": "38.024658, -84.539767",
+    "Type": "BBQ"
+  },
+  {
+    "Name": "Richie's Fast Food",
+    "Location": "38.068088, -84.504058",
+    "Type": "Seafood,Southern"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.007639, -84.495222",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Burger King",
+    "Location": "38.008477, -84.518321",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Fazoli's",
+    "Location": "38.008121, -84.517096",
+    "Type": "Italian,Pasta,Pizza,Sandwiches"
+  },
+  {
+    "Name": "Bradford BBQ.",
+    "Location": "38.0072316751235, -84.5146647846191",
+    "Type": "BBQ,Vegetarian"
+  },
+  {
+    "Name": "Mandarin Cafe & Sushi",
+    "Location": "38.006962, -84.516663",
+    "Type": "Chinese,Sushi,Seafood"
+  },
+  {
+    "Name": "LongHorn Steakhouse",
+    "Location": "38.024179, -84.540423",
+    "Type": "Steak,Southern,Fast Food"
+  },
+  {
+    "Name": "Panera Bread",
+    "Location": "38.007583, -84.517296",
+    "Type": "Bakery,Cafe"
+  },
+  {
+    "Name": "Thoroughbred Restaurant",
+    "Location": "38.065573, -84.522652",
+    "Type": "American"
+  },
+  {
+    "Name": "Gluten-Free Miracles Bakery & Cafe",
+    "Location": "38.007775, -84.519471",
+    "Type": "Pizza,Sandwich,Desserts"
+  },
+  {
+    "Name": "BabyCakes Cupcakes",
+    "Location": "38.037477, -84.464433",
+    "Type": "Desserts,Bakery"
+  },
+  {
+    "Name": "Critchfield Meats Retail Store",
+    "Location": "38.006962, -84.516663",
+    "Type": "Deli,Desserts"
+  },
+  {
+    "Name": "Curry House Indian Restaurant",
+    "Location": "38.006962, -84.516663",
+    "Type": "Indian"
+  },
+  {
+    "Name": "Penn Station East Coast Subs",
+    "Location": "38.006962, -84.516663",
+    "Type": "Fast Food,Sandwich"
+  },
+  {
+    "Name": "O'Charley_%uFFFD%uFFFDs Restaurant & Bar",
+    "Location": "38.00661, -84.517633",
+    "Type": "American,Southern"
+  },
+  {
+    "Name": "El Rancho Tapatio",
+    "Location": "38.007101, -84.519484",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "ROC Cafe",
+    "Location": "38.005827, -84.494377",
+    "Type": "American"
+  },
+  {
+    "Name": "Taco Bell",
+    "Location": "38.006713, -84.518845",
+    "Type": "Mexican,Fast Food"
+  },
+  {
+    "Name": "Mancino's Pizza & Grinders",
+    "Location": "38.065236, -84.526524",
+    "Type": "Italian"
+  },
+  {
+    "Name": "Pho BC",
+    "Location": "38.006805, -84.520364",
+    "Type": "Vietnamese"
+  },
+  {
+    "Name": "Heavenly Ham Lexington",
+    "Location": "38.006805, -84.520364",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "King of Food",
+    "Location": "38.06379, -84.480356",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Papa John's Pizza",
+    "Location": "38.065966, -84.527613",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "Hardee's",
+    "Location": "38.04284, -84.462105",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.066917, -84.526604",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Marco's Pizza",
+    "Location": "38.004469, -84.518741",
+    "Type": "Pizza,Fast Food"
+  },
+  {
+    "Name": "Salsarita's Fresh Mexican Grill",
+    "Location": "38.004582, -84.519455",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Panda Cuisine",
+    "Location": "38.004156, -84.517797",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.0283019288382, -84.5031400644724",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Martine's Pastries",
+    "Location": "38.043953, -84.460903",
+    "Type": "Desserts,Bakery"
+  },
+  {
+    "Name": "O_%uFFFD%uFFFDNeill_%uFFFD%uFFFDs",
+    "Location": "38.020016, -84.465805",
+    "Type": "Burger,Bar Food,Sandwich"
+  },
+  {
+    "Name": "Lee's Garden",
+    "Location": "38.072707, -84.505802",
+    "Type": "Asian,Chinese"
+  },
+  {
+    "Name": "SUSHI BLUE",
+    "Location": "38.004645, -84.521626",
+    "Type": "Japanese,Sushi,Fusion"
+  },
+  {
+    "Name": "La Cabana Mexican & Seafood",
+    "Location": "38.058728, -84.468768",
+    "Type": "Mexican,Seafood"
+  },
+  {
+    "Name": "A&W Burgers Chicken Floats",
+    "Location": "38.067519, -84.529794",
+    "Type": "Burger,Fast Food"
+  },
+  {
+    "Name": "Long John Silver's",
+    "Location": "38.047364, -84.548702",
+    "Type": "Seafood"
+  },
+  {
+    "Name": "KFC",
+    "Location": "38.003323, -84.519957",
+    "Type": "American,Chicken"
+  },
+  {
+    "Name": "Happy Panda",
+    "Location": "38.067724, -84.530251",
+    "Type": "Chinese,Asian"
+  },
+  {
+    "Name": "Durango's Mexican Restaurant",
+    "Location": "38.01943, -84.465257",
+    "Type": "Tex-Mex"
+  },
+  {
+    "Name": "El Mariachi Mexican Restaurant & Cantina",
+    "Location": "38.067533, -84.530433",
+    "Type": "Mexican,Tex-Mex,Italian,Pasta,Pizza,Sandwiches"
+  },
+  {
+    "Name": "Fazoli's",
+    "Location": "38.018981, -84.464861",
+    "Type": "Italian,Pasta,Pizza,Sandwiches"
+  },
+  {
+    "Name": "Paisano's Italian Restaurant & Lounge",
+    "Location": "38.002881, -84.520113",
+    "Type": "Italian"
+  },
+  {
+    "Name": "Applebee's Neighborhood Grill & Bar",
+    "Location": "38.068082, -84.529983",
+    "Type": "American"
+  },
+  {
+    "Name": "Planet Thai Inc",
+    "Location": "38.002881, -84.520113",
+    "Type": "Thai"
+  },
+  {
+    "Name": "Cocina El Sabor Jarocho",
+    "Location": "38.048485, -84.548482",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Happy China",
+    "Location": "38.044835, -84.459",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Pizza Hut",
+    "Location": "38.03111, -84.519905",
+    "Type": "Fast Food,Pizza"
+  },
+  {
+    "Name": "El Sabroso",
+    "Location": "38.047989, -84.549467",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "La Unica Mexican Grocery",
+    "Location": "38.048181, -84.549498",
+    "Type": "Sandwich,Deli"
+  },
+  {
+    "Name": "Wendy's",
+    "Location": "38.038188, -84.551816",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Panda Express",
+    "Location": "38.002353, -84.520226",
+    "Type": "Chinese,Asian"
+  },
+  {
+    "Name": "Firehouse Subs",
+    "Location": "38.068197, -84.531135",
+    "Type": "Sandwich,Fast Food"
+  },
+  {
+    "Name": "Pizza Shoppe",
+    "Location": "38.042407, -84.458128",
+    "Type": "American,Pizza,Subs"
+  },
+  {
+    "Name": "Old San Juan",
+    "Location": "38.001487, -84.516858",
+    "Type": "Cuban,Latin American,Deli"
+  },
+  {
+    "Name": "Talley's B.B.Q.",
+    "Location": "38.070655, -84.483609",
+    "Type": "BBQ"
+  },
+  {
+    "Name": "Vinaigrette Salad Kitchen",
+    "Location": "38.068197, -84.531135",
+    "Type": "Salad,Healthy Food"
+  },
+  {
+    "Name": "Wendy's",
+    "Location": "38.068876, -84.529944",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Malabu Pub & Grille",
+    "Location": "38.001407, -84.517037",
+    "Type": "Bar Food,Sandwich"
+  },
+  {
+    "Name": "Noodles and Company",
+    "Location": "38.001638, -84.519625",
+    "Type": "Asian,Fast Food"
+  },
+  {
+    "Name": "Taco Bell",
+    "Location": "38.069144, -84.530299",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Taco Tico",
+    "Location": "38.071064, -84.483487",
+    "Type": "Tex-Mex"
+  },
+  {
+    "Name": "Papa John's Pizza",
+    "Location": "38.001749, -84.52042",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "Taste of India",
+    "Location": "38.001749, -84.52042",
+    "Type": "Indian"
+  },
+  {
+    "Name": "Five Guys",
+    "Location": "38.001749, -84.52042",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.070394, -84.480475",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Domino's Pizza",
+    "Location": "38.070586, -84.481575",
+    "Type": "American,Pizza,Wings"
+  },
+  {
+    "Name": "Zaxby's Chicken Fingers & Buffalo Wings",
+    "Location": "38.069178, -84.530753",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Supreme Hibachi Buffet",
+    "Location": "38.062645, -84.468529",
+    "Type": "Asian,Sushi,Chinese"
+  },
+  {
+    "Name": "El Gran Taco",
+    "Location": "38.036216, -84.55266",
+    "Type": "Mexican,Sandwich"
+  },
+  {
+    "Name": "Sonic Drive-In",
+    "Location": "38.060981, -84.466668",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Dickey's Barbecue Pit",
+    "Location": "38.044546, -84.457084",
+    "Type": "BBQ"
+  },
+  {
+    "Name": "Country Cookin By George",
+    "Location": "38.036278, -84.552705",
+    "Type": "American"
+  },
+  {
+    "Name": "El Huarache",
+    "Location": "38.06959, -84.478539",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "El Gran Tako",
+    "Location": "38.058361, -84.463898",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.001175, -84.52071",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Arby's",
+    "Location": "38.072046, -84.481575",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "El Milagro Dos",
+    "Location": "38.045625, -84.552498",
+    "Type": "Mexican,Sandwich"
+  },
+  {
+    "Name": "Wendy's",
+    "Location": "38.072128, -84.483256",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "KFC",
+    "Location": "38.071801, -84.482463",
+    "Type": "American,Chicken"
+  },
+  {
+    "Name": "Restaurant Aguascalientes",
+    "Location": "38.048442, -84.551808",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Giovanni's Pizza",
+    "Location": "38.063801, -84.469775",
+    "Type": "Pizza,Sandwich,Italian"
+  },
+  {
+    "Name": "Clamatos Mexican Restaurant",
+    "Location": "38.046242, -84.552953",
+    "Type": "Mexican,Seafood"
+  },
+  {
+    "Name": "China King",
+    "Location": "38.047467, -84.552392",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "El Rey de los Pollos y Mariscos",
+    "Location": "38.047784, -84.552429",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Burger Shake",
+    "Location": "38.062188, -84.466469",
+    "Type": "Burger,Fast Food"
+  },
+  {
+    "Name": "Hardee's",
+    "Location": "38.067776, -84.473523",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "The Cellar Bar & Grill",
+    "Location": "37.998124, -84.498998",
+    "Type": "American,Bar Food"
+  },
+  {
+    "Name": "White Castle",
+    "Location": "38.05975, -84.463985",
+    "Type": "Fast Food,Burger"
+  },
+  {
+    "Name": "Golden Corral",
+    "Location": "38.063036, -84.467142",
+    "Type": "American"
+  },
+  {
+    "Name": "Tortilleria Y Taqueria Ramirez",
+    "Location": "38.0484, -84.552525",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Little Caesars Pizza",
+    "Location": "38.064372, -84.468431",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "Rally's",
+    "Location": "38.064761, -84.468891",
+    "Type": "Burger,Fast Food"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.047215, -84.553081",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Raising Cane's Chicken Fingers",
+    "Location": "38.000197, -84.521392",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Waffle House",
+    "Location": "38.07689, -84.506408",
+    "Type": "American"
+  },
+  {
+    "Name": "Popeyes Louisiana Kitchen",
+    "Location": "38.065133, -84.469296",
+    "Type": "Cajun,Fast Food"
+  },
+  {
+    "Name": "DQ Grill & Chill",
+    "Location": "38.071709, -84.479783",
+    "Type": "American,Burgers,Ice Cream"
+  },
+  {
+    "Name": "Coffee Times Coffee House",
+    "Location": "38.001281, -84.525199",
+    "Type": "Coffee and Tea"
+  },
+  {
+    "Name": "Cork & Barrel",
+    "Location": "38.007466, -84.518681",
+    "Type": "Bar Food"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.070813, -84.477799",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Taco Bell",
+    "Location": "38.0283019288382, -84.5031400644724",
+    "Type": "Mexican,Tex-Mex"
+  },
+  {
+    "Name": "Papa John's Pizza",
+    "Location": "38.058291, -84.461756",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "Chick-fil-A",
+    "Location": "37.999476, -84.520091",
+    "Type": "Sandwich,Fast Food"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.034046, -84.454204",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Wendy's",
+    "Location": "37.999692, -84.521484",
+    "Type": "Burger,Fast Food"
+  },
+  {
+    "Name": "Zaxby's Chicken Fingers & Buffalo Wings",
+    "Location": "38.072928, -84.481375",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Captain D's",
+    "Location": "38.069221, -84.473899",
+    "Type": "Seafood"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.016187, -84.461454",
+    "Type": "Desserts,American,Burgers"
+  },
+  {
+    "Name": "Panderia Araceli's",
+    "Location": "38.072817, -84.478234",
+    "Type": "Bakery"
+  },
+  {
+    "Name": "Starbucks",
+    "Location": "38.046178, -84.55467",
+    "Type": "American,Coffee & Tea"
+  },
+  {
+    "Name": "Donatos Pizza",
+    "Location": "38.06992, -84.474744",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "China King",
+    "Location": "38.058291, -84.461756",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Pizza Hut",
+    "Location": "38.058291, -84.461756",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "Mi Mexico Restaurant",
+    "Location": "38.045394, -84.454624",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Burger King",
+    "Location": "38.071959, -84.47821",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Sir Pizza of Kentucky",
+    "Location": "38.072207, -84.478652",
+    "Type": "Pizza,Sandwich"
+  },
+  {
+    "Name": "Red Lobster",
+    "Location": "37.998602, -84.519784",
+    "Type": "Seafood"
+  },
+  {
+    "Name": "HoneyBaked Ham Company",
+    "Location": "37.998712, -84.520523",
+    "Type": "Sandwich,Deli"
+  },
+  {
+    "Name": "GattiTown",
+    "Location": "37.998278, -84.518867",
+    "Type": "Pizza,Healthy Food"
+  },
+  {
+    "Name": "Newk's Eatery",
+    "Location": "38.015838, -84.461018",
+    "Type": "American,BBQ"
+  },
+  {
+    "Name": "Tachibana Japanese Restaurant",
+    "Location": "38.07689, -84.492066",
+    "Type": "Japanese,Seafood,Sushi"
+  },
+  {
+    "Name": "Silver Cue Billiards Bar",
+    "Location": "38.048148, -84.455291",
+    "Type": "Burger,Bar Food"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.048385, -84.454802",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Taqueria San Miguel",
+    "Location": "38.048835, -84.454965",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Parkette Drive-In",
+    "Location": "38.031182, -84.45331",
+    "Type": "American"
+  },
+  {
+    "Name": "Mouse Trap",
+    "Location": "37.996598, -84.496812",
+    "Type": "Deli,American"
+  },
+  {
+    "Name": "El Malecon Mexican Seafood & Steak Restaurant",
+    "Location": "38.072817, -84.478234",
+    "Type": "Seafood,Mexican"
+  },
+  {
+    "Name": "Drake's Lexington",
+    "Location": "37.995854, -84.496643",
+    "Type": "Burger,Bar Food,Sushi"
+  },
+  {
+    "Name": "Malone's Lansdowne",
+    "Location": "37.995854, -84.496643",
+    "Type": "Seafood,Steak"
+  },
+  {
+    "Name": "DQ Grill & Chill Restaurant",
+    "Location": "38.022342, -84.454155",
+    "Type": "American,Burgers,Ice Cream"
+  },
+  {
+    "Name": "IHOP",
+    "Location": "38.021879, -84.454351",
+    "Type": "American"
+  },
+  {
+    "Name": "Sam's Club",
+    "Location": "38.03711, -84.450433",
+    "Type": "Desserts,Cafe"
+  },
+  {
+    "Name": "OBC Kitchen",
+    "Location": "37.994926, -84.496472",
+    "Type": "American,Seafood"
+  },
+  {
+    "Name": "Malone's Prime Events & Receptions",
+    "Location": "37.994926, -84.496472",
+    "Type": "Seafood,Steakhouse"
+  },
+  {
+    "Name": "Baskin-Robbins",
+    "Location": "38.0283019288382, -84.5031400644724",
+    "Type": "Ice Cream"
+  },
+  {
+    "Name": "Penn Station East Coast Subs",
+    "Location": "38.069886, -84.468652",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Chuck E. Cheese's",
+    "Location": "38.018689, -84.454873",
+    "Type": "Pizza,Fast Food"
+  },
+  {
+    "Name": "Pho Saigon",
+    "Location": "38.018689, -84.454873",
+    "Type": "Vietnamese,Seafood"
+  },
+  {
+    "Name": "Marianas",
+    "Location": "38.016516, -84.455367",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Waffle House",
+    "Location": "38.015348, -84.553375",
+    "Type": "American"
+  },
+  {
+    "Name": "Shakespeare and Co.",
+    "Location": "37.997274, -84.478871",
+    "Type": "Coffee and Tea,Mediterranean,Middle Eastern,Seafood,Cafe"
+  },
+  {
+    "Name": "Austin City Saloon",
+    "Location": "38.016516, -84.455367",
+    "Type": "American,Bar Food"
+  },
+  {
+    "Name": "Koreana Authentic Restaurant",
+    "Location": "38.016994, -84.454684",
+    "Type": "Korean"
+  },
+  {
+    "Name": "Papa Murphy's Take 'N' Bake Pizza",
+    "Location": "38.022555, -84.557645",
+    "Type": "American,Pizza,Salads"
+  },
+  {
+    "Name": "Beaumont Bar & Grill",
+    "Location": "38.016321, -84.555371",
+    "Type": "Sandwich,Bar Food"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "37.99709, -84.480493",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Texas Roadhouse",
+    "Location": "38.015168, -84.553833",
+    "Type": "American,BBQ,Steak"
+  },
+  {
+    "Name": "Big City Pizza",
+    "Location": "37.997274, -84.478871",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "Chinoe Grill",
+    "Location": "37.997844, -84.480117",
+    "Type": "Burger,Bar Food,Sandwich"
+  },
+  {
+    "Name": "Jin Jin Chinese Restaurant",
+    "Location": "37.997274, -84.478871",
+    "Type": "Asian,Chinese"
+  },
+  {
+    "Name": "AZUR restaurant and patio",
+    "Location": "38.016321, -84.555371",
+    "Type": "American,Southern,Pizza"
+  },
+  {
+    "Name": "Zen Sushi & Sake",
+    "Location": "38.016321, -84.555371",
+    "Type": "Asian,Sushi"
+  },
+  {
+    "Name": "Bru Burger Bar",
+    "Location": "38.015725, -84.554947",
+    "Type": "American,Burger"
+  },
+  {
+    "Name": "Donatos Pizza",
+    "Location": "38.016321, -84.555371",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "Chino's DaDa",
+    "Location": "38.01684, -84.453922",
+    "Type": "Pizza,Chinese"
+  },
+  {
+    "Name": "Bront%uFFFD%uFFFD Bistro at Joseph-Beth",
+    "Location": "37.994047, -84.5238",
+    "Type": "American,Sandwich,Burger,Coffee and Tea"
+  },
+  {
+    "Name": "Miyako Sushi & Grill",
+    "Location": "38.011643, -84.456751",
+    "Type": "Japanese,Seafood,Sushi"
+  },
+  {
+    "Name": "Palmers Fresh Grill",
+    "Location": "37.994047, -84.5238",
+    "Type": "American,Seafood"
+  },
+  {
+    "Name": "Bob Evans",
+    "Location": "38.010845, -84.457478",
+    "Type": "American"
+  },
+  {
+    "Name": "West Coast Gourmet Pizza",
+    "Location": "38.031959, -84.445892",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "Tropical Smoothie Cafe",
+    "Location": "38.021822, -84.559934",
+    "Type": "Desserts"
+  },
+  {
+    "Name": "J. Render's Southern Table & Bar",
+    "Location": "38.020426, -84.559273",
+    "Type": "BBQ,Southern"
+  },
+  {
+    "Name": "Peking Bistro Chinese Restaurant",
+    "Location": "38.021822, -84.559934",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Bruster's Real Ice Cream",
+    "Location": "37.995809, -84.529397",
+    "Type": "Desserts"
+  },
+  {
+    "Name": "Crust",
+    "Location": "38.011189, -84.455159",
+    "Type": "Pizza,Fast Food"
+  },
+  {
+    "Name": "Merrick Inn",
+    "Location": "37.991868, -84.491738",
+    "Type": "Southern,Bar Food"
+  },
+  {
+    "Name": "Baskin-Robbins",
+    "Location": "38.013843, -84.557524",
+    "Type": "Ice Cream"
+  },
+  {
+    "Name": "Starbucks",
+    "Location": "38.022474, -84.559268",
+    "Type": "American,Coffee & Tea"
+  },
+  {
+    "Name": "Sir Pizza of Kentucky",
+    "Location": "38.009483, -84.45726",
+    "Type": "Pizza,Sandwich"
+  },
+  {
+    "Name": "Sahara Mediterranean Cuisine",
+    "Location": "38.013843, -84.557524",
+    "Type": "Mediterranean,Middle Eastern"
+  },
+  {
+    "Name": "Angie's",
+    "Location": "38.012026, -84.454651",
+    "Type": "American,Sandwich"
+  },
+  {
+    "Name": "Life Brewpub",
+    "Location": "38.009538, -84.456689",
+    "Type": "Sandwich,Burger,American"
+  },
+  {
+    "Name": "Panera Bread",
+    "Location": "38.011189, -84.455159",
+    "Type": "Sandwich,Cafe,Healthy Food"
+  },
+  {
+    "Name": "QDOBA Mexican Eats",
+    "Location": "38.009955, -84.45622",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Bluegrass Baking Co",
+    "Location": "38.002781, -84.545855",
+    "Type": "Desserts,European,Bakery"
+  },
+  {
+    "Name": "Cheng's",
+    "Location": "38.002781, -84.545855",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "North Lime Coffee & Donuts Clays Mill",
+    "Location": "38.002781, -84.545855",
+    "Type": "Coffee and Tea,Bakery,Donuts"
+  },
+  {
+    "Name": "Backstretch Bar & Grill",
+    "Location": "38.063091, -84.454424",
+    "Type": "Pub Food,Bar Food,American"
+  },
+  {
+    "Name": "Domino's Pizza",
+    "Location": "38.002781, -84.545855",
+    "Type": "American,Pizza,Wings"
+  },
+  {
+    "Name": "Masala Indian Cuisine",
+    "Location": "38.013843, -84.557524",
+    "Type": "Indian"
+  },
+  {
+    "Name": "The Chop House",
+    "Location": "38.009389, -84.456233",
+    "Type": "Seafood,Steak"
+  },
+  {
+    "Name": "No 1 China Buffet",
+    "Location": "37.991707, -84.52229",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Dong Yang Market",
+    "Location": "38.002781, -84.545855",
+    "Type": "Korean,Asian"
+  },
+  {
+    "Name": "Sonic Drive-In",
+    "Location": "38.010513, -84.454799",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Culver's",
+    "Location": "37.994346, -84.531495",
+    "Type": "Burger,Desserts,Fast Food"
+  },
+  {
+    "Name": "Shamrock Bar & Grille",
+    "Location": "38.008596, -84.456435",
+    "Type": "Burger,Bar Food,Sandwich"
+  },
+  {
+    "Name": "Taj India Restaurant",
+    "Location": "38.008596, -84.456435",
+    "Type": "Indian"
+  },
+  {
+    "Name": "Sir Pizza of Kentucky",
+    "Location": "37.9908629282028, -84.522395440718",
+    "Type": "Pizza,Sandwich"
+  },
+  {
+    "Name": "Captain D's",
+    "Location": "37.990342, -84.520189",
+    "Type": "Seafood"
+  },
+  {
+    "Name": "White Castle",
+    "Location": "37.990092, -84.519732",
+    "Type": "Burger"
+  },
+  {
+    "Name": "BJ's Restaurant & Brewhouse",
+    "Location": "37.990937, -84.524653",
+    "Type": "American"
+  },
+  {
+    "Name": "Patchen Pub",
+    "Location": "38.008184, -84.455421",
+    "Type": "Bar Food"
+  },
+  {
+    "Name": "Starbucks",
+    "Location": "38.009089, -84.453714",
+    "Type": "American,Coffee & Tea"
+  },
+  {
+    "Name": "Sbarro",
+    "Location": "37.9889917318432, -84.5249326106963",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "Gigi's Cupcakes",
+    "Location": "38.009089, -84.453714",
+    "Type": "Desserts,Bakery"
+  },
+  {
+    "Name": "Waffle House",
+    "Location": "38.008167, -84.454239",
+    "Type": "American"
+  },
+  {
+    "Name": "Arby's",
+    "Location": "37.991638, -84.524161",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Mi Pequena Hacienda",
+    "Location": "37.988512, -84.515365",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Columbia Steak House",
+    "Location": "38.007881, -84.453815",
+    "Type": "Burger,Bar Food,Steak"
+  },
+  {
+    "Name": "Chili's Grill & Bar",
+    "Location": "38.008459, -84.45248",
+    "Type": "American,Mexican"
+  },
+  {
+    "Name": "DQ Grill & Chill Restaurant",
+    "Location": "37.987723, -84.51606",
+    "Type": "Fast Food,Desserts"
+  },
+  {
+    "Name": "Asian Too",
+    "Location": "37.98928, -84.527346",
+    "Type": "Chinese,Fast Food,Sushi"
+  },
+  {
+    "Name": "Gold Star Chili",
+    "Location": "37.9871635485173, -84.5258450595681",
+    "Type": "American"
+  },
+  {
+    "Name": "Olive Garden Italian Restaurant",
+    "Location": "37.989147, -84.525449",
+    "Type": "Italian"
+  },
+  {
+    "Name": "Pretzel Twister",
+    "Location": "37.98928, -84.527346",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Great American Cookies",
+    "Location": "37.98928, -84.527346",
+    "Type": "Desserts,Bakery"
+  },
+  {
+    "Name": "Chick-fil-A",
+    "Location": "37.98928, -84.527346",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Chao Cajun",
+    "Location": "37.98928, -84.527346",
+    "Type": "Fast Food,Cajun"
+  },
+  {
+    "Name": "Happy Dragon",
+    "Location": "38.087255, -84.488477",
+    "Type": "Chinese,Seafood"
+  },
+  {
+    "Name": "Starbucks",
+    "Location": "37.98928, -84.527346",
+    "Type": "American,Coffee & Tea"
+  },
+  {
+    "Name": "P.F. Chang's",
+    "Location": "37.988953, -84.526856",
+    "Type": "Asian,Chinese,Vegetarian"
+  },
+  {
+    "Name": "Pie Five Pizza Co.",
+    "Location": "37.98928, -84.527346",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "A&W Burgers Chicken Floats",
+    "Location": "37.98928, -84.527346",
+    "Type": "Burger,Fast Food,American,Burgers,Hot Dogs,Ice Cream,Pub Food,Sandwiches"
+  },
+  {
+    "Name": "Sweet Lily's Ice Cream",
+    "Location": "37.98928, -84.527346",
+    "Type": "Frozen Yogurt"
+  },
+  {
+    "Name": "Moe's Southwest Grill",
+    "Location": "37.98928, -84.527346",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Krispy Kreme Doughnuts",
+    "Location": "38.007391, -84.451465",
+    "Type": "Coffee and Tea,Desserts,Cafe"
+  },
+  {
+    "Name": "Newk's Eatery",
+    "Location": "37.988363, -84.528653",
+    "Type": "American,BBQ"
+  },
+  {
+    "Name": "Charleys Philly Steaks",
+    "Location": "37.98928, -84.527346",
+    "Type": "Sandwich"
+  },
+  {
+    "Name": "O'Charley_%uFFFD%uFFFDs Restaurant & Bar",
+    "Location": "38.006974, -84.450837",
+    "Type": "American,Southern"
+  },
+  {
+    "Name": "The Cheesecake Factory",
+    "Location": "37.988232, -84.527292",
+    "Type": "American,Desserts"
+  },
+  {
+    "Name": "Arirang Garden Korean BBQ",
+    "Location": "38.00513, -84.451691",
+    "Type": "Korean,Japanese"
+  },
+  {
+    "Name": "Horseshoe's Kentucky Grill",
+    "Location": "38.076167, -84.458878",
+    "Type": "Burger,Bar Food,Steak,American"
+  },
+  {
+    "Name": "Hardee's",
+    "Location": "38.005621, -84.4513",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "37.995629, -84.545978",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "The Original Brooklyn Pizza",
+    "Location": "37.994705, -84.545731",
+    "Type": "Pizza,Italian"
+  },
+  {
+    "Name": "Captain D's",
+    "Location": "38.006703, -84.449786",
+    "Type": "Seafood"
+  },
+  {
+    "Name": "Wendy's",
+    "Location": "38.005147, -84.450619",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Lee's Famous Recipe Chicken",
+    "Location": "38.0044740026019, -84.4491170059816",
+    "Type": "Fast Food,American"
+  },
+  {
+    "Name": "Auntie Anne's Pretzels",
+    "Location": "37.98928, -84.527346",
+    "Type": "Desserts"
+  },
+  {
+    "Name": "Mad Mushroom Pizza",
+    "Location": "37.996094, -84.548159",
+    "Type": "Pizza,Sandwich,Chinese"
+  },
+  {
+    "Name": "Boardwalk Treats",
+    "Location": "37.987087, -84.528306",
+    "Type": "Desserts"
+  },
+  {
+    "Name": "Mr. Kabab",
+    "Location": "38.005667, -84.449999",
+    "Type": "Mediterranean"
+  },
+  {
+    "Name": "Black Pearl Bubble Tea",
+    "Location": "37.98928, -84.527346",
+    "Type": "Vietnamese,Beverages,Sandwich,Fast Food"
+  },
+  {
+    "Name": "KFC",
+    "Location": "38.004657, -84.450331",
+    "Type": "American,Chicken"
+  },
+  {
+    "Name": "Burger King",
+    "Location": "37.995601, -84.548532",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Chipotle Mexican Grill",
+    "Location": "38.005271, -84.449384",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Zaxby's Chicken Fingers & Buffalo Wings",
+    "Location": "37.983521, -84.495836",
+    "Type": "American"
+  },
+  {
+    "Name": "Little Caesars Pizza",
+    "Location": "37.983103, -84.496284",
+    "Type": "Pizza,Fast Food"
+  },
+  {
+    "Name": "Waffle House",
+    "Location": "37.9807579314941, -84.4983744249323",
+    "Type": "American"
+  },
+  {
+    "Name": "Golden Buffet",
+    "Location": "38.004714, -84.448746",
+    "Type": "Chinese,Seafood"
+  },
+  {
+    "Name": "Taco Bell",
+    "Location": "38.004433, -84.448317",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Cheddar's Scratch Kitchen",
+    "Location": "37.98238, -84.496055",
+    "Type": "American"
+  },
+  {
+    "Name": "Smashing Tomato",
+    "Location": "37.984375, -84.532177",
+    "Type": "Pizza,Italian"
+  },
+  {
+    "Name": "Pizza Hut",
+    "Location": "38.003602, -84.449344",
+    "Type": "Fast Food,Pizza"
+  },
+  {
+    "Name": "China Kitchen",
+    "Location": "38.002786, -84.449292",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Wing Zone",
+    "Location": "37.996674, -84.456897",
+    "Type": "Burger,American"
+  },
+  {
+    "Name": "TGI Fridays",
+    "Location": "37.985523, -84.530346",
+    "Type": "American"
+  },
+  {
+    "Name": "Smashburger",
+    "Location": "37.984783, -84.527305",
+    "Type": "Burger,Fast Food"
+  },
+  {
+    "Name": "Logan's Roadhouse",
+    "Location": "37.985374, -84.529906",
+    "Type": "American"
+  },
+  {
+    "Name": "Papa John's Pizza",
+    "Location": "38.003996, -84.447987",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "Moe's Southwest Grill",
+    "Location": "37.984884, -84.530083",
+    "Type": "Tex-Mex"
+  },
+  {
+    "Name": "BurgerFi",
+    "Location": "37.984884, -84.530083",
+    "Type": "Burger,American"
+  },
+  {
+    "Name": "Rally's",
+    "Location": "38.003584, -84.447756",
+    "Type": "Burger,Fast Food"
+  },
+  {
+    "Name": "Baskin-Robbins",
+    "Location": "38.004199, -84.446865",
+    "Type": "Ice Cream"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.004199, -84.446865",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Marco's Pizza",
+    "Location": "38.004199, -84.446865",
+    "Type": "Pizza,Fast Food"
+  },
+  {
+    "Name": "Sutton's Restaurant",
+    "Location": "38.003727, -84.44652",
+    "Type": "American,Italian"
+  },
+  {
+    "Name": "Red Bang Bang Sushi",
+    "Location": "37.984375, -84.532177",
+    "Type": "Sushi"
+  },
+  {
+    "Name": "Saul Good",
+    "Location": "37.984375, -84.532177",
+    "Type": "American"
+  },
+  {
+    "Name": "Little Caesars Pizza",
+    "Location": "38.003315, -84.445817",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "Texas Roadhouse",
+    "Location": "38.00257, -84.446725",
+    "Type": "American,BBQ,Steak"
+  },
+  {
+    "Name": "Cold Stone Creamery",
+    "Location": "37.984375, -84.532177",
+    "Type": "American,Ice Cream,Smoothies & Juices"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.000817, -84.448713",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Chuy's",
+    "Location": "37.982842, -84.528992",
+    "Type": "Southwestern,Tex-Mex,Mexican"
+  },
+  {
+    "Name": "Bella Notte",
+    "Location": "37.982542, -84.528268",
+    "Type": "Italian"
+  },
+  {
+    "Name": "Waffle House",
+    "Location": "38.078184, -84.452723",
+    "Type": "American"
+  },
+  {
+    "Name": "First Watch Man O' War Place",
+    "Location": "38.001741, -84.445846",
+    "Type": "American,Sandwich"
+  },
+  {
+    "Name": "Outback Steakhouse",
+    "Location": "37.981943, -84.528506",
+    "Type": "Steak"
+  },
+  {
+    "Name": "Embassy Suites Lexington",
+    "Location": "38.09509, -84.488823",
+    "Type": "American"
+  },
+  {
+    "Name": "Hooters",
+    "Location": "38.002936, -84.443875",
+    "Type": "American"
+  },
+  {
+    "Name": "Golden Wok",
+    "Location": "38.002936, -84.443875",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Denny's",
+    "Location": "38.095126, -84.485799",
+    "Type": "American,Diner"
+  },
+  {
+    "Name": "Schlotzsky's",
+    "Location": "37.981011, -84.53012",
+    "Type": "Fast Food,Sandwich,American,Deli Food,Pizza,Sandwiches,Wraps"
+  },
+  {
+    "Name": "Domino's Pizza",
+    "Location": "37.980272, -84.530039",
+    "Type": "American,Pizza,Wings"
+  },
+  {
+    "Name": "City Barbeque and Catering",
+    "Location": "37.999747, -84.445428",
+    "Type": "BBQ"
+  },
+  {
+    "Name": "Pepe's Mexican Restaurant",
+    "Location": "38.000355, -84.444141",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Raising Cane's Chicken Fingers",
+    "Location": "38.04029, -84.428238",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Firehouse Subs",
+    "Location": "37.999351, -84.445164",
+    "Type": "Sandwich"
+  },
+  {
+    "Name": "Jet's Pizza",
+    "Location": "37.999351, -84.445164",
+    "Type": "Pizza,Fast Food"
+  },
+  {
+    "Name": "Orange Leaf Frozen Yogurt",
+    "Location": "37.980924, -84.532753",
+    "Type": "Desserts,Frozen Yogurt"
+  },
+  {
+    "Name": "Happy Sushi Japanese Restaurant",
+    "Location": "37.980272, -84.530039",
+    "Type": "Japanese,Sushi"
+  },
+  {
+    "Name": "Jimmy John's",
+    "Location": "37.980272, -84.530039",
+    "Type": "Sandwich"
+  },
+  {
+    "Name": "A&W Burgers Chicken Floats",
+    "Location": "38.040952, -84.426091",
+    "Type": "Burger,Fast Food"
+  },
+  {
+    "Name": "Panera Bread",
+    "Location": "38.004451, -84.569856",
+    "Type": "Cafe,Healthy Food"
+  },
+  {
+    "Name": "Zaxby's Chicken Fingers & Buffalo Wings",
+    "Location": "37.999062, -84.44462",
+    "Type": "American"
+  },
+  {
+    "Name": "Smashing Tomato | Pizza, Salad and more",
+    "Location": "38.040296, -84.426419",
+    "Type": "Pizza,Italian"
+  },
+  {
+    "Name": "First Watch Hamburg-Winchester",
+    "Location": "38.040952, -84.426091",
+    "Type": "American,Diner"
+  },
+  {
+    "Name": "Shanghai Bistro",
+    "Location": "38.040296, -84.426419",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Vinaigrette Salad Kitchen",
+    "Location": "38.040296, -84.426419",
+    "Type": "American,Sandwich"
+  },
+  {
+    "Name": "The Sports Page Bourbon Bar & Grill",
+    "Location": "38.096587, -84.484826",
+    "Type": "Burger,Bar Food"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "37.978863, -84.530987",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Orange Leaf Frozen Yogurt",
+    "Location": "38.00506, -84.572615",
+    "Type": "Desserts,Frozen Yogurt"
+  },
+  {
+    "Name": "Spud's Sports Pub",
+    "Location": "37.985767, -84.461671",
+    "Type": "Bar Food,Sandwich"
+  },
+  {
+    "Name": "Harry's American Bar & Grill",
+    "Location": "38.00506, -84.572615",
+    "Type": "American,Bar Food"
+  },
+  {
+    "Name": "Papa John's Pizza",
+    "Location": "38.0030422310462, -84.5699405251431",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "Malone's Palomar",
+    "Location": "38.00506, -84.572615",
+    "Type": "American,Steak,Sandwich"
+  },
+  {
+    "Name": "Wild Eggs",
+    "Location": "38.00506, -84.572615",
+    "Type": "American"
+  },
+  {
+    "Name": "Wendy's",
+    "Location": "38.042074, -84.426256",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Arby's",
+    "Location": "38.003214, -84.571036",
+    "Type": "Burger,Fast Food"
+  },
+  {
+    "Name": "Mondelli's Bake Shop",
+    "Location": "37.984158, -84.460895",
+    "Type": "Desserts"
+  },
+  {
+    "Name": "Gold Star Chili",
+    "Location": "38.00506, -84.572615",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Fazoli's",
+    "Location": "38.0027501987593, -84.5704859686017",
+    "Type": "Italian"
+  },
+  {
+    "Name": "QDOBA Mexican Eats",
+    "Location": "38.00506, -84.572615",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Asian Wind",
+    "Location": "38.00506, -84.572615",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.005411, -84.572997",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "Subway",
+    "Location": "37.984158, -84.460895",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Domino's Pizza",
+    "Location": "37.984158, -84.460895",
+    "Type": "American,Pizza,Wings"
+  },
+  {
+    "Name": "Roosters",
+    "Location": "37.977702, -84.532602",
+    "Type": "American"
+  },
+  {
+    "Name": "Starbucks",
+    "Location": "38.040821, -84.423769",
+    "Type": "Sandwich,Cafe"
+  },
+  {
+    "Name": "Chili's Grill & Bar",
+    "Location": "37.976892, -84.530523",
+    "Type": "Tex-Mex"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.042572, -84.424053",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Rose & Jim's Bar & Grill",
+    "Location": "38.100912, -84.514823",
+    "Type": "Burger,Bar Food"
+  },
+  {
+    "Name": "Waffle House",
+    "Location": "38.041765, -84.423394",
+    "Type": "American"
+  },
+  {
+    "Name": "Cosi",
+    "Location": "38.024081, -84.424452",
+    "Type": "Sandwich,Pizza,Healthy Food"
+  },
+  {
+    "Name": "Ramsey's Diner",
+    "Location": "37.973653521855, -84.4993784999111",
+    "Type": "Sandwich,Southern"
+  },
+  {
+    "Name": "European Gourmet",
+    "Location": "37.989957, -84.448269",
+    "Type": "European,German,Eastern European"
+  },
+  {
+    "Name": "Bonefish Grill",
+    "Location": "38.024122, -84.423864",
+    "Type": "Seafood"
+  },
+  {
+    "Name": "Bob Evans",
+    "Location": "38.042116, -84.422311",
+    "Type": "American"
+  },
+  {
+    "Name": "Cold Stone Creamery",
+    "Location": "38.023898, -84.423856",
+    "Type": "Ice Cream,American,Smoothies & Juices"
+  },
+  {
+    "Name": "QDOBA Mexican Eats",
+    "Location": "38.023898, -84.423856",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Cracker Barrel Old Country Store",
+    "Location": "38.044828, -84.422011",
+    "Type": "American,Southern"
+  },
+  {
+    "Name": "Jet's Pizza",
+    "Location": "38.002292, -84.575433",
+    "Type": "Pizza,Sandwich"
+  },
+  {
+    "Name": "Johnny Carino's",
+    "Location": "38.023008, -84.42341",
+    "Type": "Italian"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "38.1024251110084, -84.4842416736992",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Cracker Barrel Old Country Store",
+    "Location": "38.101206, -84.480969",
+    "Type": "American"
+  },
+  {
+    "Name": "bd's Mongolian Grill",
+    "Location": "38.022212, -84.422563",
+    "Type": "Asian"
+  },
+  {
+    "Name": "Shanghai Bistro Tates Creek Center",
+    "Location": "37.971156, -84.498421",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Starbucks",
+    "Location": "37.981362, -84.551207",
+    "Type": "American,Coffee & Tea"
+  },
+  {
+    "Name": "Caramanda's Bake Shoppe",
+    "Location": "37.981139, -84.551339",
+    "Type": "Desserts,Bakery"
+  },
+  {
+    "Name": "Osaka Japanese Restaurant",
+    "Location": "37.981139, -84.551339",
+    "Type": "Japanese,Seafood,Sushi"
+  },
+  {
+    "Name": "Pizza Hut",
+    "Location": "37.981012, -84.550216",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "Ted's Montana Grill",
+    "Location": "38.022996, -84.420874",
+    "Type": "American,Burger,Steak"
+  },
+  {
+    "Name": "Donatos Pizza",
+    "Location": "38.007138, -84.428314",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.102841, -84.484136",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Puccini's Smiling Teeth Pizza & Pasta",
+    "Location": "37.980947, -84.551803",
+    "Type": "Italian,Pizza"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "37.979963, -84.548669",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Tekka Japanese Grill & Sushi",
+    "Location": "38.023032, -84.421736",
+    "Type": "Japanese,Seafood,Sushi"
+  },
+  {
+    "Name": "Culver's",
+    "Location": "38.020886, -84.42136",
+    "Type": "Burger,Desserts,Fast Food"
+  },
+  {
+    "Name": "Jimmy John's",
+    "Location": "38.006359, -84.427714",
+    "Type": "Sandwich"
+  },
+  {
+    "Name": "Foliage Restaurant",
+    "Location": "37.979963, -84.548669",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "McDonald's",
+    "Location": "37.969499, -84.500036",
+    "Type": "American,Burgers"
+  },
+  {
+    "Name": "Jalapenos Restaurant",
+    "Location": "38.006359, -84.427714",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "KFC",
+    "Location": "37.969245, -84.500617",
+    "Type": "Fast Food"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "38.021627, -84.41837",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Banners",
+    "Location": "37.979963, -84.548669",
+    "Type": "Fast Food,Bar Food"
+  },
+  {
+    "Name": "Taco Bell",
+    "Location": "37.968387, -84.503039",
+    "Type": "Fast Food,Mexican"
+  },
+  {
+    "Name": "Cocktails Bar & Grill",
+    "Location": "38.008834, -84.424478",
+    "Type": "Bar Food,Burger"
+  },
+  {
+    "Name": "Tandoor Fine Indian Cuisine",
+    "Location": "38.005412, -84.426633",
+    "Type": "Indian"
+  },
+  {
+    "Name": "Iron Chef",
+    "Location": "38.008834, -84.424478",
+    "Type": "Chinese"
+  },
+  {
+    "Name": "Rafferty's",
+    "Location": "38.020469, -84.419556",
+    "Type": "American,Bar Food"
+  },
+  {
+    "Name": "Fazoli's",
+    "Location": "37.967938, -84.501207",
+    "Type": "Italian,Pasta,Pizza,Sandwiches"
+  },
+  {
+    "Name": "Burger King",
+    "Location": "37.967701, -84.501876",
+    "Type": "Fast Food,Burger"
+  },
+  {
+    "Name": "Buffalo Wild Wings",
+    "Location": "38.008834, -84.424478",
+    "Type": "American,Bar Food"
+  },
+  {
+    "Name": "Saul Good Restaurant & Pub",
+    "Location": "38.016866, -84.420244",
+    "Type": "American"
+  },
+  {
+    "Name": "Back Yard Burgers",
+    "Location": "38.017388, -84.419947",
+    "Type": "American,Burger"
+  },
+  {
+    "Name": "Penn Station East Coast Subs",
+    "Location": "38.00888, -84.423824",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "SUBWAY",
+    "Location": "37.967576, -84.500712",
+    "Type": "Sandwiches"
+  },
+  {
+    "Name": "Giovanni's pizza",
+    "Location": "37.967654, -84.500517",
+    "Type": "Pizza,Sandwich"
+  },
+  {
+    "Name": "Jet's Pizza",
+    "Location": "37.967466, -84.50076",
+    "Type": "Pizza,Sandwich"
+  },
+  {
+    "Name": "Steak 'n Shake",
+    "Location": "38.018239, -84.419173",
+    "Type": "American"
+  },
+  {
+    "Name": "Fazoli's",
+    "Location": "38.01852, -84.418848",
+    "Type": "Italian"
+  },
+  {
+    "Name": "Asian Bistro Express",
+    "Location": "37.967418, -84.50079",
+    "Type": "Asian,Chinese"
+  },
+  {
+    "Name": "Red Lobster",
+    "Location": "38.018999, -84.418506",
+    "Type": "Seafood"
+  },
+  {
+    "Name": "Ramsey's Diner Andover",
+    "Location": "38.010556, -84.422209",
+    "Type": "Sandwich,Southern"
+  },
+  {
+    "Name": "Domino's Pizza",
+    "Location": "38.010556, -84.422209",
+    "Type": "Pizza,Fast Food"
+  },
+  {
+    "Name": "Puccini's Smiling Teeth Pizza & Pasta",
+    "Location": "38.010556, -84.422209",
+    "Type": "Italian,Pizza"
+  },
+  {
+    "Name": "Five Guys",
+    "Location": "38.010556, -84.422209",
+    "Type": "Fast Food,Burger"
+  },
+  {
+    "Name": "Orange Leaf Frozen Yogurt",
+    "Location": "38.010556, -84.422209",
+    "Type": "Desserts,Frozen Yogurt"
+  },
+  {
+    "Name": "Cheddar's Scratch Kitchen",
+    "Location": "38.010556, -84.422209",
+    "Type": "American"
+  },
+  {
+    "Name": "Chick-fil-A",
+    "Location": "38.016956, -84.418768",
+    "Type": "Burger"
+  },
+  {
+    "Name": "Eiffel Pizza",
+    "Location": "37.976468, -84.458551",
+    "Type": "Pizza"
+  },
+  {
+    "Name": "Starbucks",
+    "Location": "38.01714, -84.418438",
+    "Type": "American,Coffee & Tea"
+  },
+  {
+    "Name": "Chipotle Mexican Grill",
+    "Location": "38.01714, -84.418438",
+    "Type": "Mexican"
+  },
+  {
+    "Name": "Pizza Hut",
+    "Location": "37.966387, -84.501227",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "Logan's Roadhouse",
+    "Location": "38.0283019288382, -84.5031400644724",
+    "Type": "American"
+  },
+  {
+    "Name": "Papa John's Pizza",
+    "Location": "37.966023, -84.501625",
+    "Type": "American,Pizza"
+  },
+  {
+    "Name": "Carrabba's Italian Grill",
+    "Location": "38.017942, -84.417493",
+    "Type": "Italian"
+  },
+  {
+    "Name": "TGI Fridays",
+    "Location": "38.020033, -84.416871",
+    "Type": "American"
+  }
+]

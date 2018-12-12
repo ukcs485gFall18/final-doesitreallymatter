@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "restaurant-royale",
+  "private_key_id": "3c4cad74a83b58450de3e0bb2e4aa3d1b5c6645d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCV3JxU3XgHICi2\nhOwXBo+fKEN3ir0Z8YZOLJNyZu/qKIZcWbzfIw937HK4vVIN0nDalI6Nqq91q69y\nspDyN5ael1jeCNbLsqm8lDa4npXTeaBh0MSdS5WBufE+Mm1dEG4eEiieO5izbxqz\nyagNbBqroK5uTdZ9XQwoyPoPjVi7cgAJKzA7DR3MuHWe5ImHWOUIUwXPTQWXseWz\nm5hjWocaEt98HMo48ZphhdF0VePr8mC4ureNvNQZ4lfxx6ZPPZyC120s6OW00beZ\n7znRJewOIEFzv6xT3pIBWLND4jj4U9/wK/2ibDV+xHej4ON2wXSfo5bgW42xAG/z\n4HHtoB+fAgMBAAECggEAAgiCDHq2wANVL2jCmpYJs83u4GZ++0+gvrBxza8M2T9J\n12NA90FkBStYQR5nHcM5qcAzO5knE/B2NcGrdXCAos/d3PaqEg3EqhzUAzw6Pyoa\nyB5Lf0YrwJypDmrOZgwCL8vs8NH71+S4LDFJDj7lu7y3MSLtjTo1HzE0MgAnxd9C\n77dfs6qppjmpOR9v/Dce9LfjDIBI9vxgUaTq7kocJLONSYw4rFCTib+TSq/vmS3s\nq1+8f4P8GzE1umOVu+y29D2RyY888YAl7XJyOvy3fuqSbNmdFROmb96qLDaGLhOK\nTyrM7LYERwLMH+GAtlGKtB0QcUpaFcHOkEF/AVgyAQKBgQDHJn2h+kqg4VgIcF3x\nhyA1nExblcjJo9Bef2tWxtoyonRV7DJKjrVYUBiq6xE7taxoMb6LyqowjAtbYMDa\nva1ozPOygJu82Z+I4EptjOqZyIyqBd6cIERYVkZ09CCQyUdRt5Mcaip8GovWor1O\n4OCx8GCXKbuEDlmXfeiAnxCGAQKBgQDApDVH5TIClwaQwLzhtbfYHI9krbxvN/gv\nbvMyoNsvVU1BBzRItjUy2/yEp7iaQ13c5eDngLbni7vBCWD4uEEDf5ybfl9YVzX+\neQtWuPJLCSTW+9sJYYFRLNdmzFEdbiJHGHawILaF5UeDZPWJN2sYSwo3avbIS+DE\nYpC/Zn7lnwKBgCRHk82FTkEerC3lYofUiP6bOaHZmJl7OUNtzP0i/q8Iv07D16mT\nc9/hv4yrhBkvkHfuz/qhcf2kFZGQ/7EZqtSTubWEDlsJ/jEuQwDQEhDv4wg6R4KD\nsk+xb+ZwbtpRgKeXXLppcNHo+B6iyP/soaJo2v/Ov3VgM9wQOOHtmFIBAoGBAJKS\nXhe9wzdFQbGRdCUn5iGAWXn41o6ovyUX/eJfkWWKOaVonddVC1UPHCqykjqNVzVj\nkqORw5iZMNnHEQks6AqJZdbJaDIG6QYdgwsQ3QlKg8UvC5EvpvzkaV/FxVHnIh2F\n94g626U0thy7DDbC+7EYJ0XTFMGBOhsyA4AdtB9xAoGBAL6g8spbthrpWfnmlnXe\niAu0xfx5jobJU5mTAdqy3Nk5L0oX7N4wRBdw0lNlCdKWWCA6yMxzTxnDgq9MHgde\nHX4+olM1czyfGbjw3ANKe0toYYEHt6yEJkyYqnMxAiwz/Gkt19yo/CvIHhPjVIj7\ng0tHdcSBg7AksnKVLU0xomnt\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-igutk@restaurant-royale.iam.gserviceaccount.com",
+  "client_id": "116176300713003650822",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-igutk%40restaurant-royale.iam.gserviceaccount.com"
+}
