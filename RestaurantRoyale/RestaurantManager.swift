@@ -12,12 +12,32 @@ import MapKit
 
 class RestaurantManager {
 
-  func GetEveryRestaurant() {
+  func GetEveryRestaurant(completion: @escaping ([Restaurant]) -> Void){
     
+    var restaurantsArray = [Restaurant]()
+    
+    db.collection("restaurants").getDocuments() { (querySnapshot, err) in
+      if let err = err {
+        print("Error getting documents: \(err)")
+        completion(restaurantsArray)
+      } else {
+        var numAdded = 0
+        for document in querySnapshot!.documents {
+          let nextRestaurant = Restaurant()
+          nextRestaurant.loadRestaurant(restaurantID: document.documentID, completion: {
+            restaurantsArray.append(nextRestaurant)
+            numAdded += 1
+            if numAdded == querySnapshot?.count {
+              completion(restaurantsArray)
+            }
+          })
+        }
+      }
+    }
   }
   
   func GetRestaurantByCategory(category: String, completion: @escaping () -> Void) -> Restaurant {
-    var randomRestaurant = Restaurant()
+    let randomRestaurant = Restaurant()
     
     let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
     let randomID = String((0...19).map{ _ in letters.randomElement()! })
@@ -54,7 +74,7 @@ class RestaurantManager {
   
   func GetRandomRestaurant(completion: @escaping () -> Void) -> Restaurant {
     
-    var randomRestaurant = Restaurant()
+    let randomRestaurant = Restaurant()
     
     let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
     let randomID = String((0...19).map{ _ in letters.randomElement()! })
