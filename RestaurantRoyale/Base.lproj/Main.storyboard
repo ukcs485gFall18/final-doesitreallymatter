@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="roV-tE-Zlz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="roV-tE-Zlz">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -374,7 +374,7 @@
         <!--Search-->
         <scene sceneID="VHq-yU-dQ4">
             <objects>
-                <viewController id="jly-z2-CkB" customClass="RewardsViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jly-z2-CkB" customClass="SearchViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sM5-yG-WZe"/>
                         <viewControllerLayoutGuide type="bottom" id="6ri-dU-y7d"/>
@@ -392,20 +392,37 @@
                                 <rect key="frame" x="16" y="100" width="343" height="629"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableViewCell" id="pX5-tL-xwB" customClass="SearchTableViewCell" customModule="Restaurant_Royale" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pX5-tL-xwB" id="qjQ-Kq-O0U" customClass="SearchTableViewCell" customModule="Restaurant_Royale" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="w9Z-RJ-CGu" kind="show" identifier="TableViewSegue" trigger="accessoryAction" id="mrj-p1-jvZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" id="WbC-em-0Ej" propertyAccessControl="all"/>
+                    <connections>
+                        <outlet property="searchBar" destination="8Jz-IM-j7r" id="Mbo-gx-U7z"/>
+                        <outlet property="tableView" destination="H5H-uj-W0s" id="VYR-Uc-J9d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVI-OY-jG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2015.2" y="-730.04926108374389"/>
         </scene>
-        <!--View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="3i6-gK-eRQ">
             <objects>
-                <viewController id="w9Z-RJ-CGu" sceneMemberID="viewController">
+                <viewController id="w9Z-RJ-CGu" customClass="infoViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y1e-Z7-uMz"/>
                         <viewControllerLayoutGuide type="bottom" id="ahM-68-U3a"/>
@@ -413,8 +430,34 @@
                     <view key="view" contentMode="scaleToFill" id="4tv-S9-3Px">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Restaurant Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GCO-UL-5sZ">
+                                <rect key="frame" x="16" y="136" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UQU-xw-UHe">
+                                <rect key="frame" x="0.0" y="52" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="0X3-bK-Snh">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kbZ-9A-9kN">
+                                            <connections>
+                                                <segue destination="jly-z2-CkB" kind="presentation" id="vxR-qN-cxS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="action" id="kEr-Ud-IhC"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="restaurantNameLabel" destination="GCO-UL-5sZ" id="N22-IQ-XWd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t6r-0y-SAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -423,9 +466,11 @@
     </scenes>
     <resources>
         <image name="CurrentLocation" width="15" height="15"/>
-        <image name="rw-logo" width="512" height="512"/>
+        <image name="rw-logo" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="mrj-p1-jvZ"/>
+        <segue reference="vxR-qN-cxS"/>
         <segue reference="lAI-mA-Ra0"/>
     </inferredMetricsTieBreakers>
 </document>

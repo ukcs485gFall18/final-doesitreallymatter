@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131FCF621B08F3A0087BAA6 /* TabViewController.swift */; };
-		0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */; };
+		0131FCF921B0933F0087BAA6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131FCF821B0933F0087BAA6 /* SearchViewController.swift */; };
+		0143050221C09B4800F54221 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143050121C09B4800F54221 /* SearchTableViewCell.swift */; };
+		0143050421C09B8300F54221 /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143050321C09B8300F54221 /* infoViewController.swift */; };
 		30362D0621B319FC00AB07E8 /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30362D0521B319FC00AB07E8 /* gif.swift */; };
 		30362D0821B31A1700AB07E8 /* money.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30362D0721B31A1600AB07E8 /* money.gif */; };
 		30362D0A21B31A2100AB07E8 /* slots.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30362D0921B31A2100AB07E8 /* slots.gif */; };
@@ -32,7 +34,9 @@
 
 /* Begin PBXFileReference section */
 		0131FCF621B08F3A0087BAA6 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
-		0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		0131FCF821B0933F0087BAA6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0143050121C09B4800F54221 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		0143050321C09B8300F54221 /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
 		2C7E16726DE474D67283AED2 /* Pods-Restaurant Royale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Royale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale.debug.xcconfig"; sourceTree = "<group>"; };
 		30362D0521B319FC00AB07E8 /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gif.swift; sourceTree = "<group>"; };
 		30362D0721B31A1600AB07E8 /* money.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = money.gif; sourceTree = "<group>"; };
@@ -117,7 +121,9 @@
 				30362D0521B319FC00AB07E8 /* gif.swift */,
 				E9F340BF21B63F1600779987 /* Restaurant.swift */,
 				D90CB6561A739B7A00228A1F /* Main.storyboard */,
-				0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */,
+				0143050121C09B4800F54221 /* SearchTableViewCell.swift */,
+				0131FCF821B0933F0087BAA6 /* SearchViewController.swift */,
+				0143050321C09B8300F54221 /* infoViewController.swift */,
 				0131FCF621B08F3A0087BAA6 /* TabViewController.swift */,
 				D90CB6591A739B7A00228A1F /* Images.xcassets */,
 				30362D0921B31A2100AB07E8 /* slots.gif */,
@@ -295,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9F340C021B63F1600779987 /* Restaurant.swift in Sources */,
+				0143050421C09B8300F54221 /* infoViewController.swift in Sources */,
 				D90CB6821A73CBC600228A1F /* AddGeotificationViewController.swift in Sources */,
 				E9CC65E1219CDE5D00B3EDE1 /* SignUpViewController.swift in Sources */,
 				30362D0621B319FC00AB07E8 /* gif.swift in Sources */,
@@ -303,7 +310,8 @@
 				E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */,
 				D9835AF31AA6076800D265BC /* Utilities.swift in Sources */,
 				0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */,
-				0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */,
+				0143050221C09B4800F54221 /* SearchTableViewCell.swift in Sources */,
+				0131FCF921B0933F0087BAA6 /* SearchViewController.swift in Sources */,
 				E9CC65E5219CE1E500B3EDE1 /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,19 +1,23 @@
 //
-//  RewardsViewController.swift
+//  infoViewController.swift
 //  Restaurant Royale
 //
-//  Created by Joseph Crocker on 11/29/18.
+//  Created by Joseph Crocker on 12/11/18.
 //  Copyright © 2018 Ken Toh. All rights reserved.
 //
 
 import UIKit
 
-class RewardsViewController: UIViewController {
+class infoViewController: UIViewController {
+  @IBOutlet weak var restaurantNameLabel: UITextField!
+  
+  var recievedData: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+      loadData()
     }
     
 
@@ -26,5 +30,8 @@ class RewardsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+  func loadData(){
+    restaurantNameLabel.text = recievedData
+  }
 
 }
