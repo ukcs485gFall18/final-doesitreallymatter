@@ -20,29 +20,35 @@ class LoginViewController: UIViewController {
     // Do any additional setup after loading the view.
   }
   
-    @IBAction func handleLogin(_ sender: Any) {
-        guard let email = emailField.text else { return }
-        guard let password = passwordField.text else { return }
-        
-        Auth.auth().signIn(withEmail: email, password: password) { user, error in
-            
-            if error == nil && user != nil {
-                self.dismiss(animated: false, completion: nil)
-            } else {
-                print("Error logging in: \(error!.localizedDescription)")
-            }
-        }
-
-    }
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    self.view.setGradientBackground(colorOne: Colors.MaastrichtBlue, colorTwo: Colors.RifleGray)
+    
+  }
   
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destination.
-   // Pass the selected object to the new view controller.
-   }
-   */
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.setNeedsStatusBarAppearanceUpdate()
+  }
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
+  }
+  
+  @IBAction func handleLogin(_ sender: Any) {
+    
+    guard let email = emailField.text else { return }
+    guard let password = passwordField.text else { return }
+  
+    Auth.auth().signIn(withEmail: email, password: password) { user, error in
+      
+      if error == nil && user != nil {
+          self.dismiss(animated: false, completion: nil)
+      } else {
+          print("Error logging in: \(error!.localizedDescription)")
+      }
+    }
+
+  }
   
 }
