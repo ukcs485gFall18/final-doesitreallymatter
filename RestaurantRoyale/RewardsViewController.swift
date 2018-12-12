@@ -29,7 +29,18 @@ class RewardsViewController: UIViewController {
     
     restaurantLabel.text = selectedRestaurant.name
     typeLabel.text = selectedRestaurant.categories[0]
+    if (reward) {
+      rewardLabel.text = (rewardArray.randomElement())
+    } else {
+      rewardLabel.text = ("Sorry, no reward this time!")
+    }
   }
+  
+  let rewardArray = [
+    "A free drink!",
+    "A free side!",
+    "10% Off Your Entire Meal!"
+  ]
   
   @IBAction func winnerButtonPressed(_ sender: Any) {
     let alert = UIAlertController(title: "Open in Maps?", message: nil, preferredStyle: .alert)
@@ -51,6 +62,7 @@ class RewardsViewController: UIViewController {
     if (!isEqual) {
       let alert = UIAlertController(title: "Are you sure?", message: "Your reward will be lost!", preferredStyle: .alert)
       let action1 = UIAlertAction(title: "Yes", style: .destructive) { (action) in
+        reward = false
         self.performSegue(withIdentifier: "backToRandom", sender: self)
       }
       let action2 = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
@@ -61,11 +73,10 @@ class RewardsViewController: UIViewController {
     } else {
       let alert = UIAlertController(title: "Are you sure?", message: nil, preferredStyle: .alert)
       let action1 = UIAlertAction(title: "Yes", style: .destructive) { (action) in
-        print("Yes Selected")
+        reward = false
         self.performSegue(withIdentifier: "backToRandom", sender: self)
       }
       let action2 = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
-        print("Cancel selected")
       }
       alert.addAction(action1)
       alert.addAction(action2)

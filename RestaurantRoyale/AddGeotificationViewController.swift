@@ -2,6 +2,8 @@ import UIKit
 import MapKit
 import Firebase
 
+var reward = Bool(true)
+
 class AddGeotificationViewController: UIViewController{
   
   var manager = RestaurantManager()
