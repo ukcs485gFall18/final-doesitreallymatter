@@ -34,8 +34,9 @@ class AddGeotificationViewController: UIViewController{
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    randomRestaurantButton.setTitle("Let's Eat!", for: .normal)
-    randomRestaurantButton.layer.cornerRadius = 4
+    
+    randomRestaurantButton.layer.cornerRadius = randomRestaurantButton.frame.size.height / 2
+    
     background.loadGif(name: "money")
     slots.loadGif(name: "slots")
     view.bringSubview(toFront: slots)
