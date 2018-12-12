@@ -496,16 +496,13 @@
                                 <rect key="frame" x="16" y="120" width="343" height="490"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="bo0-sb-j7i" customClass="TableViewCell" customModule="Restaurant_Royale" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TableViewCell" id="bo0-sb-j7i" customClass="TableViewCell" customModule="Restaurant_Royale" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bo0-sb-j7i" id="3UH-RY-lFo">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="w9Z-RJ-CGu" kind="show" id="LL7-wm-Thr"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -547,29 +544,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oek-dg-rlp">
-                                <rect key="frame" x="16" y="107" width="343" height="30"/>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oek-dg-rlp">
+                                <rect key="frame" x="16" y="63" width="343" height="32"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uws-JO-6xv">
+                                <rect key="frame" x="16" y="168" width="343" height="17"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uws-JO-6xv">
-                                <rect key="frame" x="16" y="210" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXz-gl-F9d">
+                                <rect key="frame" x="30" y="313" width="329" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Uv6-bs-J4A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" red="0.99153405429999997" green="0.095917247240000003" blue="0.0056222132410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mapButton:" destination="w9Z-RJ-CGu" eventType="primaryActionTriggered" id="Y5J-TT-Myj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oek-dg-rlp" firstAttribute="leading" secondItem="4tv-S9-3Px" secondAttribute="leadingMargin" id="5kP-hR-LEu"/>
                             <constraint firstItem="oek-dg-rlp" firstAttribute="trailing" secondItem="uws-JO-6xv" secondAttribute="trailing" id="CZA-Mc-9gz"/>
                             <constraint firstItem="uws-JO-6xv" firstAttribute="top" secondItem="oek-dg-rlp" secondAttribute="bottom" constant="73" id="J2V-HG-9pU"/>
+                            <constraint firstItem="bXz-gl-F9d" firstAttribute="trailing" secondItem="uws-JO-6xv" secondAttribute="trailing" id="W3r-AX-kDw"/>
                             <constraint firstItem="oek-dg-rlp" firstAttribute="leading" secondItem="uws-JO-6xv" secondAttribute="leading" id="Zzo-Dp-j7e"/>
+                            <constraint firstItem="bXz-gl-F9d" firstAttribute="leading" secondItem="4tv-S9-3Px" secondAttribute="leadingMargin" constant="14" id="l0h-Pt-Ua2"/>
                             <constraint firstItem="oek-dg-rlp" firstAttribute="top" secondItem="Y1e-Z7-uMz" secondAttribute="bottom" constant="43" id="vc8-iS-wf0"/>
                             <constraint firstItem="oek-dg-rlp" firstAttribute="trailing" secondItem="4tv-S9-3Px" secondAttribute="trailingMargin" id="xWD-Qs-wRz"/>
+                            <constraint firstItem="ahM-68-U3a" firstAttribute="top" secondItem="bXz-gl-F9d" secondAttribute="bottom" constant="244" id="zu1-Md-1Jc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="NGt-m6-aUI"/>
                     <connections>
                         <outlet property="categoryLabel" destination="uws-JO-6xv" id="ohk-wX-IVb"/>
                         <outlet property="restaurantNameLabel" destination="oek-dg-rlp" id="LaN-AY-yXv"/>

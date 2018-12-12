@@ -25,7 +25,10 @@ class infoViewController: UIViewController {
       categoryLabel.text = category
     }
     
-
+    @IBAction func mapButton(_ sender: Any) {
+        restaurant.openMapToRestaurant()
+    }
+    
     /*
     // MARK: - Navigation
 

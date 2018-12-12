@@ -16,7 +16,7 @@ class RestaurantManager {
     
     var restaurantsArray = [Restaurant]()
     
-    db.collection("restaurants").getDocuments() { (querySnapshot, err) in
+    db.collection("restaurants").order(by: "name").getDocuments() { (querySnapshot, err) in
       if let err = err {
         print("Error getting documents: \(err)")
         completion(restaurantsArray)

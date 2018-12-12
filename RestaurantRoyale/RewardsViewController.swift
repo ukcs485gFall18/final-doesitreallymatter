@@ -37,6 +37,8 @@ class RewardsViewController: UIViewController, UITableViewDataSource, UITableVie
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
     
+    matches = matches.sorted {$0.name < $1.name}
+    
     let text = matches[indexPath.row].name
     
     cell.textLabel?.text = text
