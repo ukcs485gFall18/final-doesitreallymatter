@@ -47,8 +47,7 @@ class RewardsViewController: UIViewController, UITableViewDataSource, UITableVie
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let vc = storyboard?.instantiateViewController(withIdentifier: "infoViewController") as! infoViewController
     
-    vc.restaurantName = matches[indexPath.row].name
-    vc.location = matches[indexPath.row].location
+    vc.restaurant = matches[indexPath.row]
     vc.category = matches[indexPath.row].categories[0]
     self.navigationController?.pushViewController(vc, animated: true)
   }
@@ -82,6 +81,7 @@ class RewardsViewController: UIViewController, UITableViewDataSource, UITableVie
     })
     matches = restaurantArray
     matches = matches.sorted { $0.name < $1.name}
+    tableView.reloadData()
   }
   
 }

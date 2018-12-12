@@ -13,8 +13,7 @@ class infoViewController: UIViewController {
     @IBOutlet weak var restaurantNameLabel: UITextField!
     @IBOutlet weak var categoryLabel: UITextField!
     
-  var restaurantName = ""
-  var location = CLLocationCoordinate2D()
+  var restaurant = Restaurant()
   var category = ""
   
 
@@ -22,7 +21,7 @@ class infoViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-      restaurantNameLabel.text = restaurantName
+      restaurantNameLabel.text = restaurant.name
       categoryLabel.text = category
     }
     
