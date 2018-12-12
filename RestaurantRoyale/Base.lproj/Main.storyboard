@@ -40,18 +40,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9vI-jV-Rw0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9vI-jV-Rw0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B67-Jx-Yuc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B67-Jx-Yuc">
                                 <rect key="frame" x="16" y="160" width="343" height="206"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="206" id="pIT-4k-MaK"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="001-mR-9bl">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="001-mR-9bl">
                                 <rect key="frame" x="83" y="507" width="208" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99153405429999997" green="0.77565942570000002" blue="0.11593327019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="Tad-TA-0rY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Let's Eat!"/>
@@ -59,8 +62,33 @@
                                     <action selector="randomRestaurantRequest:" destination="jlM-bB-7qN" eventType="touchUpInside" id="2ap-Ym-JjX"/>
                                 </connections>
                             </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a99-ov-22s">
+                                <rect key="frame" x="78" y="633" width="209" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="eo5-Ie-DtW"/>
+                                </constraints>
+                                <state key="normal" title="Mexican"/>
+                                <connections>
+                                    <action selector="mexicanRestaurantRequest:" destination="jlM-bB-7qN" eventType="touchUpInside" id="Rgz-Zg-Jpb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9vI-jV-Rw0" secondAttribute="trailing" id="AVL-DV-MGB"/>
+                            <constraint firstItem="a99-ov-22s" firstAttribute="top" secondItem="001-mR-9bl" secondAttribute="bottom" constant="27" id="AcN-ou-2jX"/>
+                            <constraint firstItem="B67-Jx-Yuc" firstAttribute="top" secondItem="uX5-lu-sDI" secondAttribute="bottom" constant="116" id="MzY-eg-wOh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a99-ov-22s" secondAttribute="trailing" constant="72" id="OB1-IL-ISF"/>
+                            <constraint firstItem="x0S-s8-6oE" firstAttribute="top" secondItem="a99-ov-22s" secondAttribute="bottom" constant="35" id="RMX-r7-4id"/>
+                            <constraint firstItem="9vI-jV-Rw0" firstAttribute="centerX" secondItem="001-mR-9bl" secondAttribute="centerX" id="T1D-mx-5lm"/>
+                            <constraint firstItem="B67-Jx-Yuc" firstAttribute="leading" secondItem="5Wr-3R-YYX" secondAttribute="leadingMargin" id="X9Q-oc-XI0"/>
+                            <constraint firstAttribute="bottom" secondItem="9vI-jV-Rw0" secondAttribute="bottom" id="Ydy-jg-WaX"/>
+                            <constraint firstItem="001-mR-9bl" firstAttribute="leading" secondItem="5Wr-3R-YYX" secondAttribute="leadingMargin" constant="67" id="Zbw-ar-CIP"/>
+                            <constraint firstItem="a99-ov-22s" firstAttribute="leading" secondItem="5Wr-3R-YYX" secondAttribute="leadingMargin" constant="62" id="eML-U4-0ZA"/>
+                            <constraint firstItem="9vI-jV-Rw0" firstAttribute="top" secondItem="5Wr-3R-YYX" secondAttribute="top" id="hMB-A3-k1s"/>
+                            <constraint firstItem="B67-Jx-Yuc" firstAttribute="centerX" secondItem="001-mR-9bl" secondAttribute="centerX" id="jGs-am-00c"/>
+                            <constraint firstItem="9vI-jV-Rw0" firstAttribute="leading" secondItem="5Wr-3R-YYX" secondAttribute="leading" id="yOz-xR-Ntj"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Let's Eat" image="CurrentLocation" id="OpB-eq-LRt"/>
                     <connections>
@@ -71,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fig-x7-LCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1975" y="678"/>
+            <point key="canvasLocation" x="-1975.2" y="677.58620689655174"/>
         </scene>
         <!--Profile Page-->
         <scene sceneID="Lzj-pA-rE7">
