@@ -42,7 +42,10 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    self.performSegue(withIdentifier: "TableViewSegue", sender: self)
+    let vc = storyboard?.instantiateViewController(withIdentifier: "infoViewController") as! infoViewController
+    
+    vc.recievedData = matches[indexPath.row]
+    self.navigationController?.pushViewController(vc, animated: true)
   }
   
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -56,15 +59,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     tableView.reloadData()
   }
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    let dest = segue.destination as! infoViewController
-    if (segue.identifier == "TableViewSegue"){
-      let match = "whatever"
-      dest.recievedData = match
-    }
-  }
-  
+    
   func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }

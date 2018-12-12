@@ -448,7 +448,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/RestaurantRoyale/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ukycs.restaurantRoyale;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uky.doesntmatter.final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -465,7 +465,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/RestaurantRoyale/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ukycs.restaurantRoyale;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uky.doesntmatter.final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
