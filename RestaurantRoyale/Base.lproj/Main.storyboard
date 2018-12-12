@@ -480,10 +480,10 @@
             </objects>
             <point key="canvasLocation" x="-3249" y="244"/>
         </scene>
-        <!--Rewards View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="VHq-yU-dQ4">
             <objects>
-                <viewController id="jly-z2-CkB" customClass="RewardsViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jly-z2-CkB" customClass="SearchViewController" customModule="Restaurant_Royale" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sM5-yG-WZe"/>
                         <viewControllerLayoutGuide type="bottom" id="6ri-dU-y7d"/>

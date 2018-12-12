@@ -1,5 +1,5 @@
 //
-//  RewardsViewController.swift
+//  SearchViewController.swift
 //  Restaurant Royale
 //
 //  Created by Joseph Crocker on 11/29/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RewardsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     

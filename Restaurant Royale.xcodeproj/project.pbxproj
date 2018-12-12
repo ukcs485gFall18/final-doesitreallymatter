@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131FCF621B08F3A0087BAA6 /* TabViewController.swift */; };
-		0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */; };
+		0131FCF921B0933F0087BAA6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131FCF821B0933F0087BAA6 /* SearchViewController.swift */; };
 		01A7E02121C1836700C5D5DC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A7E02021C1836700C5D5DC /* TableViewCell.swift */; };
 		01A7E02321C184D900C5D5DC /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A7E02221C184D900C5D5DC /* infoViewController.swift */; };
 		30362D0621B319FC00AB07E8 /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30362D0521B319FC00AB07E8 /* gif.swift */; };
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0131FCF621B08F3A0087BAA6 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
-		0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		0131FCF821B0933F0087BAA6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		01A7E02021C1836700C5D5DC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		01A7E02221C184D900C5D5DC /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
 		2C7E16726DE474D67283AED2 /* Pods-Restaurant Royale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Royale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 				E978543321C053CA003313D1 /* rouletteWheel.gif */,
 				D90CB6561A739B7A00228A1F /* Main.storyboard */,
 				01A7E02021C1836700C5D5DC /* TableViewCell.swift */,
-				0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */,
+				0131FCF821B0933F0087BAA6 /* SearchViewController.swift */,
 				01A7E02221C184D900C5D5DC /* infoViewController.swift */,
 				E9FD90A221C07E0900864EA7 /* RestaurantManager.swift */,
 				0131FCF621B08F3A0087BAA6 /* TabViewController.swift */,
@@ -325,7 +325,7 @@
 				E9FD90A321C07E0900864EA7 /* RestaurantManager.swift in Sources */,
 				D9835AF31AA6076800D265BC /* Utilities.swift in Sources */,
 				0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */,
-				0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */,
+				0131FCF921B0933F0087BAA6 /* SearchViewController.swift in Sources */,
 				01A7E02321C184D900C5D5DC /* infoViewController.swift in Sources */,
 				E9CC65E5219CE1E500B3EDE1 /* ProfileViewController.swift in Sources */,
 				E9F340C221BF86B900779987 /* Constants.swift in Sources */,
