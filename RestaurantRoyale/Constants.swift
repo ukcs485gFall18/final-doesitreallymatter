@@ -12,7 +12,6 @@ import Firebase
 import FirebaseStorage
 
 let db = Firestore.firestore()
-let settings = db.settings
 
 let storage = Storage.storage()
 
@@ -25,5 +24,10 @@ struct Colors {
   static let Isabelline = UIColor(red: 247/255, green: 243/255, blue: 237/255, alpha: 1)
   static let RifleGray = UIColor(red: 68/255, green: 67/255, blue: 65/255, alpha: 1)
   static let MaastrichtBlue = UIColor(red: 8/255, green: 26/255, blue: 42/255, alpha: 1)
-
+  static let Mantis = UIColor(red: 125/255, green: 201/255, blue: 94/255, alpha: 1)
+  static let PastelGreen = UIColor(red: 124/255, green: 223/255, blue: 100/255, alpha: 1)
+  static let FrenchPink = UIColor(red: 255/255, green: 112/255, blue: 166/255, alpha: 1)
+  static let Mauvelous = UIColor(red: 232/255, green: 157/255, blue: 168/255, alpha: 1)
+  static let Rosewood = UIColor(red: 107/255, green: 5/255, blue: 4/255, alpha: 1)
+  static let Maize = UIColor(red: 255/255, green: 241/255, blue: 89/255, alpha: 1)
 }

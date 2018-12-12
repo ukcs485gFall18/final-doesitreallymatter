@@ -10,6 +10,8 @@
 		0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131FCF621B08F3A0087BAA6 /* TabViewController.swift */; };
 		0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */; };
 		30362D0621B319FC00AB07E8 /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30362D0521B319FC00AB07E8 /* gif.swift */; };
+		30DB616B21C187D300E2957A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DB616A21C187D300E2957A /* SearchViewController.swift */; };
+		30DB616D21C18A9500E2957A /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 30DB616C21C18A9500E2957A /* user.png */; };
 		CB00DE048DF123642887EB65 /* Pods_Restaurant_Royale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00D4DEFE6DFD07D30EAC895 /* Pods_Restaurant_Royale.framework */; };
 		D90CB6531A739B7A00228A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB6521A739B7A00228A1F /* AppDelegate.swift */; };
 		D90CB6581A739B7A00228A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90CB6561A739B7A00228A1F /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 		2C7E16726DE474D67283AED2 /* Pods-Restaurant Royale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Royale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale.debug.xcconfig"; sourceTree = "<group>"; };
 		30362D0521B319FC00AB07E8 /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gif.swift; sourceTree = "<group>"; };
 		308B7289218FDB950027F45B /* TollyToLocal.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TollyToLocal.gpx; sourceTree = "<group>"; };
+		30DB616A21C187D300E2957A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		30DB616C21C18A9500E2957A /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		7DBB1DD8B77C6707E9D01F9D /* Pods-Restaurant Royale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Royale.release.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale.release.xcconfig"; sourceTree = "<group>"; };
 		A16373B92054471A0065C2D9 /* Google.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Google.gpx; sourceTree = "<group>"; };
 		A16373BA2054475A0065C2D9 /* SimulatedLocations.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SimulatedLocations.gpx; sourceTree = "<group>"; };
@@ -132,7 +136,9 @@
 				0131FCF821B0933F0087BAA6 /* RewardsViewController.swift */,
 				E9FD90A221C07E0900864EA7 /* RestaurantManager.swift */,
 				0131FCF621B08F3A0087BAA6 /* TabViewController.swift */,
+				30DB616A21C187D300E2957A /* SearchViewController.swift */,
 				D90CB6591A739B7A00228A1F /* Images.xcassets */,
+				30DB616C21C18A9500E2957A /* user.png */,
 				E978543721C05DAB003313D1 /* profileHeader.jpg */,
 				D90CB65B1A739B7A00228A1F /* LaunchScreen.xib */,
 				D90CB6501A739B7A00228A1F /* Supporting Files */,
@@ -198,6 +204,7 @@
 				TargetAttributes = {
 					D90CB64C1A739B7A00228A1F = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = BH9BS3QV7C;
 						LastSwiftMigration = 0920;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -236,6 +243,7 @@
 				E978543821C05DAC003313D1 /* profileHeader.jpg in Resources */,
 				E978543421C053CA003313D1 /* rouletteWheel.gif in Resources */,
 				D9C1AF6C1A77CD6C00A06B2F /* Apple.gpx in Resources */,
+				30DB616D21C18A9500E2957A /* user.png in Resources */,
 				D90CB65A1A739B7A00228A1F /* Images.xcassets in Resources */,
 				E9F340BE21B63A6C00779987 /* GoogleService-Info.plist in Resources */,
 				E978543221C053BD003313D1 /* money.gif in Resources */,
@@ -316,6 +324,7 @@
 				E9CC65E3219CDE6700B3EDE1 /* LoginViewController.swift in Sources */,
 				E9CC65DF219CD82500B3EDE1 /* InitialViewController.swift in Sources */,
 				E9FD90A321C07E0900864EA7 /* RestaurantManager.swift in Sources */,
+				30DB616B21C187D300E2957A /* SearchViewController.swift in Sources */,
 				D9835AF31AA6076800D265BC /* Utilities.swift in Sources */,
 				0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */,
 				0131FCF921B0933F0087BAA6 /* RewardsViewController.swift in Sources */,
@@ -452,11 +461,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH9BS3QV7C;
 				INFOPLIST_FILE = "$(SRCROOT)/RestaurantRoyale/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ukycs.restaurantRoyale;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uky.doesntmatter.final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -469,11 +478,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH9BS3QV7C;
 				INFOPLIST_FILE = "$(SRCROOT)/RestaurantRoyale/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ukycs.restaurantRoyale;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uky.doesntmatter.final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;

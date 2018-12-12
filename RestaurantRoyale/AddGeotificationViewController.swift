@@ -7,14 +7,24 @@ class AddGeotificationViewController: UIViewController{
   var manager = RestaurantManager()
   var randomRestaurant = Restaurant()
   
+  @IBOutlet weak var dessertButton: UIButton!
+  @IBOutlet weak var FastFoodButton: UIButton!
   @IBOutlet weak var slots: UIImageView!
   @IBOutlet weak var background: UIImageView!
   @IBOutlet weak var randomRestaurantButton: UIButton!
   
-  @IBAction func mexicanRestaurantRequest(_ sender: UIButton) {
+  @IBAction func dessertRestaurantRequest(_ sender: UIButton) {
     
-    randomRestaurant = manager.GetRestaurantByCategory(category: "Mexican", completion: {
-      self.randomRestaurant.openMapToRestaurant()
+    randomRestaurant = manager.GetRestaurantByCategory(category: "Desserts", completion: {
+      self.performSegue(withIdentifier: "showReward", sender: self)
+    })
+    
+  }
+  
+  @IBAction func fastFoodRestaurantRequest(_ sender: UIButton) {
+    
+    randomRestaurant = manager.GetRestaurantByCategory(category: "Fast Food", completion: {
+      self.performSegue(withIdentifier: "showReward", sender: self)
     })
     
   }
@@ -22,20 +32,45 @@ class AddGeotificationViewController: UIViewController{
   @IBAction func randomRestaurantRequest(_ sender: UIButton) {
     
     randomRestaurant = manager.GetRandomRestaurant(completion: {
-      self.randomRestaurant.openMapToRestaurant()
+      self.performSegue(withIdentifier: "showReward", sender: self)
     })
     
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let rewardController = segue.destination as! RewardsViewController
+    rewardController.selectedRestaurant = randomRestaurant
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    randomRestaurantButton.setTitle("Let's Eat!", for: .normal)
-    randomRestaurantButton.layer.cornerRadius = 4
+    randomRestaurantButton.layer.cornerRadius = randomRestaurantButton.frame.size.height / 2
+    randomRestaurantButton.layer.masksToBounds = true
+    randomRestaurantButton.layer.borderWidth = 1
+    
+    dessertButton.layer.cornerRadius = dessertButton.frame.size.height / 2
+    dessertButton.layer.masksToBounds = true
+    dessertButton.layer.borderWidth = 1
+    
+    FastFoodButton.layer.cornerRadius = FastFoodButton.frame.size.height / 2
+    FastFoodButton.layer.masksToBounds = true
+    FastFoodButton.layer.borderWidth = 1
     
     background.loadGif(name: "money")
     slots.loadGif(name: "slots")
     view.bringSubview(toFront: slots)
     view.bringSubview(toFront: randomRestaurantButton)
+    
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    randomRestaurantButton.setGradientBackground(colorOne: Colors.DeepLemon, colorTwo: Colors.SunsetOrange)
+    
+    FastFoodButton.setGradientBackground(colorOne: Colors.Mantis, colorTwo: Colors.PastelGreen)
+    
+    dessertButton.setGradientBackground(colorOne: Colors.FrenchPink, colorTwo: Colors.Mauvelous)
     
   }
   
