@@ -29,7 +29,7 @@ class Restaurant {
           let lon = point.longitude
           self.location = CLLocationCoordinate2D(latitude: lat, longitude: lon)
         }
-        self.categories = document.get("categories") as! [String]
+        self.categories = document.get("type") as! [String]
       }
       completion()
     }
