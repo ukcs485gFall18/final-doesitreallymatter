@@ -24,10 +24,6 @@ class ProfileViewController: UIViewController {
     logoutButton.layer.masksToBounds = true
     logoutButton.layer.borderWidth = 1
     logoutButton.layer.borderColor = Colors.Timberwolf.cgColor
-    
-    let settings = db.settings
-    settings.areTimestampsInSnapshotsEnabled = true
-    db.settings = settings
 
     let user = Auth.auth().currentUser
     let userDocRef = db.collection("userData").document((user?.uid)!)
