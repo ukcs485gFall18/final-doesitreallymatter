@@ -44,6 +44,10 @@
                                 <rect key="frame" x="33" y="58" width="309" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9vI-jV-Rw0">
+                                <rect key="frame" x="0.0" y="0.0" width="457" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6A-rU-2OL">
                                 <rect key="frame" x="16" y="344" width="343" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -56,13 +60,9 @@
                                 </state>
                                 <connections>
                                     <action selector="randomRestaurantRequest:" destination="jlM-bB-7qN" eventType="touchUpInside" id="IRO-e2-WrZ"/>
-                                    <segue destination="blS-3S-H1w" kind="show" id="JqF-5e-il3"/>
+                                    <segue destination="blS-3S-H1w" kind="show" id="Mdn-Mb-Ga4"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9vI-jV-Rw0">
-                                <rect key="frame" x="0.0" y="0.0" width="457" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -158,6 +158,7 @@
                                 </state>
                                 <connections>
                                     <action selector="randomRestaurantRequest:" destination="jlM-bB-7qN" eventType="touchUpInside" id="hdP-jq-3vq"/>
+                                    <action selector="winnerButtonPressed:" destination="blS-3S-H1w" eventType="touchUpInside" id="ueN-ND-MaR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnw-3P-xpg">
@@ -172,6 +173,7 @@
                                 </state>
                                 <connections>
                                     <action selector="randomRestaurantRequest:" destination="jlM-bB-7qN" eventType="touchUpInside" id="32c-Er-98g"/>
+                                    <action selector="tryAgainPressed:" destination="blS-3S-H1w" eventType="touchUpInside" id="OLk-TY-ixe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -586,6 +588,7 @@
         <image name="profileHeader" width="1614" height="323"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Mdn-Mb-Ga4"/>
         <segue reference="EPf-ZI-PHS"/>
         <segue reference="Rxu-yy-N72"/>
     </inferredMetricsTieBreakers>

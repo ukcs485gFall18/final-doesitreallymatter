@@ -2,9 +2,10 @@
 //  WinnerViewController.swift
 //  Restaurant Royale
 //
-//  Created by Jordan Menchen on 12/9/18.
+//  Created by Jordan Menchen on 12/12/18.
 //  Copyright © 2018 Ken Toh. All rights reserved.
 //
+
 import UIKit
 
 class WinnerViewController: UIViewController {
@@ -15,7 +16,7 @@ class WinnerViewController: UIViewController {
   var restaurantType = String()
   var randomRestaurant: (name: String, id: String, type: String)?
   var randomRestaurantView = Restaurant()
-  
+
   @IBOutlet weak var restaurantLabel: UILabel!
   @IBOutlet weak var typeLabel: UILabel!
   @IBOutlet weak var rewardLabel: UILabel!
@@ -24,6 +25,7 @@ class WinnerViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+
     getRandomRestaurant()
     winnerButton.layer.cornerRadius = 4
     tryAgainButton.layer.cornerRadius = 4
@@ -37,6 +39,7 @@ class WinnerViewController: UIViewController {
       rewardLabel.text = ("Sorry, no reward this time!")
     }
   }
+  
   func getRandomRestaurant() {
     
     randomRestaurant = restaurants.randomElement()
@@ -111,15 +114,6 @@ class WinnerViewController: UIViewController {
       alert.addAction(action1)
       alert.addAction(action2)
       present(alert, animated: true, completion: nil)
-    }
-  }
-  
-  func prepareForSegue(segue: UIStoryboardSegue, sender: UIAlertController) {
-    if(segue.identifier == "backToRandom"){
-      if let tabVC = segue.destination as? TabViewController{
-        tabVC.selectedIndex = 2
-        print("back to random")
-      }
     }
   }
 }

@@ -10,6 +10,7 @@
 		0131FCF721B08F3A0087BAA6 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131FCF621B08F3A0087BAA6 /* TabViewController.swift */; };
 		3028C90921BE443B008751DA /* AtRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028C90821BE443B008751DA /* AtRestaurantViewController.swift */; };
 		30362D0621B319FC00AB07E8 /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30362D0521B319FC00AB07E8 /* gif.swift */; };
+		30DB616721C0D43E00E2957A /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DB616621C0D43E00E2957A /* WinnerViewController.swift */; };
 		CB00DE048DF123642887EB65 /* Pods_Restaurant_Royale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00D4DEFE6DFD07D30EAC895 /* Pods_Restaurant_Royale.framework */; };
 		D90CB6531A739B7A00228A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB6521A739B7A00228A1F /* AppDelegate.swift */; };
 		D90CB6581A739B7A00228A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90CB6561A739B7A00228A1F /* Main.storyboard */; };
@@ -36,10 +37,10 @@
 /* Begin PBXFileReference section */
 		0131FCF621B08F3A0087BAA6 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		2C7E16726DE474D67283AED2 /* Pods-Restaurant Royale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Royale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale.debug.xcconfig"; sourceTree = "<group>"; };
-		3028C90421BDA21E008751DA /* WinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
 		3028C90821BE443B008751DA /* AtRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AtRestaurantViewController.swift; path = "/Users/jmench/Desktop/CS485/final-doesitreallymatter/RestaurantRoyale/AtRestaurantViewController.swift"; sourceTree = "<absolute>"; };
 		30362D0521B319FC00AB07E8 /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gif.swift; sourceTree = "<group>"; };
 		308B7289218FDB950027F45B /* TollyToLocal.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TollyToLocal.gpx; sourceTree = "<group>"; };
+		30DB616621C0D43E00E2957A /* WinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
 		7DBB1DD8B77C6707E9D01F9D /* Pods-Restaurant Royale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Royale.release.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Royale/Pods-Restaurant Royale.release.xcconfig"; sourceTree = "<group>"; };
 		A16373B92054471A0065C2D9 /* Google.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Google.gpx; sourceTree = "<group>"; };
 		A16373BA2054475A0065C2D9 /* SimulatedLocations.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SimulatedLocations.gpx; sourceTree = "<group>"; };
@@ -121,9 +122,9 @@
 				E9CC65E4219CE1E500B3EDE1 /* ProfileViewController.swift */,
 				D9835AF21AA6076800D265BC /* Utilities.swift */,
 				E9F340BF21B63F1600779987 /* Restaurant.swift */,
+				30DB616621C0D43E00E2957A /* WinnerViewController.swift */,
 				D90CB6561A739B7A00228A1F /* Main.storyboard */,
 				0131FCF621B08F3A0087BAA6 /* TabViewController.swift */,
-				3028C90421BDA21E008751DA /* WinnerViewController.swift */,
 				3028C90821BE443B008751DA /* AtRestaurantViewController.swift */,
 				D90CB6521A739B7A00228A1F /* AppDelegate.swift */,
 				E9F340C121BF86B900779987 /* Constants.swift */,
@@ -310,6 +311,7 @@
 				E9F340C021B63F1600779987 /* Restaurant.swift in Sources */,
 				D90CB6821A73CBC600228A1F /* AddGeotificationViewController.swift in Sources */,
 				E9CC65E1219CDE5D00B3EDE1 /* SignUpViewController.swift in Sources */,
+				30DB616721C0D43E00E2957A /* WinnerViewController.swift in Sources */,
 				30362D0621B319FC00AB07E8 /* gif.swift in Sources */,
 				D90CB6531A739B7A00228A1F /* AppDelegate.swift in Sources */,
 				E9CC65E3219CDE6700B3EDE1 /* LoginViewController.swift in Sources */,
