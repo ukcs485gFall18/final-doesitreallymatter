@@ -45,22 +45,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9vI-jV-Rw0">
-                                <rect key="frame" x="0.0" y="0.0" width="457" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6A-rU-2OL">
-                                <rect key="frame" x="16" y="344" width="343" height="81"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMM-nQ-0lY">
+                                <rect key="frame" x="16" y="374" width="343" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99153405429999997" green="0.77565942570000002" blue="0.11593327019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Let's Eat!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="randomRestaurantRequest:" destination="jlM-bB-7qN" eventType="touchUpInside" id="IRO-e2-WrZ"/>
-                                    <segue destination="blS-3S-H1w" kind="show" id="Mdn-Mb-Ga4"/>
+                                    <action selector="randomRestaurantButtonPressed:" destination="jlM-bB-7qN" eventType="touchUpInside" id="ycC-JM-Rp3"/>
+                                    <segue destination="blS-3S-H1w" kind="show" id="9dA-SP-0V2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,7 +65,7 @@
                     <tabBarItem key="tabBarItem" title="Let's Eat" image="CurrentLocation" id="OpB-eq-LRt"/>
                     <connections>
                         <outlet property="background" destination="9vI-jV-Rw0" id="pDf-Ej-Wy0"/>
-                        <outlet property="randomRestaurantButton" destination="o6A-rU-2OL" id="TKX-x2-2W7"/>
+                        <outlet property="randomRestaurantButton" destination="sMM-nQ-0lY" id="Wr1-8P-JOg"/>
                         <outlet property="slots" destination="B67-Jx-Yuc" id="sYr-o9-TsP"/>
                     </connections>
                 </viewController>
@@ -588,7 +584,7 @@
         <image name="profileHeader" width="1614" height="323"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Mdn-Mb-Ga4"/>
+        <segue reference="9dA-SP-0V2"/>
         <segue reference="EPf-ZI-PHS"/>
         <segue reference="Rxu-yy-N72"/>
     </inferredMetricsTieBreakers>
