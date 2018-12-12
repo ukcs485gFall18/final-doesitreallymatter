@@ -1,40 +1,88 @@
-//
+
 //  SearchViewController.swift
 //  Restaurant Royale
 //
-//  Created by Jordan Menchen on 12/12/18.
+//  Created by Joseph Crocker on 11/29/18.
 //  Copyright © 2018 Ken Toh. All rights reserved.
 //
-
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+  @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var searchBar: UISearchBar!
   
   var manager = RestaurantManager()
   var restaurantArray = [Restaurant]()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      manager.GetEveryRestaurant(completion: { loaded in
-        self.restaurantArray = loaded
-        for restaurant in self.restaurantArray {
-          print(restaurant.name)
-        }
-        // Do Array things here, like updating the tableview
-      })
-
-        // Do any additional setup after loading the view.
-    }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    setupSearch()
+    loadData()
+    
+  }
+  
+  fileprivate func setupSearch()
+  {
+    searchBar.delegate = self
+    tableView.dataSource = self
+    tableView.delegate = self
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return matches.count
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
+    
+    matches = matches.sorted {$0.name < $1.name}
+    
+    let text = matches[indexPath.row].name
+    
+    cell.textLabel?.text = text
+    
+    return cell
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let vc = storyboard?.instantiateViewController(withIdentifier: "infoViewController") as! infoViewController
+    
+    vc.restaurant = matches[indexPath.row]
+    vc.category = matches[indexPath.row].categories[0]
+    self.navigationController?.pushViewController(vc, animated: true)
+  }
+  
+  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    if (searchText == ""){
+      matches = restaurantArray
     }
-    */
-
+    else{
+      matches = restaurantArray.filter{$0.name.contains(searchText)}
+      matches = matches.sorted { $0.name < $1.name }
+    }
+    tableView.reloadData()
+  }
+  
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 1
+  }
+  
+  fileprivate var matches: [Restaurant] = []
+  
+  func loadData(){
+    manager.GetEveryRestaurant(completion: { loaded in
+      self.restaurantArray = loaded
+      for restaurant in self.restaurantArray {
+        print(restaurant.name)
+        self.matches.append(restaurant)
+      }
+      self.tableView.reloadData()
+      // Do Array things here, like updating the tableview
+    })
+    matches = restaurantArray
+    matches = matches.sorted { $0.name < $1.name}
+    tableView.reloadData()
+  }
+  
 }
